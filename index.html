@@ -1579,6 +1579,22 @@ function foodOptionRow(o){
     row.append(dish,element('td','',fmt(o.kcal)));
     return row;
 }
+function alcoholCategory(dish){
+  const type=dish.name.split(',',1)[0].trim().toLowerCase();
+  return ({shot:0,beer:1,wine:2})[type] ?? 3;
+}
+function alcoholCalorieDensity(dish){
+  if(Number.isFinite(dish.kcal_per_100ml))return dish.kcal_per_100ml;
+  const volume=/^(\d+(?:\.\d+)?)\s*ml$/i.exec((dish.portion||'').trim());
+  return volume && Number(volume[1])>0 && Number.isFinite(dish.kcal)
+    ? dish.kcal*100/Number(volume[1]) : Infinity;
+}
+function compareAlcoholOptions(a,b){
+  return alcoholCategory(a)-alcoholCategory(b)
+    || alcoholCalorieDensity(a)-alcoholCalorieDensity(b)
+    || (a.menu_order ?? Infinity)-(b.menu_order ?? Infinity)
+    || a.name.localeCompare(b.name);
+}
 function renderFoodOptions(){
   const searchKey=value=>normalizedName(value).replace(/[’‘]/g,"'");
   const query=searchKey(byId('option-search').value);
@@ -1600,7 +1616,12 @@ function renderFoodOptions(){
       head.scope='rowgroup';head.colSpan=2;
       head.append(element('h2','',restaurant||'Other dishes'));
       row.append(head);body.append(row);
-      if(searchKey(restaurant)!=='supermarket')dishes.sort((a,b)=>a.name.localeCompare(b.name));
+      if(searchKey(restaurant)==='alcohol consumption'){
+        dishes.sort(compareAlcoholOptions);
+      }else if(searchKey(restaurant)!=='supermarket'){
+        dishes.sort((a,b)=>(a.menu_order ?? Number.MAX_SAFE_INTEGER)-(b.menu_order ?? Number.MAX_SAFE_INTEGER)
+          || a.name.localeCompare(b.name));
+      }
       body.append(...dishes.map(foodOptionRow));
       return body;
     });
