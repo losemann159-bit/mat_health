@@ -1,0 +1,12 @@
+# Local journal data, exports and automatic backups
+/workouts.json
+/source-chat.json
+/training-food-journal*.json
+/backups/
+/.workouts.lock
+/workouts.tmp
+*.log
+__pycache__/
+.env
+.env.*
+!.env.example
