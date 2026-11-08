@@ -25,8 +25,11 @@ def record(workout, folder, collection='workouts'):
         raise ValueError('Use the date as the daily record ID')
     def numeric(value):
         return type(value) in (int,float) and math.isfinite(value) and value >= 0
-    if collection == 'food_options' and not numeric(workout.get('kcal')):
-        raise ValueError('Provide calories per serving for the saved food option')
+    if collection == 'food_options':
+        kcal = workout.get('kcal')
+        if not numeric(kcal):
+            raise ValueError('Provide calories per serving for the saved food option')
+        workout = {**workout, 'kcal': 10 * math.floor(kcal / 10 + 0.5)}
     if collection == 'daily_energy':
         if 'weight_kg' in workout and (not numeric(workout['weight_kg']) or workout['weight_kg']==0):
             raise ValueError('Provide a positive measured weight in kilograms')

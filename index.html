@@ -1590,13 +1590,17 @@ function renderFoodOptions(){
     if(!groups.has(key))groups.set(key,{restaurant,dishes:[]});
     groups.get(key).dishes.push(dish);
   }
-  const bodies=[...groups.values()].sort((a,b)=>Number(!a.restaurant)-Number(!b.restaurant)||a.restaurant.localeCompare(b.restaurant))
+  function groupOrder(restaurant){
+    if(searchKey(restaurant)==='supermarket')return 0;
+    return restaurant?1:2;
+  }
+  const bodies=[...groups.values()].sort((a,b)=>groupOrder(a.restaurant)-groupOrder(b.restaurant)||a.restaurant.localeCompare(b.restaurant))
     .map(({restaurant,dishes})=>{
       const body=element('tbody'),row=element('tr'),head=element('th','restaurant-heading');
       head.scope='rowgroup';head.colSpan=2;
       head.append(element('h2','',restaurant||'Other dishes'));
       row.append(head);body.append(row);
-      dishes.sort((a,b)=>a.name.localeCompare(b.name));
+      if(searchKey(restaurant)!=='supermarket')dishes.sort((a,b)=>a.name.localeCompare(b.name));
       body.append(...dishes.map(foodOptionRow));
       return body;
     });

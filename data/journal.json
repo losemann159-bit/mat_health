@@ -1254,6 +1254,84 @@
       "source": "Usual order and menu photo from chat.",
       "photo_aspect": "square",
       "photo": "/photos/abf2ae0b2b118eca3c3bccbbe3e59a2b4eb0211f6617cbe4d6ea330a4db22568.webp"
+    },
+    {
+      "id": "supermarket-gatorade-purple-zero-500ml",
+      "name": "Gatorade Purple (Zero Sugar Grape) · 500 ml",
+      "restaurant": "Supermarket",
+      "portion": "1 bottle (500 ml)",
+      "kcal": 0,
+      "estimated": false,
+      "estimate_basis": "Energy per bottle on the supplied Thai product label.",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/ecfcf17aec127a419ceebaeed43db9543295449340197482cce0cd0684c646dc.webp",
+      "photo_aspect": "square"
+    },
+    {
+      "id": "supermarket-gatorade-blue-500ml",
+      "name": "Gatorade Blue (Blue Blast) · 500 ml",
+      "restaurant": "Supermarket",
+      "portion": "1 bottle (500 ml)",
+      "kcal": 130,
+      "estimated": false,
+      "estimate_basis": "Energy per bottle on the supplied Thai product label.",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/eeeb9580786e043e007538a111d82e6c64968eb3e91dd367d679b94a2f791d33.webp",
+      "photo_aspect": "square"
+    },
+    {
+      "id": "supermarket-gatorade-yellow-500ml",
+      "name": "Gatorade Yellow (Lime) · 500 ml",
+      "restaurant": "Supermarket",
+      "portion": "1 bottle (500 ml)",
+      "kcal": 130,
+      "estimated": false,
+      "estimate_basis": "Energy per bottle on the supplied Thai product label.",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/e6733a715ee21fc0c34c2f05bca2cf6c61cb0167dd30bda8a20f05f1a0635a45.webp",
+      "photo_aspect": "square"
+    },
+    {
+      "id": "supermarket-pocari-sweat-500ml",
+      "name": "Pocari Sweat · 500 ml",
+      "restaurant": "Supermarket",
+      "portion": "1 bottle (500 ml)",
+      "kcal": 130,
+      "estimated": true,
+      "estimate_basis": "Estimated from the Otsuka standard drink at 25 kcal per 100 ml. https://www.otsuka.co.jp/en/nutraceutical/products/pocarisweat/",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/f9f62707c6a5e72db75342a2930ca5edb811ba06c2989ef9f705b065cc681b10.webp",
+      "photo_aspect": "square"
+    },
+    {
+      "id": "supermarket-musashi-protein-crisp-dark-choc-mint-60g",
+      "name": "Musashi Protein Crisp (Dark Choc Mint) · 60 g",
+      "restaurant": "Supermarket",
+      "portion": "1 bar (60 g)",
+      "kcal": 230,
+      "estimated": false,
+      "estimate_basis": "978 kJ per 60 g bar, converted to 234 kcal. https://www.woolworths.com.au/shop/productdetails/153334/musashi-crisp-protein-bar-dark-chocolate-mint",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/706597d95ed519baaf41fb0beeca74f402906c0cea80de8622ba64872864624c.webp",
+      "photo_aspect": "square"
+    },
+    {
+      "id": "supermarket-greisinger-salami-sticks-80g",
+      "name": "Greisinger Salami Sticks · 80 g",
+      "restaurant": "Supermarket",
+      "portion": "1 pack (80 g)",
+      "kcal": 370,
+      "estimated": false,
+      "estimate_basis": "Alm-Beisser at 459 kcal per 100 g, or 367 kcal per 80 g pack. https://www.spar.at/produktwelt/greisinger-alm-beisser-p2020002924621",
+      "date": "2026-11-08",
+      "source": "Menu item and product photo supplied in chat.",
+      "photo": "/photos/9d305176e7145d9647c244e9a89328da9b424fe0b815e12531fb8fa79f1a541f.webp",
+      "photo_aspect": "square"
     }
   ]
 }
