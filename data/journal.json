@@ -1,0 +1,1259 @@
+{
+  "workouts": [
+    {
+      "id": "chat-2026-11-02",
+      "date": "2026-11-02",
+      "notes": "RowErg · 5 × 500 m · 2,500 m total\nAssault Bike · 5 × 10 cal · 50 cal total, alternating with rows without breaks\nChest press · 32 kg × 12 · 41 kg × 15 · 50 kg × 15\nLeg press · 115, 145 and 160 kg × 12 each\nLeg curl · 3 × 12 at 40 kg",
+      "incomplete": false,
+      "source": "Fitness log record",
+      "title": "Strength & endurance",
+      "source_section": "Completed workout reports, subsequent corrections, and the 2–7 November weekly review",
+      "minutes": 60,
+      "total_kcal": 720,
+      "peak_hr": 158,
+      "effort": 6,
+      "machine_volume_kg": 8229,
+      "strength_reps": 114,
+      "muscles": [
+        "chest",
+        "quads",
+        "hamstrings"
+      ],
+      "exercises": [
+        {
+          "name": "RowErg",
+          "detail": "5 × 500 m · 2,500 m total",
+          "unit": "m",
+          "sets": [
+            500,
+            500,
+            500,
+            500,
+            500
+          ],
+          "block": {
+            "name": "Cardio",
+            "detail": "5 alternating rounds · No breaks"
+          }
+        },
+        {
+          "name": "Assault Bike",
+          "detail": "5 × 10 cal · 50 cal total, alternating with rows without breaks",
+          "unit": "cal",
+          "sets": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "name": "Chest press",
+          "detail": "32 kg × 12 · 41 kg × 15 · 50 kg × 15",
+          "unit": "reps",
+          "sets": [
+            12,
+            15,
+            15
+          ],
+          "loads_kg": [
+            32,
+            41,
+            50
+          ],
+          "block": {
+            "name": "Strength",
+            "detail": ""
+          }
+        },
+        {
+          "name": "Leg press",
+          "detail": "115, 145 and 160 kg × 12 each",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            115,
+            145,
+            160
+          ]
+        },
+        {
+          "name": "Leg curl",
+          "detail": "3 × 12 at 40 kg. Hamstrings are the main target. The upper calf helps bend the knee.",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "load": "40 kg every set",
+          "assisting_muscles": [
+            "calves"
+          ]
+        }
+      ],
+      "rating": 8.5,
+      "highlight": "Five RowErg and bike rounds, then leg press up to 160 kg for 12 reps."
+    },
+    {
+      "id": "chat-2026-11-04",
+      "date": "2026-11-04",
+      "notes": "SkiErg · 4 × 500 m · 2,000 m total\nAssault Bike · 4 × 15 cal · 60 cal total, alternating with skiing in 23 min\nDual handle pull · 3 × 12 at 41 kg\nHigh cable · 11.3 and 18.1 kg × 12 each\nChest press · 32, 41 and 50 kg × 15 each",
+      "incomplete": false,
+      "source": "Fitness log record",
+      "title": "Cardio & upper body",
+      "source_section": "Completed workout reports, subsequent corrections, and the 2–7 November weekly review",
+      "minutes": 60,
+      "total_kcal": 720,
+      "peak_hr": 155,
+      "effort": 8,
+      "machine_volume_kg": 3674,
+      "strength_reps": 105,
+      "muscles": [
+        "back",
+        "chest"
+      ],
+      "exercises": [
+        {
+          "name": "SkiErg",
+          "detail": "4 × 500 m · 2,000 m total",
+          "unit": "m",
+          "sets": [
+            500,
+            500,
+            500,
+            500
+          ],
+          "block": {
+            "name": "Cardio",
+            "detail": "4 alternating rounds · No breaks",
+            "minutes": 23
+          }
+        },
+        {
+          "name": "Assault Bike",
+          "detail": "4 × 15 cal · 60 cal total, alternating with skiing in 23 min",
+          "unit": "cal",
+          "sets": [
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "name": "Dual handle pull",
+          "detail": "3 × 12 at 41 kg",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "load": "41 kg every set",
+          "block": {
+            "name": "Strength",
+            "detail": ""
+          }
+        },
+        {
+          "name": "High cable",
+          "detail": "11.3 and 18.1 kg × 12 each",
+          "unit": "reps",
+          "sets": [
+            12,
+            12
+          ],
+          "loads_kg": [
+            11.3,
+            18.1
+          ]
+        },
+        {
+          "name": "Chest press",
+          "detail": "32, 41 and 50 kg × 15 each",
+          "unit": "reps",
+          "sets": [
+            15,
+            15,
+            15
+          ],
+          "loads_kg": [
+            32,
+            41,
+            50
+          ]
+        }
+      ],
+      "rating": 9,
+      "highlight": "Four uninterrupted SkiErg and bike rounds in 23 minutes before upper-body strength work."
+    },
+    {
+      "id": "chat-2026-11-06",
+      "date": "2026-11-06",
+      "notes": "Sit-Up Wall Ball · 3 × 20 with a 9 kg ball, no breaks. On each sit-up, threw the ball against the wall on the way up and caught it before lowering. Breathing hard, only a few words at a time.\nFarmer Carries · 3 × 40 m with 24 kg per hand\nShoulder press · 14, 23 and 27 kg × 12 each\nSeated cable row · 27, 41 and 41 kg × 12\nReverse pec deck · 3 × 12 at 31.5 kg",
+      "incomplete": false,
+      "source": "Fitness log record",
+      "title": "Core, carries & shoulders",
+      "source_section": "Completed workout reports, subsequent corrections, and the 2–7 November weekly review",
+      "minutes": 55,
+      "total_kcal": 838,
+      "peak_hr": 154,
+      "effort": 9,
+      "machine_volume_kg": 3210,
+      "strength_reps": 108,
+      "muscles": [
+        "core",
+        "forearms",
+        "shoulders",
+        "back"
+      ],
+      "exercises": [
+        {
+          "name": "Sit-Up Wall Ball",
+          "detail": "3 × 20 with a 9 kg ball, no breaks. On each sit-up, threw the ball against the wall on the way up and caught it before lowering. Breathing hard, only a few words at a time.",
+          "unit": "reps",
+          "sets": [
+            20,
+            20,
+            20
+          ],
+          "load": "9 kg wall ball",
+          "block": {
+            "name": "Cardio, core & carries",
+            "detail": "Vigorous effort on the sit-up throws · No breaks"
+          }
+        },
+        {
+          "name": "Farmer Carries",
+          "detail": "3 × 40 m with 24 kg per hand",
+          "unit": "m",
+          "sets": [
+            40,
+            40,
+            40
+          ],
+          "load": "24 kg per hand"
+        },
+        {
+          "name": "Shoulder press",
+          "detail": "14, 23 and 27 kg × 12 each",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            14,
+            23,
+            27
+          ],
+          "block": {
+            "name": "Strength",
+            "detail": ""
+          }
+        },
+        {
+          "name": "Seated cable row",
+          "detail": "27, 41 and 41 kg × 12",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            27,
+            41,
+            41
+          ]
+        },
+        {
+          "name": "Reverse pec deck",
+          "detail": "3 × 12 at 31.5 kg",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "load": "31.5 kg every set"
+        }
+      ],
+      "average_hr": 133,
+      "rating": 9,
+      "highlight": "60 sit-ups with a 9 kg wall throw and catch on each rep, then 120 m of farmer carries at 48 kg total, followed by shoulder and back work."
+    }
+  ],
+  "attendance": {
+    "start": "2026-08-03",
+    "weekdays": [
+      1,
+      3,
+      5
+    ],
+    "skipped": [
+      "2026-10-02"
+    ],
+    "confirmed_through": "2026-11-06",
+    "source": "User confirmed the start date and single missed session in the tracker chat.",
+    "days": {
+      "2026-08-03": "attended",
+      "2026-08-05": "attended",
+      "2026-08-07": "attended",
+      "2026-08-10": "attended",
+      "2026-08-12": "attended",
+      "2026-08-14": "attended",
+      "2026-08-17": "attended",
+      "2026-08-19": "attended",
+      "2026-08-21": "attended",
+      "2026-08-24": "attended",
+      "2026-08-26": "attended",
+      "2026-08-28": "attended",
+      "2026-08-31": "attended",
+      "2026-09-02": "attended",
+      "2026-09-04": "attended",
+      "2026-09-07": "attended",
+      "2026-09-09": "attended",
+      "2026-09-11": "attended",
+      "2026-09-14": "attended",
+      "2026-09-16": "attended",
+      "2026-09-18": "attended",
+      "2026-09-21": "attended",
+      "2026-09-23": "attended",
+      "2026-09-25": "attended",
+      "2026-09-28": "attended",
+      "2026-09-30": "attended",
+      "2026-10-02": "missed",
+      "2026-10-05": "attended",
+      "2026-10-07": "attended",
+      "2026-10-09": "attended",
+      "2026-10-12": "attended",
+      "2026-10-14": "attended",
+      "2026-10-16": "attended",
+      "2026-10-19": "attended",
+      "2026-10-21": "attended",
+      "2026-10-23": "attended",
+      "2026-10-26": "attended",
+      "2026-10-28": "attended",
+      "2026-10-30": "attended",
+      "2026-11-02": "attended",
+      "2026-11-04": "attended",
+      "2026-11-06": "attended"
+    },
+    "session_estimate": {
+      "dates": [
+        "2026-08-03",
+        "2026-08-05",
+        "2026-08-07",
+        "2026-08-10",
+        "2026-08-12",
+        "2026-08-14",
+        "2026-08-17",
+        "2026-08-19",
+        "2026-08-21",
+        "2026-08-24",
+        "2026-08-26",
+        "2026-08-28",
+        "2026-08-31",
+        "2026-09-02",
+        "2026-09-04",
+        "2026-09-07",
+        "2026-09-09",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-16",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-23",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-30",
+        "2026-10-05",
+        "2026-10-07",
+        "2026-10-09",
+        "2026-10-12",
+        "2026-10-14",
+        "2026-10-16",
+        "2026-10-19",
+        "2026-10-21",
+        "2026-10-23",
+        "2026-10-26",
+        "2026-10-28",
+        "2026-10-30"
+      ],
+      "total_kcal": 600,
+      "minutes_low": 60,
+      "minutes_high": 60,
+      "source": "Mat counts each attended session before 2 November 2026 as 60 minutes and estimates 600 kcal per session."
+    }
+  },
+  "meals": [
+    {
+      "id": "chat-2026-11-06-food-noodles",
+      "date": "2026-11-06",
+      "source": "Fitness log record · Friday food report and revised portion estimates",
+      "name": "Thin noodles with chicken",
+      "portion": "Two small portions of thin chicken noodles",
+      "kcal": 500,
+      "kcal_low": 400,
+      "kcal_high": 600,
+      "estimated": true
+    },
+    {
+      "id": "chat-2026-11-06-food-bar",
+      "date": "2026-11-06",
+      "source": "Fitness log record · Friday food report and revised portion estimates",
+      "name": "Protein bar",
+      "portion": "One bar after training",
+      "kcal": 215,
+      "kcal_low": 180,
+      "kcal_high": 250,
+      "estimated": true
+    },
+    {
+      "id": "chat-2026-11-06-food-beef",
+      "date": "2026-11-06",
+      "source": "Fitness log record · Friday food report and revised portion estimates",
+      "name": "Fried sun-dried beef",
+      "portion": "Double portion",
+      "kcal": 900,
+      "kcal_low": 700,
+      "kcal_high": 1100,
+      "estimated": true
+    },
+    {
+      "id": "chat-2026-11-06-food-salad",
+      "date": "2026-11-06",
+      "source": "Fitness log record · Friday food report and revised portion estimates",
+      "name": "Papaya salad",
+      "portion": "With egg yolk and fermented fish sauce",
+      "kcal": 225,
+      "kcal_low": 150,
+      "kcal_high": 300,
+      "estimated": true
+    },
+    {
+      "id": "chat-2026-11-07-breakfast",
+      "date": "2026-11-07",
+      "name": "Crispy pork with rice",
+      "portion": "Morning · one small plate",
+      "kcal": 550,
+      "kcal_low": 450,
+      "kcal_high": 650,
+      "estimated": true,
+      "source": "Tracker chat · November 7 food report"
+    },
+    {
+      "id": "chat-2026-11-07-dinner",
+      "date": "2026-11-07",
+      "name": "Chicken and chilli pizza",
+      "portion": "Evening · one whole personal pizza, about 6–8 inches",
+      "kcal": 700,
+      "kcal_low": 500,
+      "kcal_high": 900,
+      "estimated": true,
+      "source": "Tracker chat · November 7 food report"
+    },
+    {
+      "id": "chat-2026-11-07-water",
+      "date": "2026-11-07",
+      "name": "Water",
+      "portion": "2.0 L",
+      "kcal": 0,
+      "kcal_low": 0,
+      "kcal_high": 0,
+      "estimated": false,
+      "source": "Tracker chat · November 7 food report",
+      "routine_key": "water",
+      "water_ml": 2000
+    },
+    {
+      "id": "chat-2026-11-07-coke-zero",
+      "date": "2026-11-07",
+      "source": "Tracker chat · beverage update",
+      "name": "Coke Zero",
+      "portion": "500 ml",
+      "kcal": 0,
+      "estimated": false
+    },
+    {
+      "id": "chat-2026-11-06-food-dark-chocolate-ice-cream",
+      "date": "2026-11-06",
+      "source": "Friday food correction in chat. Eaten fractions reported by the user. Calories are rounded portion estimates.",
+      "name": "Dark chocolate ice cream with whipped cream",
+      "portion": "About half the ice cream and 30% of the whipped cream",
+      "kcal": 200,
+      "estimated": true,
+      "estimate_basis": "Assumed a one-cup dessert before sharing, with a small topping."
+    },
+    {
+      "id": "chat-2026-11-06-food-pork-ribs",
+      "date": "2026-11-06",
+      "source": "Friday food correction in chat. Eaten fractions reported by the user. Calories are rounded portion estimates.",
+      "name": "Pork ribs",
+      "portion": "2 pieces",
+      "kcal": 300,
+      "estimated": true,
+      "estimate_basis": "Assumed about 75 g of edible cooked rib meat and fat, excluding bones."
+    },
+    {
+      "id": "chat-2026-11-06-food-sweet-potatoes",
+      "date": "2026-11-06",
+      "source": "Friday food correction in chat. Eaten fractions reported by the user. Calories are rounded portion estimates.",
+      "name": "Sweet potatoes",
+      "portion": "About 40% of a side portion",
+      "kcal": 50,
+      "estimated": true,
+      "estimate_basis": "Assumed a 140 g side of plain cooked sweet potatoes, about 56 g eaten."
+    },
+    {
+      "id": "chat-2026-11-06-food-thick-cut-fries",
+      "date": "2026-11-06",
+      "source": "Friday food correction in chat. Eaten fractions reported by the user. Calories are rounded portion estimates.",
+      "name": "Thick-cut French fries",
+      "portion": "About 30% of a side portion",
+      "kcal": 100,
+      "estimated": true,
+      "estimate_basis": "Assumed a 110 g side, about 33 g of fries eaten."
+    },
+    {
+      "id": "chat-2026-11-08-starbucks-iced-americano-1",
+      "date": "2026-11-08",
+      "name": "Starbucks Iced Americano",
+      "portion": "1 venti, plain, no milk or sweetener",
+      "routine_key": "americano",
+      "kcal": 20,
+      "estimated": true,
+      "source": "Reported in chat. Plain preparation from the saved coffee order; rounded estimate for one of the usual two Americanos."
+    },
+    {
+      "id": "chat-2026-11-08-brunch-crispy-pork-rice-egg",
+      "date": "2026-11-08",
+      "name": "Homemade crispy pork with rice and egg",
+      "portion": "Breakfast and lunch combined, one regular plate",
+      "source": "Reported in chat on 8 November. One regular plate confirmed.",
+      "kcal": 700,
+      "estimated": true,
+      "estimate_basis": "Rounded estimate for a regular plate of crispy pork with rice plus one egg. Pork, rice and cooking oil were not weighed."
+    },
+    {
+      "id": "chat-2026-11-08-fresh-orange-juice",
+      "source": "Reported in chat",
+      "date": "2026-11-08",
+      "name": "Freshly pressed orange juice",
+      "portion": "500 ml glass, about 60% ice",
+      "kcal": 90,
+      "estimated": true,
+      "estimate_basis": "Assumed about 200 ml of juice with no added sugar. USDA lists raw orange juice at 112 kcal per cup. Rounded to 90 kcal."
+    },
+    {
+      "id": "chat-2026-11-08-mackerel-chili-paste-rice",
+      "date": "2026-11-08",
+      "name": "Mackerel Chili Paste Fried Rice with Acacia Leaves",
+      "portion": "1 pla tu · small rice portion · 1 salted egg",
+      "kcal": 600,
+      "estimated": true,
+      "food_option_id": "pla-tu-chili-paste-rice-salted-egg",
+      "source": "Ordered and requested for today in chat.",
+      "estimate_basis": "Menu photo and portion description from chat. Estimated 500 kcal for fish, rice and salted egg, plus about 100 kcal for omelet pieces, vegetables and some dip."
+    },
+    {
+      "id": "chat-2026-11-08-starbucks-iced-americano-2",
+      "date": "2026-11-08",
+      "name": "Starbucks Iced Americano",
+      "portion": "1 venti, plain, no milk or sweetener",
+      "routine_key": "americano",
+      "kcal": 20,
+      "estimated": true,
+      "source": "Second iced venti Americano reported in chat. Usual plain order.",
+      "food_option_id": "starbucks-iced-americano-venti"
+    }
+  ],
+  "energy_profiles": [
+    {
+      "id": "2026-11-02",
+      "date": "2026-11-02",
+      "source": "Fitness log record profile; activity pattern confirmed in the journal chat",
+      "kg": 127,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0 L · daily usual",
+            "kcal": 0,
+            "water_ml": 2000
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn."
+    }
+  ],
+  "activities": [
+    {
+      "id": "chat-2026-11-06-evening",
+      "date": "2026-11-06",
+      "name": "Extra Corriculum",
+      "minutes": 52.5,
+      "total_kcal": 450,
+      "estimated": true,
+      "source": "Fitness log record · Friday final activity summary",
+      "note": "Previously logged as about 450 kcal with 50–55 active minutes. Calculation uses 52.5 active minutes."
+    }
+  ],
+  "daily_energy": [
+    {
+      "id": "2026-11-07",
+      "date": "2026-11-07",
+      "intake_complete": true,
+      "source": "User confirmed complete meals, then updated portions and drinks."
+    },
+    {
+      "id": "2026-11-06",
+      "date": "2026-11-06",
+      "intake_complete": true,
+      "source": "User confirmed the Friday food log, then added the dessert, ribs, sweet potatoes and fries in chat.",
+      "training_review": {
+        "score": 9.5,
+        "note": "The 55-minute gym session included 60 sit-up wall-ball throws with a 9 kg ball, farmer carries and upper-body strength work. The throws left you breathing hard. You then added about 53 minutes of moderate activity, breathing harder but still able to talk. The sustained second session alongside the hard gym work earns this whole day 9.5/10."
+      }
+    },
+    {
+      "id": "2026-11-08",
+      "date": "2026-11-08",
+      "intake_complete": true,
+      "source": "Confirmed in chat that food and caloric drinks are finished for the day. Only water afterward."
+    }
+  ],
+  "exercise_library": [
+    {
+      "source": "Reported in chat",
+      "date": "2026-11-08",
+      "id": "barbell-bench-press",
+      "name": "Barbell Bench Press",
+      "aliases": [
+        "Free Weight Bench Press",
+        "Bench Press (Lie Down)"
+      ],
+      "section": "strength",
+      "focus": "Chest · Triceps · Front Delts",
+      "bar_kg": 10,
+      "plates_per_side_kg": 20
+    },
+    {
+      "source": "Reported in chat",
+      "date": "2026-11-08",
+      "id": "sled-push",
+      "name": "Sled Push",
+      "section": "cardio",
+      "focus": "Quads · Glutes · Calves",
+      "unit": "m",
+      "load_unit": "kg",
+      "sled_kg": 35
+    },
+    {
+      "source": "Reported in chat",
+      "date": "2026-11-08",
+      "id": "sled-pull",
+      "name": "Sled Pull",
+      "section": "cardio",
+      "focus": "Back · Legs · Grip",
+      "unit": "m",
+      "load_unit": "kg",
+      "sled_kg": 35
+    }
+  ],
+  "food_options": [
+    {
+      "id": "grilled-squid-plain-soy",
+      "name": "Grilled Squid with Soy Sauce",
+      "portion": "150 g grilled squid and 1 tbsp plain soy sauce, grilled without added oil or sugar.",
+      "kcal": 170,
+      "date": "2026-11-08",
+      "source": "Estimated in chat while comparing dishes to order.",
+      "photo": "/photos/a2d143d03d066c014112987be83cc9c7e2ac2b5d1443d3fff7e41969e0da2f20.webp",
+      "restaurant": "Vapor"
+    },
+    {
+      "id": "pla-tu-chili-paste-rice-salted-egg",
+      "name": "Mackerel Chili Paste Fried Rice with Acacia Leaves",
+      "portion": "1 pla tu · small rice portion · 1 salted egg",
+      "kcal": 600,
+      "date": "2026-11-08",
+      "source": "Menu photo and portion description from chat. Estimated 500 kcal for fish, rice and salted egg, plus about 100 kcal for omelet pieces, vegetables and some dip.",
+      "photo": "/photos/cbe1024bca286f2da030b8c3dbb60e689e72a7ea5cf540140a42ce8de47c0905.webp",
+      "restaurant": "Vapor"
+    },
+    {
+      "id": "emilys-shredded-chicken-rice-noodles",
+      "name": "Shredded Chicken Rice Noodles + Chili Paste Fried Pork",
+      "restaurant": "Emily's",
+      "portion": "1 box with 1 small packet of crispy pork chili paste",
+      "kcal": 500,
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "User's menu photo and description. Rounded estimate for one full box including the whole packet. Emily's menu confirms the noodles, chicken and spicy pork crackling: https://www.emilys-group.com/th/brands/emilys",
+      "estimate_basis": "Assumed about 200 g cooked rice noodles (220 kcal), 75 g chicken (120 kcal), and roughly 160 kcal combined for dressing, garnishes and the crispy pork chili packet.",
+      "photo": "/photos/4aa3b54eb343e2eb3d02c7eb5b1d990e4ebc09757d0ae6d147148021e4fe10c7.webp"
+    },
+    {
+      "id": "mattis-turkish-eggs-sourdough",
+      "date": "2026-11-08",
+      "name": "Turkish Eggs with Sourdough",
+      "restaurant": "Matti's",
+      "portion": "1 bowl with 1 slice of sourdough",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Estimated for the pictured egg serving, dill Greek yogurt, chili oil and one thick slice of sourdough.",
+      "source": "Portion and photo provided in chat. Menu: https://www.wongnai.com/delivery/businesses/1099742Ip/order",
+      "photo": "/photos/282d9ab5f61ab40f22ec78d54db6f8f80cfb52ba4e684dc4096bfbac7a6f0733.webp"
+    },
+    {
+      "id": "mattis-mexican-sous-vide-chicken",
+      "date": "2026-11-08",
+      "name": "Mexican-Spiced Sous Vide Chicken (250 g)",
+      "restaurant": "Matti's",
+      "portion": "1 pack, 250 g",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes 250 g of cooked skinless chicken breast with dry seasoning and little added fat.",
+      "source": "Portion and photo provided in chat. Menu: https://www.wongnai.com/delivery/businesses/1099742Ip/order",
+      "photo": "/photos/cd8c7b0d0d3af6ab51aa0fe5ca5970027fac0ae1c67631b7bc6aef43c2aa0fb4.webp"
+    },
+    {
+      "id": "seoulchon-nashville-boneless-5-double-creamy-garlic",
+      "date": "2026-11-08",
+      "name": "Nashville Boneless Chicken (5 pcs) + 2 Creamy Garlic Dips",
+      "restaurant": "Seoulchon",
+      "portion": "5 pieces and 2 full small dip cups",
+      "kcal": 900,
+      "estimated": true,
+      "source": "Usual order and photo from chat. Menu: https://www.wongnai.com/delivery/businesses/223271rB/order",
+      "estimate_basis": "Rounded estimate based on comparable fried boneless chicken and creamy garlic sauce. Assumes about 700 kcal for five pieces and 200 kcal for two small, fully eaten dip cups. Seoulchon serving weights and nutrition unverified.",
+      "photo": "/photos/24940d444646029bc3cb1226ca5af75ca37a036351209b377fe71d22042d0811.webp"
+    },
+    {
+      "id": "eddies-afr-duo-hamburg",
+      "name": "AFR Duo Hamburg",
+      "restaurant": "Eddie's",
+      "date": "2026-11-08",
+      "portion": "100 g beef patty, 100 g pork patty and 1 fried egg with American fried rice, bacon and ketchup-mustard sauce.",
+      "kcal": 1100,
+      "estimated": true,
+      "source": "Usual order and menu photo from chat. Eddie's delivery menu lists fried rice, egg, bacon, pork and beef patties and ketchup-mustard: https://www.wongnai.com/delivery/businesses/3161660vX/order",
+      "estimate_basis": "Rounded full-plate estimate: about 450 kcal for both patties combined, 400 for the fried rice, 100 for the egg, and 150 for the bacon and sauce. Rice portion, meat fat content and cooking oil are estimated.",
+      "photo": "/photos/21d1ae2358397cc7fa79d65d008fa000227612d96db39e9cf56979b5d070f954.webp"
+    },
+    {
+      "id": "s-and-p-rice-chicken-brown-sauce",
+      "name": "Rice with Chicken Brown Sauce",
+      "restaurant": "S&P",
+      "portion": "1 plate including the rice",
+      "kcal": 500,
+      "estimated": true,
+      "estimate_basis": "Assumes about 200 g cooked rice, a small portion of chicken, brown sauce and garnish.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo provided in chat. Rounded portion estimate. Restaurant menu: https://www.snp1344.com/en/menu/food",
+      "photo": "/photos/f68e0cd366251c0fecab6c5fa55d836b87ba1b5fa52d109582ad037e8dbf9ec3.webp"
+    },
+    {
+      "id": "s-and-p-stewed-egg-pork-belly",
+      "name": "Stewed Egg with Pork Belly",
+      "restaurant": "S&P",
+      "portion": "1 bowl of stew",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes roughly one to one and a half eggs, about 60 g pork belly and some braising liquid. No side of rice.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo provided in chat. Rounded portion estimate. Restaurant menu: https://www.snp1344.com/en/menu/food",
+      "photo": "/photos/43d23e5c7903dde9f7a0bea59bd8d94f9835e115a07ed5849771df2c7c48d285.webp"
+    },
+    {
+      "id": "s-and-p-deep-fried-chicken-wings",
+      "name": "Deep Fried Chicken Wings",
+      "restaurant": "S&P",
+      "portion": "1 plate of split wings",
+      "kcal": 500,
+      "estimated": true,
+      "estimate_basis": "Assumes approximately 150 g of edible fried meat and skin across the pictured plate, excluding bones.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo provided in chat. Rounded portion estimate. Restaurant menu: https://www.snp1344.com/en/menu/food",
+      "photo": "/photos/ba52299965dc26f87dc5ae1a4fcdd3495f3e7d901444e64ac8bb731a5283cb25.webp"
+    },
+    {
+      "id": "s-and-p-chicken-green-curry",
+      "name": "Chicken Green Curry",
+      "restaurant": "S&P",
+      "portion": "1 bowl of curry",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes a single bowl of chicken, coconut milk curry and vegetables. No side of rice.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo provided in chat. Rounded portion estimate. Restaurant menu: https://www.snp1344.com/en/menu/food",
+      "photo": "/photos/3944c4788e5db706633d845f53e0024ee9eb3a266dfd03fe2344b220e9db8843.webp"
+    },
+    {
+      "id": "berlin-doener-beef-extra-50g",
+      "restaurant": "Berlin Doener Kebab",
+      "name": "Beef Doener Kebab (+50 g)",
+      "portion": "1 Turkish kebab bread with extra beef (+50 g), garlic sauce, red onion, red cabbage, feta and chilli flakes.",
+      "kcal": 1000,
+      "estimated": true,
+      "estimate_basis": "Assumes 125 g meat plus 50 g extra (about 450 kcal), bread 320 kcal, garlic sauce 130 kcal, feta 75 kcal, and vegetables and chilli 20 kcal. Rounded per sandwich.",
+      "photo": "/photos/165dfc989d1592b859e86a6fa0ad76b80740a03aec726904203476dca4ede147.webp",
+      "date": "2026-11-08",
+      "source": "Usual order and reference photo supplied in chat. Ingredient-based estimate. Restaurant: https://berlinsdonerkebab.com/"
+    },
+    {
+      "id": "berlin-doener-chicken-extra-50g",
+      "restaurant": "Berlin Doener Kebab",
+      "name": "Chicken Doener Kebab (+50 g)",
+      "portion": "1 Turkish kebab bread with extra chicken (+50 g), garlic sauce, red onion, red cabbage, feta and chilli flakes.",
+      "kcal": 900,
+      "estimated": true,
+      "estimate_basis": "Assumes 125 g meat plus 50 g extra (about 350 kcal), bread 320 kcal, garlic sauce 130 kcal, feta 75 kcal, and vegetables and chilli 20 kcal. Rounded per sandwich.",
+      "photo": "/photos/165dfc989d1592b859e86a6fa0ad76b80740a03aec726904203476dca4ede147.webp",
+      "date": "2026-11-08",
+      "source": "Usual order and reference photo supplied in chat. Ingredient-based estimate. Restaurant: https://berlinsdonerkebab.com/"
+    },
+    {
+      "id": "champion-curry-osaka-curry-udon-beef-hamburg-100g",
+      "restaurant": "Champion Curry",
+      "name": "Osaka Curry Udon with Beef Hamburg (100 g)",
+      "date": "2026-11-08",
+      "portion": "1 bowl with a 100 g beef patty",
+      "estimated": true,
+      "kcal": 700,
+      "estimate_basis": "Assumes about 260 kcal for cooked udon, 190 kcal for curry sauce and garnish, and 250 kcal for the 100 g beef patty.",
+      "source": "Usual order and photo provided in chat. Ingredient-based estimate. Comparable curry udon: https://www.kikkoman.com/en/cookbook/recipe/00000660.html",
+      "photo": "/photos/cfe03c39ef7f8ba344733761a09a8fd7dd9527060175086c7e977a473c09790b.webp"
+    },
+    {
+      "id": "jiancha-orange-tea-smoothie-half-sweet",
+      "restaurant": "Jiancha",
+      "name": "Orange Tea Smoothie (50% Sweetness)",
+      "portion": "1 cup, tea base, 50% sweetness, no add-ons",
+      "date": "2026-11-08",
+      "estimated": true,
+      "kcal": 200,
+      "estimate_basis": "Rounded estimate for one cup. Assumes about 100 kcal from orange and 70 kcal from added sweetener. The amounts of fruit and syrup per cup are unknown.",
+      "source": "Usual order described in chat. Menu reference: https://jianchatea.com/menu?category=tea",
+      "photo": "/photos/d8e79786da5b09c06f445ccec0aaca8b62dd6aca0df61779af5ec3a929d9deb9.webp"
+    },
+    {
+      "id": "chagee-osmanthus-oolong-large-normal-ice-less-sweet",
+      "restaurant": "Chagee",
+      "name": "Osmanthus Oolong Milk Tea (Large, Less Sweet)",
+      "portion": "700 ml cup, normal ice, less sweet",
+      "date": "2026-11-08",
+      "kcal": 200,
+      "estimated": true,
+      "estimate_basis": "Rounded per cup using comparable large iced, reduced-sugar servings from the mainland China menu as a guide. The exact Thai recipe and sweetener amount are unconfirmed.",
+      "source": "Usual order from chat. Thai menu: https://global.chagee.com/th/en/product/fresh-milk-tea-series . Calorie comparison: https://chageemenus.com/drink/osmanthus-oolong-milk-tea/ Large cup capacity on the CentralWorld menu: https://www.wongnai.com/restaurants/2308441Qo-chagee-centraworld/menu/items/59300070",
+      "photo": "/photos/601f58a4c797429625efdeaeadea35d44b89de2fb76fd4510ac5c5d450a50b1e.webp"
+    },
+    {
+      "id": "que-pasa-jalapeno-cheese-poppers-creamy-dip",
+      "name": "Jalapeño Cheese Poppers with Creamy Dip",
+      "portion": "About 8 poppers and 2 tbsp creamy dip (assumed from photo)",
+      "kcal": 700,
+      "estimate_basis": "Assumes about 75 kcal per fried popper and 120 kcal for about 2 tbsp of creamy dip. Rounded for the full order. Que Pasa lists poppers without a piece count.",
+      "source": "Usual order and photo from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/14156Od/order . Comparable breaded poppers: https://mccainusafoodservice.com/products/details/anchor-poppers-original-cream-cheese-breaded-stuffed-jalapenos/",
+      "restaurant": "Que Pasa",
+      "estimated": true,
+      "date": "2026-11-08",
+      "photo": "/photos/6d77cb8f158f01192859d6ae6426b137baf56843862004bf8a39bde313d2cc3b.webp"
+    },
+    {
+      "id": "que-pasa-bacon-wrapped-shrimp-no-sauce",
+      "name": "Bacon-Wrapped Shrimp (No Sauce)",
+      "portion": "3 skewers, no dipping sauce",
+      "kcal": 400,
+      "estimate_basis": "The restaurant lists 3 skewers. Assumes about 120 g cooked shrimp and 50 g cooked bacon across the order, with a small allowance for cooking fat. Excludes the dip in the photo.",
+      "source": "Usual order and photo from chat. Three-skewer serving from Que Pasa delivery menu: https://www.wongnai.com/delivery/businesses/14156Od/order",
+      "restaurant": "Que Pasa",
+      "estimated": true,
+      "date": "2026-11-08",
+      "photo": "/photos/4a3046527025203fd14ecd7da7d17b536e919c2a38da54d39b2542101705ac7f.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-crispy-rice-salad",
+      "name": "Spicy Fermented Pork Salad with Crispy Rice",
+      "kcal": 500,
+      "portion": "One plate, including crispy rice and peanuts",
+      "estimate_basis": "Assumes 120 g cooked rice before frying, 60 g fermented pork and 15 g peanuts, plus frying oil and dressing.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/1f258f659634e55299c74a56c270d0713bb5355488844d9a93ab4b95af4c3284.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-liang-leaves-egg",
+      "name": "Stir-Fried Liang Leaves with Egg",
+      "kcal": 300,
+      "portion": "One plate of leaves and egg",
+      "estimate_basis": "Assumes two eggs and about one tablespoon of oil across the plate, plus leaves and seasonings.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/9fe7c01cdde77042267a164f78065b346937b37ff2f20c2497acdec827ab7267.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-cabbage-fish-sauce",
+      "name": "Stir-Fried Cabbage with Fish Sauce",
+      "kcal": 200,
+      "portion": "One plate of stir-fried cabbage",
+      "estimate_basis": "Assumes about 200 g cabbage, one tablespoon of oil, garlic and fish sauce.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/fbcc80614041289bab0cbb24d6de6bc6635af77528a48da2ea7295daf31ef26b.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-quail-eggs-tamarind",
+      "name": "Quail Eggs with Tamarind Sauce",
+      "kcal": 200,
+      "portion": "About 4 quail eggs, halved, with sauce and shallots",
+      "estimate_basis": "Uses quail eggs as described in chat. Allows about 60 kcal for four eggs and about 140 kcal for sweet tamarind sauce, absorbed oil and fried shallots.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/4b4d2fc8bbe161fd0a054c23805cd0657e9b3d3d894001c745e7ca2be9d7da18.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-beef-shank-green-curry-vermicelli",
+      "name": "Beef Shank Green Curry with Fermented Rice Vermicelli",
+      "kcal": 700,
+      "portion": "One curry and noodle set, including half an egg",
+      "estimate_basis": "Assumes about 180 g cooked vermicelli, 100 g cooked beef shank, coconut curry sauce, vegetables and the half egg shown with the set.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Restaurant photo: https://img.wongnai.com/p/256x256/2026/10/09/ca8acac67bb0475ba92ad23671522175.jpg",
+      "photo": "/photos/f64fb55841694e3673e19bfe5ce34043d451ff15fbd4f1549bb08ea226ba54cb.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-pork-maggi-sauce",
+      "name": "Stir-Fried Pork with Maggi Sauce",
+      "kcal": 500,
+      "portion": "One plate of pork, without a side of rice",
+      "estimate_basis": "Assumes about 150 g cooked pork with oil and Maggi glaze.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/46f0640065822c40df94d8ec9e86e92c7670f9f8b8e6036f8d667c8999f7b295.webp"
+    },
+    {
+      "id": "kub-kao-kub-pla-crispy-pork-chili-salt",
+      "name": "Roasted Crispy Pork with Chili and Salt",
+      "kcal": 800,
+      "portion": "One plate of crispy pork, without a side of rice",
+      "estimate_basis": "Assumes about 150 g cooked crispy pork belly including skin and fat, with fried garlic and chili. The amount of pork and rendered fat changes the estimate.",
+      "restaurant": "Kub Kao Kub Pla",
+      "estimated": true,
+      "date": "2026-11-08",
+      "source": "Usual order from chat. Restaurant menu: https://www.wongnai.com/delivery/businesses/1217498vg/order. Photo supplied in chat.",
+      "photo": "/photos/981321d6af8db3f21610e08bf89207d7163386b441ed856184a1e64db7e789bf.webp"
+    },
+    {
+      "id": "sizzler-beet-quail-egg-salad",
+      "date": "2026-11-08",
+      "name": "Beet Salad with Boiled Quail Eggs",
+      "restaurant": "Sizzler",
+      "kcal": 100,
+      "estimated": true,
+      "portion": "Small plate",
+      "estimate_basis": "Assumes about 100 g of beets and four boiled quail eggs. Counts the ingredients described, without added dressing.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/1992Qy/order. User photo.",
+      "photo_aspect": "square",
+      "photo": "/photos/4f82e0fb92c5b611d75c3184cc829909ac1b9e813c965c89ace70ee402e55d46.webp"
+    },
+    {
+      "id": "sizzler-half-cheese-toast",
+      "date": "2026-11-08",
+      "name": "Cheese Toast (Half Slice)",
+      "restaurant": "Sizzler",
+      "kcal": 150,
+      "estimated": true,
+      "portion": "Half of one slice",
+      "estimate_basis": "Half of the 290 kcal oval cheese toast in the US Sizzler nutrition guide is about 145 kcal. Rounded to 150 as a comparison for the Thai slice.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/1992Qy/order. Restaurant photo: https://img.wongnai.com/p/256x256/2023/09/05/d5216f35b3b944c7af6d2d0817d3beb9.jpg. Comparable toast calories: https://sizzler.com/wp-content/uploads/2024/07/Sizzler-Nutrition.pdf",
+      "photo_aspect": "square",
+      "photo": "/photos/6fb2e07a00a21910320775d1b10707645daf92c28ca40c76e77c93c7ba05ac37.webp"
+    },
+    {
+      "id": "sizzler-spicy-chicken-pork-loin-potato",
+      "date": "2026-11-08",
+      "name": "Spicy Chicken & Grilled Pork Loin with Baked Potato",
+      "restaurant": "Sizzler",
+      "kcal": 700,
+      "estimated": true,
+      "portion": "Two small steaks and one baked potato",
+      "estimate_basis": "Assumes about 120 g cooked chicken, 110 g cooked pork loin, a 180 g baked potato and some cooking fat or marinade. The pictured drink and other sides are excluded.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/1992Qy/order. User photo.",
+      "photo_aspect": "square",
+      "photo": "/photos/17a963afe9f23e084d2f316d31c8cfafb64261852d1b7c78cde9d32609425469.webp"
+    },
+    {
+      "id": "sizzler-small-mushroom-soup-bacon",
+      "date": "2026-11-08",
+      "name": "Mushroom Soup with Baked Bacon",
+      "restaurant": "Sizzler",
+      "kcal": 150,
+      "estimated": true,
+      "portion": "One small bowl with bacon",
+      "estimate_basis": "Assumes 180 ml of cream of mushroom soup with a small sprinkle of cooked bacon (about 7 g).",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/1992Qy/order. User photo.",
+      "photo_aspect": "square",
+      "photo": "/photos/876f4f98f1b706af259df762ee05ce412baf8cf86bd357b87e69e8e0188c31cb.webp"
+    },
+    {
+      "id": "hidden-backyard-tenderloin-wasabi",
+      "restaurant": "Hidden Backyard",
+      "name": "Tenderloin with Wasabi Dipping Sauce",
+      "portion": "One plate with wasabi dipping sauce and garlic",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes 150 g cooked tenderloin (about 330 kcal) plus about 70 kcal for cooking fat, garlic and sauce. Portion weight is estimated.",
+      "date": "2026-11-08",
+      "source": "Usual order and photo supplied in chat. Tenderloin listed on restaurant menu: https://www.wongnai.com/delivery/businesses/178356pT/order",
+      "photo_aspect": "square",
+      "photo": "/photos/9cfd02d07513d5c2083b3533f786800cb90b0af00772e3a5bb78cb038e60ff9e.webp"
+    },
+    {
+      "id": "hidden-backyard-isaan-ribeye",
+      "restaurant": "Hidden Backyard",
+      "name": "Isaan Ribeye",
+      "portion": "One bowl with roasted garlic and Isaan seasoning",
+      "kcal": 500,
+      "estimated": true,
+      "estimate_basis": "Assumes 150 g cooked ribeye (about 430 kcal) plus about 70 kcal for cooking fat, garlic and seasoning. Portion weight is estimated.",
+      "date": "2026-11-08",
+      "source": "Usual order and photo supplied in chat.",
+      "photo_aspect": "square",
+      "photo": "/photos/6a2fd65ecf370864bc6546071afafc91cb1c30c492c54836ca939aa2eba6d6b4.webp"
+    },
+    {
+      "id": "starbucks-iced-americano-venti",
+      "restaurant": "Starbucks",
+      "name": "Iced Caffè Americano (Venti)",
+      "kcal": 20,
+      "portion": "Venti, plain over ice",
+      "estimated": true,
+      "estimate_basis": "Comparable Starbucks Philippines Venti iced Americano is 17 kcal, rounded to 20. Espresso, water and ice.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/55417Rm/order . Estimate reference: https://starbucks.ph/docs/CalorieContentandNutriInfoDatabase.pdf",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/4661d0ae4fec731e428fc39961649d1c392172f9f57594f82299ae176c0e2e53.webp"
+    },
+    {
+      "id": "starbucks-toffee-nut-crunch-latte-venti",
+      "restaurant": "Starbucks",
+      "name": "Toffee Nut Crunch Latte (Venti)",
+      "kcal": 450,
+      "portion": "Hot Venti with whole milk, whipped cream and crunch topping",
+      "estimated": true,
+      "estimate_basis": "Rounded estimate for the standard hot recipe. Comparable Starbucks Philippines Venti Toffee Nut Latte with whole milk and whip is 433 kcal. Thai syrup and topping amounts may differ.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/55417Rm/order . Estimate reference: https://starbucks.ph/docs/CalorieContentandNutriInfoDatabase.pdf",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/095922345ea249acafee1a3f3bb07db2631eca708b3b65fa7b15d9a66ff0e54e.webp"
+    },
+    {
+      "id": "starbucks-xmas-tree-brownie",
+      "restaurant": "Starbucks",
+      "name": "Xmas Tree Brownie",
+      "kcal": 350,
+      "portion": "One decorated brownie",
+      "estimated": true,
+      "estimate_basis": "Estimate per piece. Comparable Starbucks Austria Christmas Tree Brownie is 364 kcal for 72 g. Thai piece weight is unconfirmed.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/55417Rm/order . Estimate reference: https://www.starbucks.at/sites/starbucks-at-pwa/files/2024-12/AT%20Food%20Nutrition%20Holiday.pdf",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/659acc75bcb1908884f84311e292fde5d776c92ff981994606f9afaa95d146f3.webp"
+    },
+    {
+      "id": "starbucks-orangina-two-espresso-shots",
+      "restaurant": "Starbucks",
+      "name": "Orangina & 2 Espresso Shots",
+      "kcal": 120,
+      "portion": "One 250 ml bottle with two plain espresso shots",
+      "estimated": true,
+      "estimate_basis": "Assumes the Thai retail 250 ml bottle (about 105 kcal) and about 10 kcal for a double espresso, rounded to 120.",
+      "source": "Usual order in chat. Thai menu: https://www.wongnai.com/delivery/businesses/55417Rm/order . Estimate reference: https://www.tops.co.th/th/orangina-orange-juice-250ml-3249760702015 . Bottle nutrition: https://www.nutracheck.com/CaloriesIn/Product/18/Orangina%2B250ml",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/2a02745651dbf2b53c97a6d241676050dc1fb2ba1daa11a1c2be01be73928f08.webp"
+    },
+    {
+      "id": "lehaha-wang-lao-ji",
+      "name": "Wang Lao Ji Herbal Tea",
+      "restaurant": "Lehaha Lanzhou Noodles",
+      "portion": "One 310 ml can",
+      "kcal": 120,
+      "estimated": true,
+      "estimate_basis": "The photographed red can is 310 ml. The original sweetened tea lists 38 kcal per 100 ml, about 118 kcal per can.",
+      "source": "Menu favorite and photo supplied in chat. https://www.cocowoods.cz/en/wang-lao-ji-herbal-tea-tin-310ml/",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/d12ec7b5bba1084c1372f374b716dbf4d7056ec478f3eba140d0b89ccffac112.webp"
+    },
+    {
+      "id": "lehaha-pork-bun",
+      "name": "Steamed Bun with Pork Filling",
+      "restaurant": "Lehaha Lanzhou Noodles",
+      "portion": "One filled bun",
+      "kcal": 500,
+      "estimated": true,
+      "estimate_basis": "One round bun with shredded braised pork as pictured. Rounded estimate using a comparable roujiamo recipe. The restaurant portion weight and pork fat content are unknown.",
+      "source": "Menu favorite and photo supplied in chat. https://www.chinasichuanfood.com/chinese-hamburger-pork-belly-buns/",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/1213c3ca33b87101c63e04eed9055d0f7544b86f0901d49f8090f81b8f7d67b2.webp"
+    },
+    {
+      "id": "lehaha-braised-beef",
+      "name": "Braised Beef",
+      "restaurant": "Lehaha Lanzhou Noodles",
+      "portion": "One side plate, assumed 150 g cooked beef",
+      "kcal": 300,
+      "estimated": true,
+      "estimate_basis": "Assumes 150 g of sliced cooked beef. Lean simmered beef shank is a proxy at about 201 kcal per 100 g. Restaurant serving weight and cut are unconfirmed.",
+      "source": "Menu favorite and photo supplied in chat. https://fdc.nal.usda.gov/food-details/169442/nutrients",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/a1cd67de136016b7f31430d1222b266d8992466f10e7443752b6310e2fd0daff.webp"
+    },
+    {
+      "id": "detroit-pizza-company-pepperoni",
+      "name": "Pepperoni",
+      "kcal": 1600,
+      "restaurant": "Detroit Pizza Company",
+      "portion": "One whole medium pizza (about 8 x 10 inches)",
+      "estimated": true,
+      "estimate_basis": "Rounded whole-pan estimate using the medium size confirmed in chat and comparable pan recipes. Restaurant ingredient weights are unconfirmed.",
+      "source": "Usual order and photo from chat. Pan recipe reference: https://brianlagerstrom.com/recipes/detroit-style-pizza/",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/0992bbaee7d602e078ebe3d427a662a04c961e207034c9dc09fcaa210e7eb0ed.webp"
+    },
+    {
+      "id": "detroit-pizza-company-ham-and-cheese",
+      "name": "Ham & Cheese",
+      "kcal": 1600,
+      "restaurant": "Detroit Pizza Company",
+      "portion": "One whole medium pizza (about 8 x 10 inches)",
+      "estimated": true,
+      "estimate_basis": "Rounded whole-pan estimate using the medium size confirmed in chat and comparable pan recipes. Restaurant ingredient weights are unconfirmed.",
+      "source": "Usual order and photo from chat. Pan recipe reference: https://brianlagerstrom.com/recipes/detroit-style-pizza/",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/ec8b0b30b1dfff8b4b8728b2895863210e28ef53ef9d01d370f80c88903794dc.webp"
+    },
+    {
+      "id": "detroit-pizza-company-meaty-deluxe",
+      "name": "Meaty Deluxe",
+      "kcal": 1900,
+      "restaurant": "Detroit Pizza Company",
+      "portion": "One whole medium pizza (about 8 x 10 inches)",
+      "estimated": true,
+      "estimate_basis": "Rounded whole-pan estimate using the medium size confirmed in chat and comparable pan recipes. Restaurant ingredient weights are unconfirmed.",
+      "source": "Usual order and photo from chat. Pan recipe reference: https://brianlagerstrom.com/recipes/detroit-style-pizza/",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/e027d38e7242994ddb1981f1490490aefc4d4704bf664a2be7836ea4142fe626.webp"
+    },
+    {
+      "id": "chicken-king-king-fried-chicken-quarter",
+      "restaurant": "Chicken King",
+      "name": "King Fried Chicken Quarter",
+      "portion": "One skin-on leg quarter",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes about 160 g of edible cooked thigh, drumstick and skin. Comparable fried chicken leg provides 254 kcal per 100 g. Chicken only.",
+      "source": "Usual order and photo from chat. USDA FoodData Central: https://fdc.nal.usda.gov/food-details/173616/nutrients",
+      "date": "2026-11-08",
+      "photo_aspect": "square",
+      "photo": "/photos/8ed81dba4b0ed1213ab51b7370d49afcc2ee136a9d2c9009c9db7ff244165c1a.webp"
+    },
+    {
+      "id": "bonchon-soy-garlic-chicken-thigh",
+      "name": "Soy Garlic Chicken Thigh (4 pcs)",
+      "restaurant": "Bonchon",
+      "portion": "4 pieces of Korean fried chicken thigh",
+      "kcal": 600,
+      "estimated": true,
+      "estimate_basis": "Bonchon US soy garlic boneless chicken as a portion comparison: 1,473 kcal for 10 pieces, scaled to four and rounded.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo from chat. US portion comparison: https://bonchon-brand.files.svdcdn.com/production/Downloads/Nutrition-Facts_2026.pdf?dm=1771966496",
+      "photo_aspect": "square",
+      "photo": "/photos/ff2776777e8eaf118e85f664ffa09dc3b3334e2dffa584199448d317623d1f0a.webp"
+    },
+    {
+      "id": "bonchon-soy-garlic-chicken-breast",
+      "name": "Soy Garlic Chicken Breast (4 pcs)",
+      "restaurant": "Bonchon",
+      "portion": "4 pieces of Korean fried chicken breast",
+      "kcal": 500,
+      "estimated": true,
+      "estimate_basis": "Bonchon US soy garlic strips as a portion comparison: 943 kcal for eight pieces, scaled to four (about 472 kcal) and rounded to the nearest 100.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo from chat. US portion comparison: https://bonchon-brand.files.svdcdn.com/production/Downloads/Nutrition-Facts_2026.pdf?dm=1771966496",
+      "photo_aspect": "square",
+      "photo": "/photos/319e9449bf3c5783d412b8ca476e3be043543b3348b788a45fffef779938bd9e.webp"
+    },
+    {
+      "id": "bonchon-soy-garlic-fried-gyoza",
+      "name": "Soy Garlic Fried Gyoza (5 pcs)",
+      "restaurant": "Bonchon",
+      "portion": "5 fried dumplings with soy garlic glaze",
+      "kcal": 400,
+      "estimated": true,
+      "estimate_basis": "Assumes about 125 g for five dumplings. Comparable Bonchon US soy garlic potstickers are about 744 kcal per 224 g.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo from chat. US portion comparison: https://bonchon-brand.files.svdcdn.com/production/Downloads/Nutrition-Facts_2026.pdf?dm=1771966496",
+      "photo_aspect": "square",
+      "photo": "/photos/5c6f5c81eea05a4a09425b06c99e45b8dca54a2231e57b3aaf9764e6183db6d3.webp"
+    },
+    {
+      "id": "bonchon-crispy-fried-squid-tentacles",
+      "name": "Crispy Fried Squid Tentacles",
+      "restaurant": "Bonchon",
+      "portion": "1 appetizer, before dipping sauce",
+      "kcal": 300,
+      "estimated": true,
+      "estimate_basis": "Assumes a small plate of about 140 g of breaded fried squid at roughly 210 kcal per 100 g. Dipping sauce is extra.",
+      "date": "2026-11-08",
+      "source": "Usual order and menu photo from chat.",
+      "photo_aspect": "square",
+      "photo": "/photos/abf2ae0b2b118eca3c3bccbbe3e59a2b4eb0211f6617cbe4d6ea330a4db22568.webp"
+    }
+  ]
+}

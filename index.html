@@ -1566,11 +1566,11 @@ function openDishPhoto(dish){
 function foodOptionRow(o){
     const row=element('tr'),dish=element('td');
     const layout=element('div','option-dish');
-    if(typeof o.photo==='string' && o.photo.startsWith('data:image/webp;base64,')){
+    if(typeof o.photo==='string' && (o.photo.startsWith('data:image/webp;base64,') || /^\/photos\/[a-f0-9]{64}\.webp$/.test(o.photo))){
       const button=element('button','option-thumb');
       button.type='button';button.setAttribute('aria-haspopup','dialog');
       button.setAttribute('aria-label','Enlarge photo of '+o.name);
-      const photo=element('img');photo.src=o.photo;photo.alt='';
+      const photo=element('img');photo.loading='lazy';photo.src=o.photo;photo.alt='';
       button.append(photo);button.onclick=()=>openDishPhoto(o);
       layout.append(button);
     }
@@ -1643,7 +1643,7 @@ async function refresh(){
     }
     if(foodViewToday!==todayBangkok())renderFoodView();
     byId('status').textContent='';
-  }catch{byId('status').textContent='Could not load the journal. Open OPEN_TRACKER.pyw to reconnect.';}
+  }catch{byId('status').textContent='Could not load the journal. Check your connection and select Refresh.';}
 }
 byId('refresh').addEventListener('click',refresh);window.addEventListener('focus',refresh);setInterval(refresh,15000);
 const initialJournalLoad=refresh();

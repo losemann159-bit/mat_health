@@ -10,3 +10,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+/dist/
+/node_modules/
+/.netlify/
