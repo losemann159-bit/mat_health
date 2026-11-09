@@ -511,6 +511,15 @@ nav .wordmark { margin-left:0; color:white }
 .restaurant-heading h2 { font-size:17px; font-weight:600; letter-spacing:-.035em }
 .option-list td:last-child { font-size:19px; font-weight:550; font-variant-numeric:tabular-nums; color:var(--blue) }
 .option-list strong { font-weight:550 }
+.menu-calories { display:grid; grid-template-columns:4.5rem 4.5rem; gap:10px; justify-content:end; text-align:right; align-items:baseline; white-space:nowrap }
+.menu-calories .serving-kcal { font-size:14px; color:var(--muted); font-weight:450 }
+.option-list .menu-subheading th { padding:12px 0 6px }
+.menu-subheading h3 { color:var(--ink); font-size:14px; font-weight:600 }
+@media(max-width:480px) {
+  .menu-calories { grid-template-columns:3.5rem 3.5rem; gap:5px }
+  .comparison-menu .option-dish { column-gap:8px }
+  .comparison-menu .option-thumb { width:44px; height:44px }
+}
 .option-dish { display:flex; align-items:center; gap:14px }
 .option-thumb { flex:none; width:64px; height:64px; border:0; padding:0; border-radius:6px; background:transparent; cursor:zoom-in }
 .option-thumb img { display:block; width:100%; height:100%; object-fit:cover; border-radius:inherit }
@@ -1563,7 +1572,7 @@ function openDishPhoto(dish){
   image.alt=dish.name;image.src=dish.photo;
   dishDialog.showModal();
 }
-function foodOptionRow(o){
+function foodOptionRow(o,density=null){
     const row=element('tr'),dish=element('td');
     const layout=element('div','option-dish');
     if(typeof o.photo==='string' && (o.photo.startsWith('data:image/webp;base64,') || /^\/photos\/[a-f0-9]{64}\.webp$/.test(o.photo))){
@@ -1576,24 +1585,58 @@ function foodOptionRow(o){
     }
     layout.append(element('strong','',o.name));
     dish.append(layout);
-    row.append(dish,element('td','',fmt(o.kcal)));
+    const calories=element('td');
+    if(density!==null){
+      const values=element('div','menu-calories');
+      values.append(element('span','',Number.isFinite(density)?fmt(density):'—'),element('span','serving-kcal',fmt(o.kcal)));
+      calories.append(values);
+    }else{
+      calories.textContent=fmt(o.kcal);
+    }
+    row.append(dish,calories);
     return row;
 }
 function alcoholCategory(dish){
   const type=dish.name.split(',',1)[0].trim().toLowerCase();
   return ({shot:0,beer:1,wine:2})[type] ?? 3;
 }
-function alcoholCalorieDensity(dish){
-  if(Number.isFinite(dish.kcal_per_100ml))return dish.kcal_per_100ml;
-  const volume=/^(\d+(?:\.\d+)?)\s*ml$/i.exec((dish.portion||'').trim());
-  return volume && Number(volume[1])>0 && Number.isFinite(dish.kcal)
-    ? dish.kcal*100/Number(volume[1]) : Infinity;
+function calorieDensity(dish,unit){
+  const label=unit==='ml'?dish.kcal_per_100ml:dish.kcal_per_100g;
+  if(Number.isFinite(label))return label;
+  const pattern=unit==='ml'?/\b(\d+(?:\.\d+)?)\s*ml\b/i:/\b(\d+(?:\.\d+)?)\s*g\b/i;
+  const amount=Number(pattern.exec(dish.portion||'')?.[1]);
+  return amount>0 && Number.isFinite(dish.kcal)?dish.kcal*100/amount:Infinity;
 }
-function compareAlcoholOptions(a,b){
-  return alcoholCategory(a)-alcoholCategory(b)
-    || alcoholCalorieDensity(a)-alcoholCalorieDensity(b)
-    || (a.menu_order ?? Infinity)-(b.menu_order ?? Infinity)
-    || a.name.localeCompare(b.name);
+function appendComparisonGroup(body,items,title,unit,serving){
+  if(!items.length)return;
+  body.classList.add('comparison-menu');
+  const row=element('tr','menu-subheading'),heading=element('th'),units=element('th');
+  heading.append(element('h3','',title));
+  const labels=element('div','menu-calories');
+  labels.append(element('span','','Per 100 '+unit),element('span','',serving));
+  units.append(labels);row.append(heading,units);body.append(row);
+  body.append(...items.map(dish=>foodOptionRow(dish,calorieDensity(dish,unit))));
+}
+function appendAlcoholOptions(body,dishes){
+  const groups=[['Shots','Per shot'],['Beer','Per beer'],['Wine','Per bottle'],['Other','Per serving']];
+  groups.forEach(([title,serving],category)=>{
+    const items=dishes.filter(dish=>alcoholCategory(dish)===category);
+    items.sort((a,b)=>calorieDensity(a,'ml')-calorieDensity(b,'ml')
+      || (a.menu_order ?? Infinity)-(b.menu_order ?? Infinity) || a.name.localeCompare(b.name));
+    appendComparisonGroup(body,items,title,'ml',serving);
+  });
+}
+function appendSupermarketOptions(body,dishes){
+  body.classList.add('supermarket-menu');
+  const drinks=[],food=[];
+  for(const dish of dishes){
+    if(Number.isFinite(calorieDensity(dish,'ml')))drinks.push(dish);
+    else food.push(dish);
+  }
+  for(const [items,title,unit,serving] of [[drinks,'Drinks','ml','Per drink'],[food,'Food','g','Per pack']]){
+    items.sort((a,b)=>calorieDensity(a,unit)-calorieDensity(b,unit)||a.name.localeCompare(b.name));
+    appendComparisonGroup(body,items,title,unit,serving);
+  }
 }
 function renderFoodOptions(){
   const searchKey=value=>normalizedName(value).replace(/[’‘]/g,"'");
@@ -1616,13 +1659,17 @@ function renderFoodOptions(){
       head.scope='rowgroup';head.colSpan=2;
       head.append(element('h2','',restaurant||'Other dishes'));
       row.append(head);body.append(row);
-      if(searchKey(restaurant)==='alcohol consumption'){
-        dishes.sort(compareAlcoholOptions);
-      }else if(searchKey(restaurant)!=='supermarket'){
-        dishes.sort((a,b)=>(a.menu_order ?? Number.MAX_SAFE_INTEGER)-(b.menu_order ?? Number.MAX_SAFE_INTEGER)
-          || a.name.localeCompare(b.name));
+      if(searchKey(restaurant)==='supermarket'){
+        appendSupermarketOptions(body,dishes);
+        return body;
       }
-      body.append(...dishes.map(foodOptionRow));
+      if(searchKey(restaurant)==='alcohol consumption'){
+        appendAlcoholOptions(body,dishes);
+        return body;
+      }
+      dishes.sort((a,b)=>(a.menu_order ?? Number.MAX_SAFE_INTEGER)-(b.menu_order ?? Number.MAX_SAFE_INTEGER)
+        || a.name.localeCompare(b.name));
+      body.append(...dishes.map(dish=>foodOptionRow(dish)));
       return body;
     });
   const table=byId('option-list');

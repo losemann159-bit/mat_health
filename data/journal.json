@@ -289,6 +289,109 @@
       "average_hr": 133,
       "rating": 9,
       "highlight": "60 sit-ups with a 9 kg wall throw and catch on each rep, then 120 m of farmer carries at 48 kg total, followed by shoulder and back work."
+    },
+    {
+      "id": "fitness-a6f4d6c2-0569-460f-a443-31aa0085b3c6",
+      "source": "Fitness log record, 9 November 2026",
+      "title": "Bike, rowing, chest and arms",
+      "incomplete": false,
+      "notes": "Assault Bike - 5 intervals of 15 machine calories each, 75 cal total.\nRowErg - 4 x 500 m, 2,000 m total. The last 500 m was fast.\nBiceps curl - Arm curl (biceps): 12 at 23 kg, 12 at 32 kg, 12 at 32 kg.\nTriceps pushdown - 3 sets of 12 triceps pushdowns at 23 kg.\nChest press - 12 at 50 kg, 12 at 50 kg, 12 at 59 kg.\n4 alternating bike and row rounds, then a fifth bike interval. Exhaustion after cardio was 7-8/10. Heart rate fell from 160 to 120 bpm in about a minute.",
+      "minutes": 65,
+      "total_kcal": 810,
+      "peak_hr": 160,
+      "recovery_hr": 120,
+      "recovery_minutes": 1,
+      "effort": 7.5,
+      "effort_low": 7,
+      "effort_high": 8,
+      "effort_scope": "After cardio",
+      "rating": 9,
+      "muscles": [
+        "chest",
+        "biceps",
+        "triceps",
+        "quads",
+        "back"
+      ],
+      "machine_volume_kg": 3780,
+      "strength_reps": 108,
+      "exercises": [
+        {
+          "name": "Assault Bike",
+          "detail": "5 intervals of 15 machine calories each, 75 cal total.",
+          "unit": "cal",
+          "sets": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "block": {
+            "name": "Cardio",
+            "detail": "4 alternating bike and row rounds, then a fifth bike interval. Exhaustion after cardio was 7-8/10. Heart rate fell from 160 to 120 bpm in about a minute.",
+            "rating": 8.5
+          }
+        },
+        {
+          "name": "RowErg",
+          "detail": "4 x 500 m, 2,000 m total. The last 500 m was fast.",
+          "unit": "m",
+          "sets": [
+            500,
+            500,
+            500,
+            500
+          ]
+        },
+        {
+          "name": "Biceps curl",
+          "detail": "Arm curl (biceps): 12 at 23 kg, 12 at 32 kg, 12 at 32 kg.",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            23,
+            32,
+            32
+          ],
+          "block": {
+            "name": "Strength",
+            "detail": "Biceps curls, triceps pushdowns, then chest press."
+          }
+        },
+        {
+          "name": "Triceps pushdown",
+          "detail": "3 sets of 12 triceps pushdowns at 23 kg.",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "load": "23 kg every set"
+        },
+        {
+          "name": "Chest press",
+          "detail": "12 at 50 kg, 12 at 50 kg, 12 at 59 kg.",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            50,
+            50,
+            59
+          ]
+        }
+      ],
+      "highlight": "Fast final 500 m row and 59 kg for 12 on the final chest press set.",
+      "date": "2026-11-09"
     }
   ],
   "attendance": {
@@ -574,6 +677,42 @@
       "estimated": true,
       "source": "Second iced venti Americano reported in chat. Usual plain order.",
       "food_option_id": "starbucks-iced-americano-venti"
+    },
+    {
+      "id": "chat-2026-11-09-double-pork-porridge-two-eggs",
+      "date": "2026-11-09",
+      "source": "Reported in journal chat on 9 November. Mat confirmed about 100 g cooked pork and about half the rice porridge eaten.",
+      "name": "Double pork porridge with egg and century egg",
+      "portion": "Double pork (about 100 g cooked), 1 regular egg, 1 century egg, about half the rice porridge. No sauces or extras.",
+      "kcal": 500,
+      "kcal_low": 420,
+      "kcal_high": 580,
+      "estimated": true,
+      "estimate_basis": "About 100 g cooked pork (250 kcal), both eggs (170 kcal), and about half a bowl of plain rice porridge (80 kcal). The pork fat content and porridge thickness are estimated.",
+      "estimate_reference": "https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_01_nvic.html"
+    },
+    {
+      "id": "fitness-96c334c3-524c-44e5-b9a1-043961b0354d",
+      "source": "Fitness log record, lunch photo and protein confirmation",
+      "name": "Protein Crisp bar",
+      "portion": "1 bar after the gym, 20 g protein. Evian water with lunch.",
+      "protein_g": 20,
+      "kcal": 215,
+      "kcal_low": 180,
+      "kcal_high": 250,
+      "estimated": true,
+      "estimate_basis": "Midpoint of the 180-250 kcal estimate in the food log. Mat confirmed 20 g protein.",
+      "date": "2026-11-09"
+    },
+    {
+      "id": "fitness-69086a9d-92db-4e48-99af-92de6ff1e8e0",
+      "source": "Fitness log record, dinner and subsequent calorie correction",
+      "name": "Corn som tam with salted egg, grilled meats and Isaan sausage",
+      "portion": "4 spoons of corn som tam, half a salted egg, 2 tiny pieces of beef tongue without sauce, grilled pork neck and beef (reported as \"2 slices of grilled pork neck and beef\"), and 1 tiny Isaan sausage.",
+      "kcal": 620,
+      "estimated": true,
+      "estimate_basis": "Mat chose 620 kcal for the whole dinner, the high end of the original 365-620 kcal estimate.",
+      "date": "2026-11-09"
     }
   ],
   "energy_profiles": [
@@ -596,6 +735,41 @@
             "portion": "2.0 L · daily usual",
             "kcal": 0,
             "water_ml": 2000
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn."
+    },
+    {
+      "id": "2026-11-09",
+      "date": "2026-11-09",
+      "source": "Fitness log record, usual daily water intake reported 9 November 2026",
+      "kg": 127,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0-2.5 L daily",
+            "kcal": 0,
+            "water_ml": 2250,
+            "water_ml_low": 2000,
+            "water_ml_high": 2500
           },
           {
             "routine_key": "americano",
@@ -1305,7 +1479,8 @@
       "date": "2026-11-08",
       "source": "Menu item and product photo supplied in chat.",
       "photo": "/photos/f9f62707c6a5e72db75342a2930ca5edb811ba06c2989ef9f705b065cc681b10.webp",
-      "photo_aspect": "square"
+      "photo_aspect": "square",
+      "kcal_per_100ml": 25
     },
     {
       "id": "supermarket-musashi-protein-crisp-dark-choc-mint-60g",
@@ -1318,7 +1493,8 @@
       "date": "2026-11-08",
       "source": "Menu item and product photo supplied in chat.",
       "photo": "/photos/706597d95ed519baaf41fb0beeca74f402906c0cea80de8622ba64872864624c.webp",
-      "photo_aspect": "square"
+      "photo_aspect": "square",
+      "kcal_per_100g": 389.58
     },
     {
       "id": "supermarket-greisinger-salami-sticks-80g",
@@ -1331,7 +1507,8 @@
       "date": "2026-11-08",
       "source": "Menu item and product photo supplied in chat.",
       "photo": "/photos/9d305176e7145d9647c244e9a89328da9b424fe0b815e12531fb8fa79f1a541f.webp",
-      "photo_aspect": "square"
+      "photo_aspect": "square",
+      "kcal_per_100g": 459
     },
     {
       "id": "supermarket-schweppes-lime-330ml",
@@ -1370,7 +1547,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/c38e7cd991fbe7a519badf35a9f6c12ca65099fafa92e088cd9c628a57a3ac65.webp"
+      "photo": "/photos/c38e7cd991fbe7a519badf35a9f6c12ca65099fafa92e088cd9c628a57a3ac65.webp",
+      "kcal_per_100g": 399
     },
     {
       "id": "supermarket-lorenz-saltletts-mini-bagel-150g",
@@ -1383,7 +1561,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/99b4d169ffba79148315514a588322474cafa3be0e86177531c92e415261fac5.webp"
+      "photo": "/photos/99b4d169ffba79148315514a588322474cafa3be0e86177531c92e415261fac5.webp",
+      "kcal_per_100g": 436
     },
     {
       "id": "supermarket-lorenz-saltletts-sticks-150g",
@@ -1396,7 +1575,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/8b282e8c512e475b3c118c74f837346c8ef6c2ae668320d88c51288b7bfc371d.webp"
+      "photo": "/photos/8b282e8c512e475b3c118c74f837346c8ef6c2ae668320d88c51288b7bfc371d.webp",
+      "kcal_per_100g": 391
     },
     {
       "id": "supermarket-bahlsen-waffeletten-dark-100g",
@@ -1409,7 +1589,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/97aafc3487d19b5669d8a6fca9ce5357634c46e188608366f09d97a7eacb2c90.webp"
+      "photo": "/photos/97aafc3487d19b5669d8a6fca9ce5357634c46e188608366f09d97a7eacb2c90.webp",
+      "kcal_per_100g": 527
     },
     {
       "id": "supermarket-bahlsen-choco-leibniz-milk-125g",
@@ -1422,7 +1603,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/54d8ddd3f8ea894c9d90ffb69989a07bd8b79501bc11a83af4cca5693efb1bb1.webp"
+      "photo": "/photos/54d8ddd3f8ea894c9d90ffb69989a07bd8b79501bc11a83af4cca5693efb1bb1.webp",
+      "kcal_per_100g": 505
     },
     {
       "id": "supermarket-chupa-chups-sour-bites-90g",
@@ -1435,7 +1617,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/5b2b8eba8f6c2c041bf71863884f08f4476564ad8a2eb9258d8541ec8f21c43b.webp"
+      "photo": "/photos/5b2b8eba8f6c2c041bf71863884f08f4476564ad8a2eb9258d8541ec8f21c43b.webp",
+      "kcal_per_100g": 361
     },
     {
       "id": "supermarket-haribo-happy-cola-80g",
@@ -1448,7 +1631,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/030a79ec0fbba19b885c10712a6371809d0b4eb993a99717dfa08ff0057bb7d6.webp"
+      "photo": "/photos/030a79ec0fbba19b885c10712a6371809d0b4eb993a99717dfa08ff0057bb7d6.webp",
+      "kcal_per_100g": 343
     },
     {
       "id": "supermarket-haribo-worms-80g",
@@ -1461,7 +1645,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/284cd1de644031f3f277746027daa1339989bbcbd1c5dae2d77049a9ed45503a.webp"
+      "photo": "/photos/284cd1de644031f3f277746027daa1339989bbcbd1c5dae2d77049a9ed45503a.webp",
+      "kcal_per_100g": 337
     },
     {
       "id": "supermarket-haribo-berries-jelly-80g",
@@ -1474,7 +1659,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/c04a2f72a63ebb3bbdbf6d2500b88bd3bbd9c153720111558bdf985326de9a5b.webp"
+      "photo": "/photos/c04a2f72a63ebb3bbdbf6d2500b88bd3bbd9c153720111558bdf985326de9a5b.webp",
+      "kcal_per_100g": 350
     },
     {
       "id": "supermarket-haribo-cola-sour-80g",
@@ -1487,7 +1673,8 @@
       "date": "2026-11-08",
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/7a5c79226bba7de196f8ba850255377f3ae7a8e8501251b99f7b46d1eaf7f5b7.webp"
+      "photo": "/photos/7a5c79226bba7de196f8ba850255377f3ae7a8e8501251b99f7b46d1eaf7f5b7.webp",
+      "kcal_per_100g": 348
     },
     {
       "id": "supermarket-haribo-lakritz-schnecken-80g",
@@ -1500,7 +1687,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/0af79c4c41db306117ccba3a494d476e560cb5f8abc159dd422fe80937610944.webp"
+      "photo": "/photos/0af79c4c41db306117ccba3a494d476e560cb5f8abc159dd422fe80937610944.webp",
+      "kcal_per_100g": 327
     },
     {
       "id": "supermarket-ben-shaws-cloudy-lemonade-330ml",
@@ -1513,7 +1701,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/67ecc4c3c16dbb94de2aaec16aa971f3f0b744535c08ca0e0dda3a0476380190.webp"
+      "photo": "/photos/67ecc4c3c16dbb94de2aaec16aa971f3f0b744535c08ca0e0dda3a0476380190.webp",
+      "kcal_per_100ml": 24
     },
     {
       "id": "supermarket-ben-shaws-cream-soda-330ml",
@@ -1526,7 +1715,8 @@
       "date": "2026-11-08",
       "source": "Menu option and package size supplied in chat. Product photo: https://thepantrybasket.co.uk/products/ben-shaws-cream-soda-can-330ml",
       "photo_aspect": "square",
-      "photo": "/photos/642177d48f4a79f9f8ffad0d488574ad1fe1a91abebd71bf30b0cb64fe40050f.webp"
+      "photo": "/photos/642177d48f4a79f9f8ffad0d488574ad1fe1a91abebd71bf30b0cb64fe40050f.webp",
+      "kcal_per_100ml": 19
     },
     {
       "id": "supermarket-coca-cola-original-325ml",
@@ -1604,7 +1794,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/51fc2b99821d28e4e48a10f568b63b4791ed7607d1625f3c2f3ec5d5e725e0a3.webp"
+      "photo": "/photos/51fc2b99821d28e4e48a10f568b63b4791ed7607d1625f3c2f3ec5d5e725e0a3.webp",
+      "kcal_per_100g": 400
     },
     {
       "id": "alcohol-regency-brandy-30ml",
@@ -1797,6 +1988,50 @@
       "photo": "/photos/e679c6699e1e9d7ef2ffbb741dcccff9c64179a5cf2bfd9b14d3ec9dfaf652c7.webp",
       "photo_aspect": "square",
       "kcal_per_100ml": 37.0
+    },
+    {
+      "estimated": true,
+      "name": "Cheese & Charcuterie Platter (Half)",
+      "estimate_basis": "Assumes your half contains about 90 g mixed cheese (315 kcal), 25 g ham (35 kcal) and 25 g salami (100 kcal). Bread is a separate option.",
+      "portion": "Half a platter of five cheeses including blue and brie, plus ham and salami",
+      "id": "chez-papa-cheese-charcuterie",
+      "kcal": 450,
+      "date": "2026-11-08",
+      "restaurant": "Chez Papa",
+      "source": "Usual order and portions supplied in chat. Restaurant menu: https://chezpapabangkok.com/menu/. Portion weights estimated."
+    },
+    {
+      "estimated": true,
+      "name": "Half Baguette",
+      "estimate_basis": "Assumes a 250 g baguette. Half is 125 g at about 270 kcal per 100 g, or 338 kcal before rounding.",
+      "portion": "Half a plain baguette",
+      "id": "chez-papa-baguette",
+      "kcal": 340,
+      "date": "2026-11-08",
+      "restaurant": "Chez Papa",
+      "source": "Usual order and portions supplied in chat. Restaurant menu: https://chezpapabangkok.com/menu/. Portion weights estimated."
+    },
+    {
+      "estimated": true,
+      "name": "Tomato & Mozzarella Salad (Half)",
+      "estimate_basis": "Assumes your half includes about 60 g fresh mozzarella (150 kcal), tomato (20 kcal) and a teaspoon of olive oil (40 kcal).",
+      "portion": "Half the salad",
+      "id": "chez-papa-tomato-mozzarella",
+      "kcal": 210,
+      "date": "2026-11-08",
+      "restaurant": "Chez Papa",
+      "source": "Usual order and portions supplied in chat. Restaurant menu: https://chezpapabangkok.com/menu/. Portion weights estimated."
+    },
+    {
+      "estimated": true,
+      "name": "Grilled Bone Marrow (1 of 3)",
+      "estimate_basis": "Assumes about 25 g edible roasted marrow at about 8 kcal per gram. Bread is counted separately.",
+      "portion": "Marrow from one of the three bones on the plate",
+      "id": "chez-papa-grilled-bone-marrow",
+      "kcal": 200,
+      "date": "2026-11-08",
+      "restaurant": "Chez Papa",
+      "source": "Usual order and portions supplied in chat. Restaurant menu: https://chezpapabangkok.com/menu/. Portion weights estimated."
     }
   ]
 }
