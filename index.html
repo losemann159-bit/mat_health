@@ -165,7 +165,7 @@ main{padding-bottom:50px!important}.section-title{display:flex;align-items:end;j
 .strength-sets { grid-column:2; grid-row:1; min-width:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:7px; margin:0; padding:0; list-style:none }
 .strength-sets li { min-width:0; display:grid; justify-items:end; align-content:start; gap:6px }
 .set-number { display:none }
-.extra-sets .set-number { display:block }
+.extra-sets li:nth-child(n+4) .set-number { display:block }
 .set-value { white-space:nowrap }
 .strength-weight { font-weight:inherit }
 .no-set .set-value { color:var(--muted) }
@@ -498,8 +498,20 @@ nav .wordmark { margin-left:0; color:white }
 #history-dialog .attendance-months[open] .attendance-heading::after { content:'−' }
 #history-dialog .calendar-tools { margin-top:12px }
 .session-list-heading { font-size:18px; margin:20px 20px 4px }
-#food-options { max-width:880px; margin:clamp(22px,5vw,56px) auto 40px }
-#food-options h1 { font-size:clamp(28px,4vw,44px); letter-spacing:-.045em }
+#food-options,#protein-foods { max-width:880px; margin:clamp(22px,5vw,56px) auto 40px }
+#food-options h1,#protein-foods h1 { font-size:clamp(28px,4vw,44px); letter-spacing:-.045em }
+.protein-groups { display:flex; gap:4px; background:var(--pale-blue); padding:4px; border:0; margin:18px 0 12px; border-radius:8px }
+.protein-groups label { flex:1; position:relative; text-align:center; cursor:pointer }
+.protein-groups input { position:absolute; width:1px; height:1px; opacity:0 }
+.protein-groups span { display:block; padding:9px 4px; border-radius:6px; color:var(--muted); font-weight:550 }
+.protein-groups input:checked + span { background:var(--blue); color:white }
+.protein-groups input:focus-visible + span { outline:2px solid var(--ink); outline-offset:2px }
+.protein-table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums }
+.protein-table th,.protein-table td { padding:10px 4px; border-bottom:1px solid var(--rule); text-align:right }
+.protein-table th { color:var(--muted); font-size:13px }
+.protein-table :is(th,td):first-child { text-align:left }
+.protein-table td:nth-child(2) { font-weight:600; color:var(--blue) }
+.protein-note { margin-top:12px; font-size:13px; color:var(--muted) }
 .option-tools { display:flex; align-items:end; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:24px }
 .option-tools p { color:var(--muted); margin-top:6px; font-size:14px }
 #option-search { width:200px; max-width:100%; min-height:36px; border:1px solid var(--rule); border-radius:6px; padding:5px 10px; background:white; color:var(--ink); font:inherit }
@@ -557,6 +569,7 @@ nav .wordmark { margin-left:0; color:white }
 <body><header><div class="shell"><nav aria-label="Journal navigation"><a href="#overview" class="wordmark">Health Journal</a>
   <div class="journal-links">
     <a id="options-link" href="#food-options">Menu Options</a>
+    <a id="protein-link" href="#protein-foods">Protein Foods</a>
     <button type="button" id="open-builder" aria-haspopup="dialog" aria-controls="builder-dialog">Workout Builder</button>
     <button type="button" id="open-history" aria-haspopup="dialog" aria-controls="history-dialog">Attendance &amp; History</button>
   </div>
@@ -609,6 +622,19 @@ nav .wordmark { margin-left:0; color:white }
   <div class="option-tools"><div><h1 id="options-title">Menu Options</h1><p>Saved dishes to compare before you order.</p></div><input id="option-search" type="search" aria-label="Find a dish or restaurant" placeholder="Find a dish or restaurant"></div>
   <table class="option-list" id="option-list" aria-label="Saved dishes by restaurant"><thead><tr><th scope="col">Dish</th><th scope="col">Est. kcal</th></tr></thead></table>
   <p id="option-empty" hidden></p>
+</section>
+<section id="protein-foods" aria-labelledby="protein-title" hidden>
+  <h1 id="protein-title">Protein Foods</h1>
+  <fieldset class="protein-groups" aria-label="Protein food category">
+    <label><input type="radio" name="protein-group" value="Meat"><span>Meat</span></label>
+    <label><input type="radio" name="protein-group" value="Seafood"><span>Seafood</span></label>
+    <label><input type="radio" name="protein-group" value="Other" checked><span>Other</span></label>
+  </fieldset>
+  <table class="protein-table" aria-label="Protein and calories per 100 grams" aria-describedby="protein-note">
+    <thead><tr><th scope="col">Per 100 g</th><th scope="col">Protein</th><th scope="col">Calories</th></tr></thead>
+    <tbody id="protein-rows"></tbody>
+  </table>
+  <p class="protein-note" id="protein-note">Approximate values per 100 g of edible food. Meat and seafood weights are cooked. Values vary by cut and preparation.</p>
 </section>
 <div class="footer"><span id="status" role="status">Loading journal…</span><div><button id="refresh">Refresh</button> &nbsp; <a href="/api/workouts" download="training-food-journal.json">Export journal</a></div></div></main>
 <dialog id="dish-photo-dialog" aria-labelledby="dish-photo-title">
@@ -1728,19 +1754,36 @@ function renderFoodOptions(){
   empty.hidden=groups.size>0;
   empty.textContent=query?'No dishes match your search.':'Your saved food options will appear here.';
 }
+const proteinFoods={
+  Meat:[['Skinless chicken breast',31,165],['Turkey breast',29,135],['Lean beef','26–29','170–210'],['Pork tenderloin',26,145]],
+  Seafood:[['Tuna in water',26,116],['Shrimp',24,99],['White fish (dory or cod)','20–24','90–120'],['Salmon',22,206]],
+  Other:[['Boiled eggs',13,155],['Egg whites',11,52],['Greek yogurt, plain nonfat',10,59],['Firm tofu',15,145],['Cottage cheese, low-fat',12,82]]
+};
+function renderProteinFoods(){
+  const group=document.querySelector('input[name="protein-group"]:checked').value;
+  byId('protein-rows').replaceChildren(...proteinFoods[group].map(([name,protein,kcal])=>{
+    const row=element('tr');
+    row.append(element('td','',name),element('td','',protein+' g'),element('td','',kcal));
+    return row;
+  }));
+}
+byId('protein-foods').addEventListener('change',renderProteinFoods);
+renderProteinFoods();
 function selectJournalPage(){
-  const options=byId('food-options'),wasOpen=!options.hidden,open=location.hash==='#food-options';
-  options.hidden=!open;
-  if(!open && dishDialog.open)dishDialog.close();
-  for(const id of ['training-panel','food-panel','overview'])byId(id).hidden=open;
-  if(open){
-    byId('options-link').setAttribute('aria-current','page');
-    window.scrollTo(0,0);
-  }else{
-    byId('options-link').removeAttribute('aria-current');
-    if(wasOpen && location.hash==='#food-title')byId('food-title').scrollIntoView();
-    else if(wasOpen && (!location.hash||location.hash==='#overview'))window.scrollTo(0,0);
+  const options=byId('food-options'),protein=byId('protein-foods');
+  const wasOpen=!options.hidden||!protein.hidden;
+  options.hidden=location.hash!=='#food-options';
+  protein.hidden=location.hash!=='#protein-foods';
+  const guideOpen=!options.hidden||!protein.hidden;
+  if(options.hidden && dishDialog.open)dishDialog.close();
+  for(const [page,link] of [[options,byId('options-link')],[protein,byId('protein-link')]]){
+    if(page.hidden)link.removeAttribute('aria-current');
+    else link.setAttribute('aria-current','page');
   }
+  for(const id of ['training-panel','food-panel','overview'])byId(id).hidden=guideOpen;
+  if(guideOpen)window.scrollTo(0,0);
+  else if(wasOpen && location.hash==='#food-title')byId('food-title').scrollIntoView();
+  else if(wasOpen && (!location.hash||location.hash==='#overview'))window.scrollTo(0,0);
 }
 byId('option-search').addEventListener('input',renderFoodOptions);
 window.addEventListener('hashchange',selectJournalPage);

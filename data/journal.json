@@ -484,22 +484,29 @@
           "detail": "12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg"
         },
         {
-          "name": "Wall Ball Squats",
+          "name": "Squat Wall Ball",
           "unit": "reps",
           "total_reps": 100,
           "load": "9 kg wall ball",
           "block": {
-            "name": "Wall Ball Squats",
-            "detail": "100 total squats with a 9 kg wall ball."
+            "name": "Cardio",
+            "detail": "5 sets of 20 with a 9 kg wall ball, 100 reps total."
           },
-          "detail": "100x squads with wall ball 9kg"
+          "detail": "5×20 Squat Wall Ball (9kg)",
+          "sets": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
         }
       ],
       "strength_reps": 163,
       "strength_sets": 14,
       "machine_volume_kg": 4990,
       "total_reps": 263,
-      "notes": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg\n\nreverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg\n\nRow Machine 12x 41kg\nRow Machine 12x 41kg\n\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n\n100x squads with wall ball 9kg",
+      "notes": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg\n\nreverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg\n\nRow Machine 12x 41kg\nRow Machine 12x 41kg\n\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n\n5×20 Squat Wall Ball (9kg)",
       "highlight": "14 strength sets and 163 reps for 4,990 kg, followed by 100 squats with a 9 kg wall ball. 263 reps overall."
     }
   ],
