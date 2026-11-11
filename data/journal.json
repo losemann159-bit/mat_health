@@ -392,6 +392,115 @@
       ],
       "highlight": "Fast final 500 m row and 59 kg for 12 on the final chest press set.",
       "date": "2026-11-09"
+    },
+    {
+      "id": "fitness-089c0ce5-2991-4f09-82fe-78d9e4f47705",
+      "date": "2026-11-11",
+      "source": "Fitness log record, 11 November 2026. Exercise reports, final duration, watch readings and session review.",
+      "title": "Upper-body strength and wall ball squats",
+      "incomplete": false,
+      "minutes": 85,
+      "total_kcal": 779,
+      "average_hr": 101,
+      "peak_hr": 152,
+      "rating": 8.5,
+      "performance_ratings": {
+        "upper_body_strength": 9,
+        "muscular_endurance": 9,
+        "exercise_balance": 8,
+        "cardiovascular_conditioning": 6.5
+      },
+      "muscles": [
+        "chest",
+        "shoulders",
+        "back",
+        "quads",
+        "glutes"
+      ],
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "exercise_id": "barbell-bench-press",
+          "sets": [
+            10,
+            10,
+            8,
+            10,
+            10,
+            10
+          ],
+          "unit": "reps",
+          "loads_kg": [
+            20,
+            30,
+            40,
+            50,
+            50,
+            50
+          ],
+          "block": {
+            "name": "Strength",
+            "detail": "Barbell bench press, reverse pec deck, seated row and lateral raise. 14 sets, 163 reps and 4,990 kg lifted.",
+            "rating": 9
+          },
+          "detail": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg"
+        },
+        {
+          "name": "Reverse pec deck",
+          "sets": [
+            15,
+            15,
+            15
+          ],
+          "unit": "reps",
+          "loads_kg": [
+            13.5,
+            22.5,
+            32
+          ],
+          "detail": "reverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg"
+        },
+        {
+          "name": "Seated Row Machine",
+          "equipment": "Cybex chest-supported seated row machine",
+          "sets": [
+            12,
+            12
+          ],
+          "unit": "reps",
+          "load": "41 kg every set",
+          "detail": "Row Machine 12x 41kg\nRow Machine 12x 41kg"
+        },
+        {
+          "name": "Lateral Raise Machine",
+          "equipment": "Cybex lateral raise machine",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "unit": "reps",
+          "load": "18.5 kg every set",
+          "detail": "12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg"
+        },
+        {
+          "name": "Wall Ball Squats",
+          "unit": "reps",
+          "total_reps": 100,
+          "load": "9 kg wall ball",
+          "block": {
+            "name": "Wall Ball Squats",
+            "detail": "100 total squats with a 9 kg wall ball."
+          },
+          "detail": "100x squads with wall ball 9kg"
+        }
+      ],
+      "strength_reps": 163,
+      "strength_sets": 14,
+      "machine_volume_kg": 4990,
+      "total_reps": 263,
+      "notes": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg\n\nreverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg\n\nRow Machine 12x 41kg\nRow Machine 12x 41kg\n\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n\n100x squads with wall ball 9kg",
+      "highlight": "14 strength sets and 163 reps for 4,990 kg, followed by 100 squats with a 9 kg wall ball. 263 reps overall."
     }
   ],
   "attendance": {
@@ -754,6 +863,49 @@
       "protein_g_low": 65,
       "protein_g_high": 75,
       "estimate_basis": "Screenshot estimates in kcal: chicken 275, pumpkin 95, eggs 150, rice 35 and vegetables 40. Itemized total 595 kcal without sauce. Food rating in the screenshot: 9.5/10."
+    },
+    {
+      "id": "fitness-d36381c2-5675-4aa5-9575-e88c8dca45c4",
+      "date": "2026-11-11",
+      "source": "Post-workout bar reported in the Fitness log. Mat confirmed in tracker chat that this bar was lunch.",
+      "name": "Lunch: post-workout protein bar",
+      "portion": "1 bar after training",
+      "estimated": true,
+      "kcal": 200,
+      "protein_g": 20,
+      "estimate_basis": "The Fitness log estimated about 200 kcal and 20 g protein assuming the same bar as Monday. The exact bar and label for Wednesday were not reported."
+    },
+    {
+      "id": "chat-2026-11-11-dinner-b0e4dbab-ffec-445b-acbe-50e84affe51e",
+      "date": "2026-11-11",
+      "name": "Dinner: mixed grill, tabbouleh, Greek salad and garlic naan",
+      "source": "Dinner portions and meal estimate from the screenshot Mat shared in the tracker chat.",
+      "portion": "Half of the smaller mixed grill, half the tabbouleh, half the Greek salad and a quarter of the garlic naan. Skipped the spicy potatoes and garlic mousse.",
+      "estimated": true,
+      "kcal": 820,
+      "kcal_low": 745,
+      "kcal_high": 1020,
+      "use_logged_kcal": true,
+      "protein_g_low": 45,
+      "protein_g_high": 65,
+      "estimate_basis": "Screenshot working estimate: 820 kcal. Mixed grill 400-550 kcal, tabbouleh 100-150 kcal, Greek salad 150-225 kcal and garlic naan 95 kcal. Screenshot food rating: 8.5/10."
+    },
+    {
+      "id": "chat-2026-11-11-snack-a601f914-8988-4092-b3b7-1690d587c4ad",
+      "date": "2026-11-11",
+      "name": "Snack",
+      "portion": "1 piece, about 10 cm long and 0.7 cm across (estimated 5-7 g).",
+      "estimated": true,
+      "kcal": 30,
+      "kcal_low": 25,
+      "kcal_high": 35,
+      "protein_g_low": 1,
+      "protein_g_high": 2,
+      "fat_g_low": 2,
+      "fat_g_high": 3,
+      "use_logged_kcal": true,
+      "estimate_basis": "Midpoint of the supplied 25-35 kcal range for one piece. The screenshot gives a snack rating of 7/10.",
+      "source": "Mat confirmed the snack estimate from the screenshot in the tracker chat."
     }
   ],
   "energy_profiles": [
@@ -872,6 +1024,12 @@
       "date": "2026-11-10",
       "intake_complete": true,
       "source": "Mat confirmed in the tracker chat that intake is complete for 10 November and only water is planned for the rest of the day."
+    },
+    {
+      "date": "2026-11-11",
+      "id": "2026-11-11",
+      "intake_complete": true,
+      "source": "Mat asked to close the day after adding the snack."
     }
   ],
   "exercise_library": [
