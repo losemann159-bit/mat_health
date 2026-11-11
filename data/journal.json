@@ -713,6 +713,47 @@
       "estimated": true,
       "estimate_basis": "Mat chose 620 kcal for the whole dinner, the high end of the original 365-620 kcal estimate.",
       "date": "2026-11-09"
+    },
+    {
+      "id": "chat-2026-11-10-breakfast-80fe3301-5af1-4a85-8512-0a5cbcb97993",
+      "date": "2026-11-10",
+      "source": "Breakfast reported in tracker chat. Sauce portion corrected and 800 kcal confirmed in Fitness log record.",
+      "name": "Breakfast: dory fish, fried chicken and boiled eggs",
+      "portion": "All the fish, chicken and boiled eggs including the extra egg, half the rice, about 90% of the pumpkin, vegetables and about 60% of the jaew sauce. Skipped the mayonnaise.",
+      "estimated": true,
+      "kcal": 800,
+      "kcal_low": 790,
+      "kcal_high": 800,
+      "protein_g_low": 55,
+      "protein_g_high": 75,
+      "estimate_basis": "After the jaew sauce correction, the meal estimate was 790-800 kcal, including 15-25 kcal for sauce. Mat accepted 800 kcal as the working estimate.",
+      "use_logged_kcal": true
+    },
+    {
+      "id": "fitness-f2d16422-b54a-466b-bcbb-c4ffe7bbfffb",
+      "date": "2026-11-10",
+      "name": "Grilled pork chop with grilled mushrooms and spinach",
+      "portion": "200 g grilled pork chop, grilled mushrooms and grilled spinach",
+      "kcal": 650,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Reported estimates: pork chop 450 kcal, mushrooms 100 kcal, spinach 100 kcal.",
+      "source": "Dinner reported by Mat in the Fitness log record."
+    },
+    {
+      "id": "chat-2026-11-11-breakfast-bb6b8b84-09e2-4112-b79f-85ba118aef82",
+      "date": "2026-11-11",
+      "source": "Mat identified the pictured meal estimate as his breakfast in the tracker chat.",
+      "name": "Breakfast: grilled chicken breast, pumpkin and boiled eggs",
+      "portion": "Grilled chicken breast, 200-250 g pumpkin, 2 boiled eggs, 2 tablespoons of rice and vegetables. Estimate assumes no sauce.",
+      "estimated": true,
+      "kcal": 595,
+      "kcal_low": 580,
+      "kcal_high": 680,
+      "use_logged_kcal": true,
+      "protein_g_low": 65,
+      "protein_g_high": 75,
+      "estimate_basis": "Screenshot estimates in kcal: chicken 275, pumpkin 95, eggs 150, rice 35 and vegetables 40. Itemized total 595 kcal without sauce. Food rating in the screenshot: 9.5/10."
     }
   ],
   "energy_profiles": [
@@ -819,6 +860,18 @@
       "date": "2026-11-08",
       "intake_complete": true,
       "source": "Confirmed in chat that food and caloric drinks are finished for the day. Only water afterward."
+    },
+    {
+      "id": "2026-11-09",
+      "date": "2026-11-09",
+      "intake_complete": true,
+      "source": "Mat confirmed in the tracker chat that Monday had no further food. The only drinks were water and Americano, covered by the existing daily routine."
+    },
+    {
+      "id": "2026-11-10",
+      "date": "2026-11-10",
+      "intake_complete": true,
+      "source": "Mat confirmed in the tracker chat that intake is complete for 10 November and only water is planned for the rest of the day."
     }
   ],
   "exercise_library": [
@@ -1494,7 +1547,8 @@
       "source": "Menu item and product photo supplied in chat.",
       "photo": "/photos/706597d95ed519baaf41fb0beeca74f402906c0cea80de8622ba64872864624c.webp",
       "photo_aspect": "square",
-      "kcal_per_100g": 389.58
+      "kcal_per_100g": 389.58,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-greisinger-salami-sticks-80g",
@@ -1508,7 +1562,8 @@
       "source": "Menu item and product photo supplied in chat.",
       "photo": "/photos/9d305176e7145d9647c244e9a89328da9b424fe0b815e12531fb8fa79f1a541f.webp",
       "photo_aspect": "square",
-      "kcal_per_100g": 459
+      "kcal_per_100g": 459,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-schweppes-lime-330ml",
@@ -1548,7 +1603,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/c38e7cd991fbe7a519badf35a9f6c12ca65099fafa92e088cd9c628a57a3ac65.webp",
-      "kcal_per_100g": 399
+      "kcal_per_100g": 399,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-lorenz-saltletts-mini-bagel-150g",
@@ -1562,7 +1618,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/99b4d169ffba79148315514a588322474cafa3be0e86177531c92e415261fac5.webp",
-      "kcal_per_100g": 436
+      "kcal_per_100g": 436,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-lorenz-saltletts-sticks-150g",
@@ -1576,7 +1633,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/8b282e8c512e475b3c118c74f837346c8ef6c2ae668320d88c51288b7bfc371d.webp",
-      "kcal_per_100g": 391
+      "kcal_per_100g": 391,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-bahlsen-waffeletten-dark-100g",
@@ -1590,7 +1648,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/97aafc3487d19b5669d8a6fca9ce5357634c46e188608366f09d97a7eacb2c90.webp",
-      "kcal_per_100g": 527
+      "kcal_per_100g": 527,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-bahlsen-choco-leibniz-milk-125g",
@@ -1604,7 +1663,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/54d8ddd3f8ea894c9d90ffb69989a07bd8b79501bc11a83af4cca5693efb1bb1.webp",
-      "kcal_per_100g": 505
+      "kcal_per_100g": 505,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-chupa-chups-sour-bites-90g",
@@ -1618,7 +1678,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/5b2b8eba8f6c2c041bf71863884f08f4476564ad8a2eb9258d8541ec8f21c43b.webp",
-      "kcal_per_100g": 361
+      "kcal_per_100g": 361,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-haribo-happy-cola-80g",
@@ -1632,7 +1693,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/030a79ec0fbba19b885c10712a6371809d0b4eb993a99717dfa08ff0057bb7d6.webp",
-      "kcal_per_100g": 343
+      "kcal_per_100g": 343,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-haribo-worms-80g",
@@ -1646,7 +1708,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/284cd1de644031f3f277746027daa1339989bbcbd1c5dae2d77049a9ed45503a.webp",
-      "kcal_per_100g": 337
+      "kcal_per_100g": 337,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-haribo-berries-jelly-80g",
@@ -1660,7 +1723,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/c04a2f72a63ebb3bbdbf6d2500b88bd3bbd9c153720111558bdf985326de9a5b.webp",
-      "kcal_per_100g": 350
+      "kcal_per_100g": 350,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-haribo-cola-sour-80g",
@@ -1674,7 +1738,8 @@
       "source": "Menu item, package size and product photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/7a5c79226bba7de196f8ba850255377f3ae7a8e8501251b99f7b46d1eaf7f5b7.webp",
-      "kcal_per_100g": 348
+      "kcal_per_100g": 348,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-haribo-lakritz-schnecken-80g",
@@ -1688,7 +1753,8 @@
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/0af79c4c41db306117ccba3a494d476e560cb5f8abc159dd422fe80937610944.webp",
-      "kcal_per_100g": 327
+      "kcal_per_100g": 327,
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-ben-shaws-cloudy-lemonade-330ml",
@@ -1755,7 +1821,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/594d5276875120993f685b03918d246d76ac050a2f9ab87f604077943796b63c.webp"
+      "photo": "/photos/594d5276875120993f685b03918d246d76ac050a2f9ab87f604077943796b63c.webp",
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-mama-cup-minced-pork-60g",
@@ -1768,7 +1835,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/cc5a52dec6098957b0eb788d91f646a2fb1f569827af23428c32a9c28f652c83.webp"
+      "photo": "/photos/cc5a52dec6098957b0eb788d91f646a2fb1f569827af23428c32a9c28f652c83.webp",
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-mama-cup-creamy-shrimp-tom-yum-60g",
@@ -1781,7 +1849,8 @@
       "date": "2026-11-08",
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
-      "photo": "/photos/263947ddeb0c76153a163c3b28bc5236cc39757b827f671a4a677020f1a2ef0f.webp"
+      "photo": "/photos/263947ddeb0c76153a163c3b28bc5236cc39757b827f671a4a677020f1a2ef0f.webp",
+      "menu_category": "Other"
     },
     {
       "id": "supermarket-emborg-danablu-creamy-cheese-100g",
@@ -1795,7 +1864,8 @@
       "source": "Menu option, package size and photo supplied in chat.",
       "photo_aspect": "square",
       "photo": "/photos/51fc2b99821d28e4e48a10f568b63b4791ed7607d1625f3c2f3ec5d5e725e0a3.webp",
-      "kcal_per_100g": 400
+      "kcal_per_100g": 400,
+      "menu_category": "Other"
     },
     {
       "id": "alcohol-regency-brandy-30ml",
@@ -2032,6 +2102,253 @@
       "date": "2026-11-08",
       "restaurant": "Chez Papa",
       "source": "Usual order and portions supplied in chat. Restaurant menu: https://chezpapabangkok.com/menu/. Portion weights estimated."
+    },
+    {
+      "id": "supermarket-fruit-watermelon",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Watermelon",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 30,
+      "estimated": true,
+      "kcal_per_100g": 30,
+      "carbs_per_100g": 7.6,
+      "sugar_per_100g": 6.2,
+      "fiber_per_100g": 0.4,
+      "estimate_basis": "Supplied fruit table: 30 kcal per 100 g of edible fruit.",
+      "menu_order": 1,
+      "photo_aspect": "square",
+      "photo": "/photos/aae4f39c761b8d0b5dd05e156151699b83388b5130f5d1083cb230ec8cc9231e.webp"
+    },
+    {
+      "id": "supermarket-fruit-pineapple",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Pineapple",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 50,
+      "estimated": true,
+      "kcal_per_100g": 50,
+      "carbs_per_100g": 13.1,
+      "sugar_per_100g": 9.9,
+      "fiber_per_100g": 1.4,
+      "estimate_basis": "Supplied fruit table: 50 kcal per 100 g of edible fruit.",
+      "menu_order": 2,
+      "photo_aspect": "square",
+      "photo": "/photos/630e0e192f35954e9f68da79bcce9f8235812c78e6133433445cd74174595e52.webp"
+    },
+    {
+      "id": "supermarket-fruit-raspberry",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Raspberry",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 50,
+      "estimated": true,
+      "kcal_per_100g": 52,
+      "carbs_per_100g": 11.9,
+      "sugar_per_100g": 4.4,
+      "fiber_per_100g": 6.5,
+      "estimate_basis": "Supplied fruit table: 52 kcal per 100 g of edible fruit.",
+      "menu_order": 3,
+      "photo_aspect": "square",
+      "photo": "/photos/9ba5b48df7f04960713907936a1b8d9def1e7784b2bda69eba0ae14b3e4bc253.webp"
+    },
+    {
+      "id": "supermarket-fruit-green-apple",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Green Apple",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 50,
+      "estimated": true,
+      "kcal_per_100g": 52,
+      "carbs_per_100g": 13.8,
+      "sugar_per_100g": 10.4,
+      "fiber_per_100g": 2.4,
+      "estimate_basis": "Supplied fruit table: 52 kcal per 100 g of edible fruit.",
+      "menu_order": 4,
+      "photo_aspect": "square",
+      "photo": "/photos/d42d1189501a9270a4a1ae837fad9d391613d10876a99c5da02ca71d26273001.webp"
+    },
+    {
+      "id": "supermarket-fruit-red-apple",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Red Apple",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 50,
+      "estimated": true,
+      "kcal_per_100g": 52,
+      "carbs_per_100g": 13.8,
+      "sugar_per_100g": 10.4,
+      "fiber_per_100g": 2.4,
+      "estimate_basis": "Supplied fruit table: 52 kcal per 100 g of edible fruit.",
+      "menu_order": 5,
+      "photo_aspect": "square",
+      "photo": "/photos/6a46d7073eba9cec769044fff2899d549444cd6871a75dca40c47818ff5c7de7.webp"
+    },
+    {
+      "id": "supermarket-fruit-blueberry",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Blueberry",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 60,
+      "estimated": true,
+      "kcal_per_100g": 57,
+      "carbs_per_100g": 14.5,
+      "sugar_per_100g": 10,
+      "fiber_per_100g": 2.4,
+      "estimate_basis": "Supplied fruit table: 57 kcal per 100 g of edible fruit.",
+      "menu_order": 6,
+      "photo_aspect": "square",
+      "photo": "/photos/9bd762a29a2ccaca07753b90e11e2ff585b378009f11772a6a6674e1e14188c0.webp"
+    },
+    {
+      "id": "supermarket-fruit-mango-sweet",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Mango (sweet)",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 60,
+      "estimated": true,
+      "kcal_per_100g": 60,
+      "carbs_per_100g": 15,
+      "sugar_per_100g": 13.7,
+      "fiber_per_100g": 1.6,
+      "estimate_basis": "Supplied fruit table: 60 kcal per 100 g of edible fruit.",
+      "menu_order": 7,
+      "photo_aspect": "square",
+      "photo": "/photos/83a6cd1bafb99ab2fa0faa345480afbeb68c88eeff6d595c4ff2bb4a15dca8c8.webp"
+    },
+    {
+      "id": "supermarket-fruit-kiwi",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Kiwi",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 60,
+      "estimated": true,
+      "kcal_per_100g": 61,
+      "carbs_per_100g": 14.7,
+      "sugar_per_100g": 9,
+      "fiber_per_100g": 3,
+      "estimate_basis": "Supplied fruit table: 61 kcal per 100 g of edible fruit.",
+      "menu_order": 8,
+      "photo_aspect": "square",
+      "photo": "/photos/5e8a92a924989316713410440ab5baf0dcfe69178eb85943dd049562f09e6991.webp"
+    },
+    {
+      "id": "supermarket-fruit-cherries",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Cherries",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 60,
+      "estimated": true,
+      "kcal_per_100g": 63,
+      "carbs_per_100g": 16,
+      "sugar_per_100g": 12.8,
+      "fiber_per_100g": 2.1,
+      "estimate_basis": "Supplied fruit table: 63 kcal per 100 g of edible fruit.",
+      "menu_order": 9,
+      "photo_aspect": "square",
+      "photo": "/photos/928a10da22b7f38253939a0908717b05e6426a9116ff19569c00a8cfca48d80f.webp"
+    },
+    {
+      "id": "supermarket-fruit-guava",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Guava",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 70,
+      "estimated": true,
+      "kcal_per_100g": 68,
+      "carbs_per_100g": 14.3,
+      "sugar_per_100g": 8.9,
+      "fiber_per_100g": 5.4,
+      "estimate_basis": "Supplied fruit table: 68 kcal per 100 g of edible fruit.",
+      "menu_order": 10,
+      "photo_aspect": "square",
+      "photo": "/photos/2fbd61ae4a9065e245a088eb4451a493471594c521ec84c3c35bea535881cde7.webp"
+    },
+    {
+      "id": "supermarket-fruit-grapes",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Grapes",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 70,
+      "estimated": true,
+      "kcal_per_100g": 69,
+      "carbs_per_100g": 18.1,
+      "sugar_per_100g": 15.5,
+      "fiber_per_100g": 0.9,
+      "estimate_basis": "Supplied fruit table: 69 kcal per 100 g of edible fruit.",
+      "menu_order": 11,
+      "photo_aspect": "square",
+      "photo": "/photos/8d8be17586d5d11c5e65e458eb8d29ebd35626bf12a517f8602890650b36241a.webp"
+    },
+    {
+      "id": "supermarket-fruit-banana",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Banana",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 90,
+      "estimated": true,
+      "kcal_per_100g": 89,
+      "carbs_per_100g": 22.8,
+      "sugar_per_100g": 12.2,
+      "fiber_per_100g": 2.6,
+      "estimate_basis": "Supplied fruit table: 89 kcal per 100 g of edible fruit.",
+      "menu_order": 12,
+      "photo_aspect": "square",
+      "photo": "/photos/1a2dd00cb41b98641299548eb193688a25f398c7f6b0519f8ecd9eef82bb1636.webp"
+    },
+    {
+      "id": "supermarket-fruit-passion-fruit",
+      "date": "2026-11-10",
+      "source": "Fruit nutrition table supplied in chat.",
+      "name": "Passion fruit",
+      "restaurant": "Supermarket",
+      "menu_category": "Fruits",
+      "portion": "100 g edible portion",
+      "kcal": 100,
+      "estimated": true,
+      "kcal_per_100g": 97,
+      "carbs_per_100g": 23.4,
+      "sugar_per_100g": 11.2,
+      "fiber_per_100g": 10.4,
+      "estimate_basis": "Supplied fruit table: 97 kcal per 100 g of edible fruit.",
+      "menu_order": 13,
+      "photo_aspect": "square",
+      "photo": "/photos/756521b105689e0ceb9ccc2270ca2530b6935b8db3b492b77232f4207d971b52.webp"
     }
   ]
 }

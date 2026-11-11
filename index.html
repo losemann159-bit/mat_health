@@ -296,7 +296,8 @@ summary{list-style:none}.history summary{display:grid;grid-template-columns:72px
 .food-list-head h4,.activity-list h4{margin:0;color:var(--ink);font-size:14px;font-weight:550}
 .meal{padding:7px 0}
 .meal+.meal{border-top:1px solid #eff0f3}
-.meal-copy,#extra-list{min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}
+.meal-copy{min-width:0;overflow-wrap:anywhere}
+#extra-list{min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}
 .meal b{font-size:14px;font-weight:500}.meal small{color:var(--muted);font-size:12px;margin-inline-start:6px}
 .meal-value{font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}.meal-value abbr{color:var(--muted);text-decoration:none}
 .food-date{font:13px var(--sans);padding:6px 9px;border:1px solid var(--rule);border-radius:6px;background:var(--white);color:var(--ink)}.empty-food{padding:13px 0;color:var(--muted)}
@@ -524,6 +525,19 @@ nav .wordmark { margin-left:0; color:white }
 .option-thumb { flex:none; width:64px; height:64px; border:0; padding:0; border-radius:6px; background:transparent; cursor:zoom-in }
 .option-thumb img { display:block; width:100%; height:100%; object-fit:cover; border-radius:inherit }
 .option-restaurant { color:var(--muted); font-size:13px; margin-top:3px }
+.option-list td.fruit-section { padding:0; border:0; color:var(--ink); font:inherit; text-align:left; white-space:normal }
+.fruit-table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums }
+.fruit-table h3 { color:var(--ink); font-size:14px; font-weight:600 }
+.fruit-table th small { font-size:inherit; font-weight:400 }
+.fruit-table th:not(:first-child),.fruit-table td:not(:first-child) { text-align:right; padding-left:8px }
+.fruit-table td.fruit-kcal { font-size:19px; font-weight:550; color:var(--blue) }
+.fruit-table td.fruit-grams { font-size:14px; font-weight:450; color:var(--muted) }
+@media(max-width:480px) {
+  .fruit-table td:first-child { padding-right:2px }
+  .fruit-table .option-dish { gap:6px }
+  .fruit-table .option-thumb { width:38px; height:38px }
+  .fruit-table th:not(:first-child),.fruit-table td:not(:first-child) { padding-left:4px }
+}
 #dish-photo-dialog { margin:auto; width:min(760px,calc(100% - 24px)); max-height:92dvh; padding:0; border:0; border-radius:10px; background:white; color:var(--ink) }
 #dish-photo-dialog::backdrop { background:rgb(15 19 26 / 75%) }
 .dish-photo-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 16px }
@@ -564,7 +578,7 @@ nav .wordmark { margin-left:0; color:white }
   <div class="week-heading"><h3 id="week-title">Last 7 days <span id="week-coverage" hidden></span></h3><span id="week-range"></span></div>
   <div class="week-scroll" tabindex="0" role="group" aria-label="Calorie totals in kcal"><dl class="week-totals" id="week-totals"></dl></div>
 </section>
-<section class="energy-panel"><div class="period-head"><h3>Calories eaten and burned</h3><div class="period-nav"><button id="prev-period" aria-label="Previous 3 days">‹</button><span id="period-label"></span><button id="next-period" aria-label="Next 3 days">›</button></div></div>
+<section class="energy-panel"><div class="period-head"><h3>Calories eaten and burned</h3><div class="period-nav"><button id="prev-period" aria-label="Previous 7 days">‹</button><span id="period-label"></span><button id="next-period" aria-label="Next 7 days">›</button></div></div>
 <div class="legend"><span title="Resting calories, everyday movement and digestion"><i class="swatch baseline-burn"></i>Daily baseline</span><span><i class="swatch gymburn"></i>Gym</span><span><i class="swatch otherburn"></i>Additional activity</span><span><i class="swatch eaten"></i>Food</span></div>
 <div id="period-chart"></div></section>
 <section class="food" aria-labelledby="food-day">
@@ -1083,7 +1097,7 @@ function roundEstimatedKcal(value){
   return increment*Math.round(value/increment);
 }
 function portionEstimate(meal){
-  if(!known(meal.kcal))return meal;
+  if(!known(meal.kcal)||meal.use_logged_kcal===true)return meal;
   const {kcal_low:low,kcal_high:high}=meal;
   const ranged=known(low)&&known(high)&&high>low;
   if(!ranged&&!meal.estimated)return meal;
@@ -1188,9 +1202,11 @@ function renderBalance(day,entries){
     if(b.profile.gym_test_note)description.push(b.profile.gym_test_note);
   }
   description.push(b.watch?'Your daily burn comes from the full-day total on your watch. It already includes your workouts.':'For the minutes you exercised, the estimate uses your activity calories in place of your usual seated burn.');
-  if(entries.some(m=>m.estimated)){
-    if(entries.some(m=>known(m.kcal_low)&&known(m.kcal_high)&&m.kcal_high>m.kcal_low))description.push('For a portion range, we use a point 80% of the way from the low estimate to the high one.');
-    description.push('We round food estimates of 100 kcal or more to the nearest 100, and estimates of 10 to 99 kcal to the nearest 10.');
+  if(entries.some(m=>m.use_logged_kcal===true))description.push('Meals with a chosen calorie estimate use that amount as logged.');
+  const automaticEstimates=entries.filter(m=>m.estimated&&m.use_logged_kcal!==true);
+  if(automaticEstimates.length){
+    if(automaticEstimates.some(m=>known(m.kcal_low)&&known(m.kcal_high)&&m.kcal_high>m.kcal_low))description.push('For an automatically estimated portion range, we use a point 80% of the way from the low estimate to the high one.');
+    description.push('We round automatic food estimates of 100 kcal or more to the nearest 100, and estimates of 10 to 99 kcal to the nearest 10.');
   }
   if(b.estimate) {
     const e=b.estimate;
@@ -1232,6 +1248,7 @@ function renderRecentBalances(){
   panel.append(table);
 }
 const foodDate=byId('food-date');
+const foodPeriodDays=7;
 let selectedFoodDay=null,foodViewToday='';
 function selectFoodDay(date){
   selectedFoodDay=date&&date!==todayBangkok()?date:null;
@@ -1250,10 +1267,10 @@ function foodDayButton(date,selected,group,className=''){
 function renderFoodView(){
   foodViewToday=todayBangkok();
   const day=selectedFoodDay||foodViewToday;
-  // Keep the latest three dates together, then page backward in groups of three.
+  // Anchor each seven-day period to today so selecting a row keeps the chart in place.
   const daysAgo=(Date.parse(foodViewToday)-Date.parse(day))/86400000;
-  const end=shiftDay(foodViewToday,-3*Math.floor(daysAgo/3));
-  const dates=[-2,-1,0].map(offset=>shiftDay(end,offset));
+  const end=shiftDay(foodViewToday,-foodPeriodDays*Math.floor(daysAgo/foodPeriodDays));
+  const dates=Array.from({length:foodPeriodDays},(_,i)=>shiftDay(end,i+1-foodPeriodDays));
   foodDate.value=day;
   renderFoodWeek(day>foodViewToday?foodViewToday:day);
   renderPeriod(dates,day);
@@ -1558,33 +1575,38 @@ function stepWorkout(direction) {
 byId('older-workout').onclick=()=>stepWorkout(-1);
 byId('newer-workout').onclick=()=>stepWorkout(1);
 singleWorkout.addEventListener('change',showWorkoutWindow);
-byId('prev-period').onclick=()=>selectFoodDay(shiftDay(selectedFoodDay||todayBangkok(),-3));
-byId('next-period').onclick=()=>selectFoodDay(shiftDay(selectedFoodDay||todayBangkok(),3));
+byId('prev-period').onclick=()=>selectFoodDay(shiftDay(selectedFoodDay||todayBangkok(),-foodPeriodDays));
+byId('next-period').onclick=()=>selectFoodDay(shiftDay(selectedFoodDay||todayBangkok(),foodPeriodDays));
 const dishDialog=byId('dish-photo-dialog');
 dishDialog.addEventListener('click',e=>{if(e.target===dishDialog)dishDialog.close();});
 function openDishPhoto(dish){
   byId('dish-photo-title').textContent=dish.name;
   byId('dish-photo-restaurant').textContent=dish.restaurant||'';
   byId('dish-photo-restaurant').hidden=!dish.restaurant;
-  byId('dish-photo-portion').textContent=[dish.portion, (dish.estimated?'≈ ':'')+fmt(dish.kcal)+' kcal'].filter(Boolean).join(' · ');
+  byId('dish-photo-portion').textContent=dish.menu_category==='Fruits' && Number.isFinite(dish.kcal_per_100g)
+    ? fmt(dish.kcal_per_100g)+' kcal per 100 g'
+    : [dish.portion, (dish.estimated?'≈ ':'')+fmt(dish.kcal)+' kcal'].filter(Boolean).join(' · ');
   const image=byId('dish-photo-large');
   image.classList.toggle('square',dish.photo_aspect==='square');
   image.alt=dish.name;image.src=dish.photo;
   dishDialog.showModal();
 }
+function foodOptionName(o){
+  const dish=element('td'),layout=element('div','option-dish');
+  if(typeof o.photo==='string' && (o.photo.startsWith('data:image/webp;base64,') || /^\/photos\/[a-f0-9]{64}\.webp$/.test(o.photo))){
+    const button=element('button','option-thumb');
+    button.type='button';button.setAttribute('aria-haspopup','dialog');
+    button.setAttribute('aria-label','Enlarge photo of '+o.name);
+    const photo=element('img');photo.loading='lazy';photo.src=o.photo;photo.alt='';
+    button.append(photo);button.onclick=()=>openDishPhoto(o);
+    layout.append(button);
+  }
+  layout.append(element('strong','',o.name));
+  dish.append(layout);
+  return dish;
+}
 function foodOptionRow(o,density=null){
-    const row=element('tr'),dish=element('td');
-    const layout=element('div','option-dish');
-    if(typeof o.photo==='string' && (o.photo.startsWith('data:image/webp;base64,') || /^\/photos\/[a-f0-9]{64}\.webp$/.test(o.photo))){
-      const button=element('button','option-thumb');
-      button.type='button';button.setAttribute('aria-haspopup','dialog');
-      button.setAttribute('aria-label','Enlarge photo of '+o.name);
-      const photo=element('img');photo.loading='lazy';photo.src=o.photo;photo.alt='';
-      button.append(photo);button.onclick=()=>openDishPhoto(o);
-      layout.append(button);
-    }
-    layout.append(element('strong','',o.name));
-    dish.append(layout);
+    const row=element('tr'),dish=foodOptionName(o);
     const calories=element('td');
     if(density!==null){
       const values=element('div','menu-calories');
@@ -1626,17 +1648,44 @@ function appendAlcoholOptions(body,dishes){
     appendComparisonGroup(body,items,title,'ml',serving);
   });
 }
+function appendFruitOptions(body,fruits){
+  if(!fruits.length)return;
+  const cell=element('td','fruit-section'),table=element('table','fruit-table');
+  cell.colSpan=2;
+  table.setAttribute('aria-label','Fruit nutrition per 100 g');
+  const head=table.createTHead().insertRow(),title=element('th');
+  title.scope='col';
+  title.append(element('h3','','Fruits'),element('small','','Per 100 g'));
+  head.append(title);
+  for(const label of ['kcal','Carbs (g)','Sugar (g)','Fiber (g)']){
+    const th=element('th','',label);
+    th.scope='col';head.append(th);
+  }
+  fruits.sort((a,b)=>calorieDensity(a,'g')-calorieDensity(b,'g') || (a.menu_order ?? Infinity)-(b.menu_order ?? Infinity) || a.name.localeCompare(b.name));
+  const rows=table.createTBody();
+  for(const fruit of fruits){
+    const row=rows.insertRow(),kcal=calorieDensity(fruit,'g');
+    row.append(foodOptionName(fruit),element('td','fruit-kcal',Number.isFinite(kcal)?fmt(kcal):'—'));
+    for(const grams of [fruit.carbs_per_100g,fruit.sugar_per_100g,fruit.fiber_per_100g]){
+      row.append(element('td','fruit-grams',Number.isFinite(grams)?grams.toFixed(1):'—'));
+    }
+  }
+  cell.append(table);body.insertRow().append(cell);
+}
 function appendSupermarketOptions(body,dishes){
   body.classList.add('supermarket-menu');
-  const drinks=[],food=[];
+  const drinks=[],fruits=[],other=[];
   for(const dish of dishes){
-    if(Number.isFinite(calorieDensity(dish,'ml')))drinks.push(dish);
-    else food.push(dish);
+    if(dish.menu_category==='Fruits')fruits.push(dish);
+    else if(Number.isFinite(calorieDensity(dish,'ml')))drinks.push(dish);
+    else other.push(dish);
   }
-  for(const [items,title,unit,serving] of [[drinks,'Drinks','ml','Per drink'],[food,'Food','g','Per pack']]){
+  for(const [items,unit] of [[drinks,'ml'],[other,'g']]){
     items.sort((a,b)=>calorieDensity(a,unit)-calorieDensity(b,unit)||a.name.localeCompare(b.name));
-    appendComparisonGroup(body,items,title,unit,serving);
   }
+  appendComparisonGroup(body,drinks,'Drinks','ml','Per drink');
+  appendFruitOptions(body,fruits);
+  appendComparisonGroup(body,other,'Other','g','Per pack');
 }
 function renderFoodOptions(){
   const searchKey=value=>normalizedName(value).replace(/[’‘]/g,"'");
@@ -1644,7 +1693,7 @@ function renderFoodOptions(){
   const groups=new Map();
   for(const dish of journalData.food_options||[]){
     const restaurant=(dish.restaurant||'').trim();
-    if(!searchKey([dish.name,dish.portion,restaurant].join(' ')).includes(query))continue;
+    if(!searchKey([dish.name,dish.portion,restaurant,dish.menu_category].join(' ')).includes(query))continue;
     const key=searchKey(restaurant);
     if(!groups.has(key))groups.set(key,{restaurant,dishes:[]});
     groups.get(key).dishes.push(dish);
