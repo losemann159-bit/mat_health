@@ -508,6 +508,106 @@
       "total_reps": 263,
       "notes": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg\n\nreverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg\n\nRow Machine 12x 41kg\nRow Machine 12x 41kg\n\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n\n5×20 Squat Wall Ball (9kg)",
       "highlight": "14 strength sets and 163 reps for 4,990 kg, followed by 100 squats with a 9 kg wall ball. 263 reps overall."
+    },
+    {
+      "id": "fitness-467fe489-7cef-4abb-b04b-651d06da97dd",
+      "date": "2026-11-13",
+      "source": "Fitness log record, Friday 13 November. Original exercise reports, block heart rate, session duration and Apple Watch total.",
+      "title": "SkiErg, Assault Bike, leg press, back and core",
+      "notes": "4x 500m SkiErg\n5x 15 cal Assault Bike\n12x Leg Press 125kg\n12x Leg Press 150kg\n12x Leg Press 165kg\n\nno break 35 minutes\npeak heart 165\naverage 146\n7 out of 10 and now continue\n\n12x Dual Handle Pull 41kg\n12x Dual Handle Pull 41kg\n12x Dual Handle Pull 41kg\n\n20x Abdominal 40kg\n20x Abdominal 50kg\n20x Abdominal 50kg",
+      "minutes": 60,
+      "total_kcal": 930,
+      "incomplete": false,
+      "rating": 9,
+      "effort": 7,
+      "effort_scope": "After the 35-minute conditioning and leg press block",
+      "muscles": [
+        "quads",
+        "glutes",
+        "back",
+        "core"
+      ],
+      "exercises": [
+        {
+          "name": "SkiErg",
+          "detail": "4x 500m SkiErg",
+          "unit": "m",
+          "sets": [
+            500,
+            500,
+            500,
+            500
+          ],
+          "block": {
+            "name": "Conditioning and leg press",
+            "detail": "SkiErg, Assault Bike and leg press together: no break 35 minutes; peak heart 165, average 146. Exhaustion after this block: 7 out of 10.",
+            "minutes": 35,
+            "average_hr": 146,
+            "peak_hr": 165
+          }
+        },
+        {
+          "name": "Assault Bike",
+          "detail": "5x 15 cal Assault Bike",
+          "unit": "cal",
+          "sets": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "name": "Leg Press",
+          "detail": "12x Leg Press 125kg\n12x Leg Press 150kg\n12x Leg Press 165kg",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "loads_kg": [
+            125,
+            150,
+            165
+          ]
+        },
+        {
+          "name": "Dual Handle Pull",
+          "detail": "12x Dual Handle Pull 41kg\n12x Dual Handle Pull 41kg\n12x Dual Handle Pull 41kg",
+          "unit": "reps",
+          "sets": [
+            12,
+            12,
+            12
+          ],
+          "load": "41 kg every set",
+          "block": {
+            "name": "Strength",
+            "detail": "Dual Handle Pull and Abdominal Machine after the 35-minute block. The remaining 25 minutes are derived from the reported 60-minute total."
+          }
+        },
+        {
+          "name": "Abdominal Machine",
+          "detail": "20x Abdominal 40kg\n20x Abdominal 50kg\n20x Abdominal 50kg",
+          "unit": "reps",
+          "sets": [
+            20,
+            20,
+            20
+          ],
+          "loads_kg": [
+            40,
+            50,
+            50
+          ]
+        }
+      ],
+      "strength_sets": 9,
+      "strength_reps": 132,
+      "machine_volume_kg": 9556,
+      "highlight": "35 minutes of continuous conditioning and leg press. Heaviest leg press set: 12 reps at 165 kg."
     }
   ],
   "attendance": {
@@ -913,6 +1013,235 @@
       "use_logged_kcal": true,
       "estimate_basis": "Midpoint of the supplied 25-35 kcal range for one piece. The screenshot gives a snack rating of 7/10.",
       "source": "Mat confirmed the snack estimate from the screenshot in the tracker chat."
+    },
+    {
+      "id": "chat-2026-11-12-breakfast-991ab4f0-9c21-4179-a9cf-bc74b0cbfc4e",
+      "date": "2026-11-12",
+      "source": "Mat identified the pictured meal as his breakfast in the tracker chat.",
+      "name": "Breakfast: dory fish, dark rice and pumpkin",
+      "portion": "About 150 g cooked dory fish, 2 tablespoons of dark rice and 150 g pumpkin. Estimate includes cooking oil and seasoning.",
+      "estimated": true,
+      "kcal": 310,
+      "protein_g": 30,
+      "estimate_basis": "Dory fish 160 kcal and 27 g protein, dark rice 35 kcal and 1 g protein, pumpkin 65 kcal and 2 g protein, cooking oil and seasoning 50 kcal. Assumes minimal oil. Screenshot food rating 9.5/10."
+    },
+    {
+      "id": "chat-2026-11-12-snack-i-did-have-a-bifi-today",
+      "date": "2026-11-12",
+      "source": "Mat reported having one BiFi today in the tracker chat.",
+      "name": "Snack: BiFi salami stick",
+      "portion": "1 stick, assumed BiFi Original (22.5 g).",
+      "kcal": 116,
+      "estimated": true,
+      "protein_g": 5.4,
+      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1"
+    },
+    {
+      "id": "chat-2026-11-12-drink-4497a529-c17d-4c40-8eec-970a6c5b48e6",
+      "date": "2026-11-12",
+      "source": "Mat reported drinking the Meiji bottle shown in the tracker chat.",
+      "name": "Meiji High Protein banana milk",
+      "portion": "1 bottle (350 ml)",
+      "estimated": false,
+      "kcal": 210,
+      "kcal_low": 210,
+      "kcal_high": 210,
+      "protein_g": 33,
+      "use_logged_kcal": true,
+      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein."
+    },
+    {
+      "id": "chat-2026-11-12-meal-0ddd4f1c-a6be-4fff-b5a4-a404970da689",
+      "date": "2026-11-12",
+      "source": "Mat reported eating the grilled salmon plate shown in the tracker chat.",
+      "name": "Grilled salmon with vegetables and corn",
+      "portion": "1 full plate: 160-180 g grilled salmon, 150 g broccoli, 70 g green beans, 100 g carrots and half a cob of corn, with seasoning and minimal oil.",
+      "estimated": true,
+      "kcal": 520,
+      "kcal_low": 450,
+      "kcal_high": 600,
+      "use_logged_kcal": true,
+      "protein_g_low": 42,
+      "protein_g_high": 48,
+      "carbs_g_low": 30,
+      "carbs_g_high": 35,
+      "fat_g_low": 22,
+      "fat_g_high": 28,
+      "fiber_g_low": 9,
+      "fiber_g_high": 12,
+      "estimate_basis": "Full-plate estimate from the screenshot: salmon 350 kcal, broccoli 50, green beans 25, carrots 40, corn 45 and oil/seasoning 10, totaling 520 kcal."
+    },
+    {
+      "date": "2026-11-13",
+      "id": "chat-2026-11-13-ba84db30-00d4-4609-bfa9-dec44d40df32-plate",
+      "source": "Mat supplied the chicken meal estimate with the breakfast drink report in the tracker chat.",
+      "name": "Chicken breast with mashed potatoes, broccoli and carrots",
+      "portion": "Chicken breast (300 g weighed raw), 130 g mashed potatoes, 120 g broccoli and 80 g carrots, with cooking oil and seasoning.",
+      "kcal": 620,
+      "protein_g": 76,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Screenshot itemizes chicken 360 kcal and 69 g protein, mashed potatoes 170 kcal and 3 g, broccoli 40 kcal and 3 g, carrots 30 kcal and 1 g, and oil/seasoning 20 kcal."
+    },
+    {
+      "id": "chat-2026-11-13-ba84db30-00d4-4609-bfa9-dec44d40df32-milk",
+      "date": "2026-11-13",
+      "source": "Mat reported the same protein milk as yesterday for breakfast.",
+      "name": "Breakfast: Meiji High Protein banana milk",
+      "portion": "1 bottle (350 ml)",
+      "estimated": false,
+      "kcal": 210,
+      "kcal_low": 210,
+      "kcal_high": 210,
+      "protein_g": 33,
+      "use_logged_kcal": true,
+      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein."
+    },
+    {
+      "id": "fitness-b1a4dd40-602a-47ec-8df1-96c89094308a-cognac",
+      "date": "2026-11-13",
+      "source": "Mat identified these as the after-dinner Martell pours and supplied the revised portion estimate in the tracker chat. Reported after midnight in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
+      "name": "Martell VSOP cognac",
+      "portion": "10 small pours, estimated at 10 ml each (100 ml total).",
+      "kcal": 220,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "The updated screenshot estimates 220 kcal for 100 ml of Martell VSOP at 40% ABV. The per-pour volume is approximate."
+    },
+    {
+      "id": "fitness-b1a4dd40-602a-47ec-8df1-96c89094308a-cocktail",
+      "date": "2026-11-13",
+      "source": "Fitness log record, drinks from Friday night reported at 01:59 Saturday in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
+      "name": "Sweet cocktail mix",
+      "portion": "1 full shot",
+      "kcal": 100,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Fitness log estimate of 100 kcal. Recipe and volume unspecified."
+    },
+    {
+      "id": "chat-2026-11-13-dinner-4970a9c1-e882-4264-a7d1-3e68d6e64b71",
+      "date": "2026-11-13",
+      "source": "Mat identified the pictured sandwich and salad as dinner before the Friday-night drinks.",
+      "name": "Dinner: open-faced grilled chicken sandwich",
+      "portion": "Bottom slice of bread, grilled chicken, rocket and vegetables, with some sauce or cooking oil.",
+      "kcal": 400,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Screenshot estimate in kcal: bottom slice of bread 150, chicken 200, rocket and vegetables 10, sauce or oil 40."
+    },
+    {
+      "id": "chat-2026-11-13-dinner-e9220e18-e96f-4cf1-b08e-8132705af15e",
+      "date": "2026-11-13",
+      "source": "Mat identified the pictured sandwich and salad as dinner before the Friday-night drinks.",
+      "name": "Dinner: salad with walnuts, cheese and dressing",
+      "portion": "1 full bowl.",
+      "kcal": 450,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "protein_g_low": 12,
+      "protein_g_high": 17,
+      "carbs_g_low": 35,
+      "carbs_g_high": 45,
+      "fat_g_low": 25,
+      "fat_g_high": 30,
+      "fiber_g_low": 6,
+      "fiber_g_high": 9,
+      "estimate_basis": "Supplied estimate of 450 kcal for the full salad, including walnuts, cheese and dressing."
+    },
+    {
+      "id": "chat-2026-11-14-bifi-when-i-came-home",
+      "date": "2026-11-13",
+      "source": "Mat reported eating one BiFi when he came home on Saturday. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
+      "name": "Snack: BiFi salami stick",
+      "portion": "1 stick after coming home, assumed BiFi Original (22.5 g).",
+      "kcal": 116,
+      "estimated": true,
+      "protein_g": 5.4,
+      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1"
+    },
+    {
+      "id": "chat-2026-11-13-one-singha-beer-on-friday",
+      "date": "2026-11-13",
+      "source": "Mat reported one Singha on Friday in the tracker chat.",
+      "name": "Singha beer",
+      "portion": "1 bottle (630 ml)",
+      "kcal": 230,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "630 ml at 37 kcal per 100 ml gives 233.1 kcal. https://carlsbergsverige.se/produkter/singha/singha/"
+    },
+    {
+      "portion": "1 bottle (350 ml)",
+      "kcal": 210,
+      "kcal_low": 210,
+      "kcal_high": 210,
+      "protein_g": 33,
+      "estimated": false,
+      "use_logged_kcal": true,
+      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein.",
+      "date": "2026-11-13",
+      "source": "Mat reported one Meiji protein milk and one protein bar for Friday lunch and asked to use the previous entries.",
+      "id": "chat-2026-11-13-lunch-meiji-and-bar-milk",
+      "name": "Lunch: Meiji High Protein banana milk"
+    },
+    {
+      "kcal": 200,
+      "protein_g": 20,
+      "estimated": true,
+      "date": "2026-11-13",
+      "source": "Mat reported one Meiji protein milk and one protein bar for Friday lunch and asked to use the previous entries.",
+      "id": "chat-2026-11-13-lunch-meiji-and-bar-bar",
+      "name": "Lunch: protein bar",
+      "portion": "1 bar",
+      "estimate_basis": "Same estimate as the previous lunch protein bar on 11 November: about 200 kcal and 20 g protein."
+    },
+    {
+      "id": "chat-2026-11-14-lunch-aca0e336-f958-4c84-aa0c-ed207a31bfea",
+      "date": "2026-11-14",
+      "source": "Mat identified the pictured shrimp plate as lunch in the tracker chat.",
+      "name": "Lunch: shrimp with mashed potatoes, broccoli and carrots",
+      "portion": "12 medium shrimp (100 g edible), 150 g mashed potatoes, 150 g broccoli and 100 g carrots, with cooking oil and seasoning.",
+      "kcal": 440,
+      "protein_g": 32,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Supplied estimate: shrimp 100 kcal, mashed potatoes 195 kcal, broccoli 50 kcal, carrots 40 kcal, and cooking oil and seasoning 55 kcal. Food rating in the supplied estimate: 9/10."
+    },
+    {
+      "id": "chat-2026-11-14-dinner-1b6d137d-440b-40e4-a248-a4d6d7bcdd00",
+      "date": "2026-11-14",
+      "source": "Mat confirmed eating the Saturday dinner as pictured, without chili oil.",
+      "name": "Dinner: rosemary chicken, Turkish eggs and sourdough",
+      "portion": "250 g rosemary chicken, Turkish eggs with yogurt, and sourdough bread. No chili oil.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "kcal": 740,
+      "protein_g": 87,
+      "estimate_basis": "Supplied estimate: chicken 300 kcal and 57 g protein, Turkish eggs with yogurt 280 kcal and 25 g protein, sourdough 160 kcal and 5 g protein."
+    },
+    {
+      "id": "chat-2026-11-14-salami-one-of-four-488-per-100g",
+      "date": "2026-11-14",
+      "source": "Mat reported eating one of four salami pieces in a 200 g pack, labelled 488 kcal per 100 g.",
+      "name": "Snack: salami",
+      "portion": "1 of 4 pieces from a 200 g pack, approximately 50 g.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "kcal": 244,
+      "estimate_basis": "Assuming four equal pieces, one piece weighs 50 g. At 488 kcal per 100 g, one piece is 244 kcal."
+    },
+    {
+      "id": "chat-2026-11-15-breakfast-62a4a540-7dc2-4d8c-b72d-3a29a283525a",
+      "date": "2026-11-15",
+      "source": "Mat identified the pictured meal as breakfast in the tracker chat.",
+      "name": "Breakfast: shrimp, boiled eggs, Japanese pumpkin and corn",
+      "portion": "14 medium shrimp, 2 boiled eggs, 250 g Japanese pumpkin and 2 small pieces of corn.",
+      "kcal": 510,
+      "protein_g": 54,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Photo estimate assumes no added oil or sauce. Shrimp: 155 kcal and 34 g protein. Eggs: 150 kcal and 13 g. Pumpkin: 125 kcal and 4 g. Corn: 80 kcal and 3 g. Food rating shown: 9.5/10."
     }
   ],
   "energy_profiles": [
@@ -982,7 +1311,80 @@
           }
         ]
       },
-      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn."
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "baseline_kcal": 2600,
+      "baseline_note": "2,600 kcal seated baseline applied back to 6 November at Mat's request on 12 November."
+    },
+    {
+      "id": "2026-11-12",
+      "date": "2026-11-12",
+      "source": "Mat chose a seated-day baseline of 2,600 kcal in the tracker chat on 12 November.",
+      "kg": 127,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0-2.5 L daily",
+            "kcal": 0,
+            "water_ml": 2250,
+            "water_ml_low": 2000,
+            "water_ml_high": 2500
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "baseline_kcal": 2600
+    },
+    {
+      "id": "2026-11-06",
+      "date": "2026-11-06",
+      "source": "Mat requested on 12 November that the 2,600 kcal seated baseline cover the full 6-12 November chart.",
+      "kg": 127,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0 L · daily usual",
+            "kcal": 0,
+            "water_ml": 2000
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "baseline_kcal": 2600,
+      "baseline_note": "2,600 kcal seated baseline applied back to 6 November at Mat's request on 12 November."
     }
   ],
   "activities": [
@@ -995,6 +1397,24 @@
       "estimated": true,
       "source": "Fitness log record · Friday final activity summary",
       "note": "Previously logged as about 450 kcal with 50–55 active minutes. Calculation uses 52.5 active minutes."
+    },
+    {
+      "id": "fitness-6d2505f3-c995-49ef-9050-6e585175a189",
+      "date": "2026-11-13",
+      "source": "Fitness log record, Friday night outing, reported at 01:59 Saturday in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
+      "name": "Dancing",
+      "minutes": 90,
+      "total_kcal": 685,
+      "note": "Apple Watch session calories. Friday night into Saturday."
+    },
+    {
+      "id": "fitness-c66295dd-8a94-42bf-bd4a-4c3c8d02da16",
+      "date": "2026-11-13",
+      "source": "Fitness log record, reported at 03:24 Saturday in Bangkok. Mat confirmed in the tracker chat this was extra cardio in addition to dancing. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
+      "name": "Extra cardio",
+      "minutes": 42,
+      "total_kcal": 321,
+      "note": "Separate cardio session after dancing. Apple Watch session calories."
     }
   ],
   "daily_energy": [
@@ -1037,6 +1457,31 @@
       "id": "2026-11-11",
       "intake_complete": true,
       "source": "Mat asked to close the day after adding the snack."
+    },
+    {
+      "id": "2026-11-12",
+      "date": "2026-11-12",
+      "source": "Mat asked in tracker chat to add a second BiFi planned for later and then close the day.",
+      "intake_complete": true,
+      "intake_note": "Planned for later: 1 more BiFi stick (about 116 kcal, assuming a 22.5 g Original)."
+    },
+    {
+      "id": "2026-11-13",
+      "date": "2026-11-13",
+      "source": "Mat reported his morning weight after breakfast in Fitness log record on 13 November. Mat asked to close Friday after reporting his dinner. Mat rated Friday's overall fitness 9/10.",
+      "weight_kg": 116.5,
+      "weight_note": "Morning weigh-in after breakfast.",
+      "intake_complete": true,
+      "training_review": {
+        "score": 9,
+        "note": "Mat rated Friday's overall fitness 9/10."
+      }
+    },
+    {
+      "id": "2026-11-14",
+      "date": "2026-11-14",
+      "source": "Mat asked to close Saturday in the tracker chat.",
+      "intake_complete": true
     }
   ],
   "exercise_library": [
@@ -1075,6 +1520,32 @@
       "unit": "m",
       "load_unit": "kg",
       "sled_kg": 35
+    },
+    {
+      "name": "Leg Press",
+      "id": "leg-press",
+      "section": "strength",
+      "focus": "Quads · Glutes",
+      "date": "2026-11-14",
+      "source": "Tracker chat correction to the categories shown for the 13 November gym session."
+    },
+    {
+      "name": "SkiErg",
+      "id": "skierg",
+      "section": "cardio",
+      "unit": "m",
+      "focus": "Aerobic endurance · Lats & core",
+      "date": "2026-11-14",
+      "source": "Tracker chat correction to the categories shown for the 13 November gym session."
+    },
+    {
+      "name": "Assault Bike",
+      "id": "assault-bike",
+      "section": "cardio",
+      "unit": "cal",
+      "focus": "Aerobic endurance · Arms & legs",
+      "date": "2026-11-14",
+      "source": "Tracker chat correction to the categories shown for the 13 November gym session."
     }
   ],
   "food_options": [

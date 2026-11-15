@@ -769,6 +769,18 @@ function exerciseKey(exercise) {
   return id?'id:'+id:'name:'+normalizedName(exercise.name);
 }
 function exerciseLabel(exercise) { return libraryExercise(exercise)?.name||activityName(exercise.name); }
+function* exercisesWithSections(workout) {
+  let blockSection;
+  for (const exercise of workout.exercises||[]) {
+    const block=exercise.block?.name;
+    if (block) {
+      blockSection=/^cardio\b/i.test(block)?'cardio':/^(strength|core)\b/i.test(block)?'strength':undefined;
+    }
+    const entry=libraryExercise(exercise);
+    const section=entry?.section||blockSection||(['m','cal','min'].includes(exercise.unit)?'cardio':'strength');
+    yield {exercise,entry,section};
+  }
+}
 function displayWeightText(text) {
   // A history note can list several weights before a single kg unit.
   return (text || '').replace(/\d+(?:\.\d+)?(?:\s*(?:,|and|\/|→|–)\s*\d+(?:\.\d+)?)*\s*kg\b/gi,
@@ -1003,13 +1015,8 @@ function card(w, previous, activities) {
   head.append(map);
   n.append(head);
   const blocks=new Map();
-  let name='Exercises';
-  for (const exercise of w.exercises||[]) {
-    if (exercise.block?.name) {
-      name=exercise.block.name;
-      if (/^cardio\b/i.test(name)) name='Cardio';
-      else if (/^(strength|core)\b/i.test(name)) name='Strength & Core';
-    }
+  for (const {exercise,section} of exercisesWithSections(w)) {
+    const name=section==='cardio'?'Cardio':'Strength & Core';
     if (!blocks.has(name)) blocks.set(name,[]);
     blocks.get(name).push(exercise);
   }
@@ -1020,7 +1027,7 @@ function renderWorkoutBoard(cards) {
   grid.style.setProperty('--workout-count',Math.max(1,cards.length));
   grid.replaceChildren(...cards.map(card=>card.header));
   const sections=new Set(cards.flatMap(card=>[...card.blocks.keys()]));
-  for (const name of new Set(['Cardio','Strength & Core',...sections])) {
+  for (const name of ['Cardio','Strength & Core']) {
     if (!sections.has(name)) continue;
     const strength=name==='Strength & Core';
     const block=element('section','exercise-block');
@@ -1064,7 +1071,7 @@ function renderWorkoutBoard(cards) {
     for(const card of cards){
       const list=element('ul','additional-list');
       list.setAttribute('aria-label',card.date+' · Additional');
-      for(const a of card.activities){
+      for(const a of activityRows(card.activities)){
         const item=element('li'),label=element('span');
         if(known(a.minutes))label.append(element('span','set-count',fmt(a.minutes)+'min'),' ');
         label.append(activityName(a.name));
@@ -1117,10 +1124,10 @@ function activityDetails(a){
 function spanText(low,high){
   return Math.round(low)===Math.round(high)?fmt(low):fmt(low)+'–'+fmt(high);
 }
-function roundEstimatedKcal(value){
+function roundEstimatedKcal(value,round=Math.round){
   if(!known(value))return null;
   const increment=value>=100?100:value>=10?10:1;
-  return increment*Math.round(value/increment);
+  return increment*round(value/increment);
 }
 function portionEstimate(meal){
   if(!known(meal.kcal)||meal.use_logged_kcal===true)return meal;
@@ -1159,6 +1166,19 @@ function activityTotals(activities){
   }
   return {minutes,kcal};
 }
+function activityRows(activities){
+  const names=['dancing','extra cardio','extra corriculum'];
+  const outing=activities.filter(a=>names.includes(normalizedName(a.name)));
+  if(!outing.length)return activities;
+  const first=outing[0];
+  let row={...first,name:'Extra Corriculum'};
+  if(outing.length>1){
+    const {minutes,kcal}=activityTotals(outing);
+    row={name:'Extra Corriculum',date:first.date,minutes,total_kcal:kcal,
+      estimated:outing.some(a=>a.estimated||!known(a.total_kcal))};
+  }
+  return activities.filter(a=>a===first||!outing.includes(a)).map(a=>a===first?row:a);
+}
 function calorieBalance(day, data, ledger=data===journalData?gymAttendance:gymLedger(data)){
   const profile=profileForDay(day,data);
   const dayLog=(data.daily_energy||[]).find(d=>d.date===day)||{};
@@ -1171,10 +1191,11 @@ function calorieBalance(day, data, ledger=data===journalData?gymAttendance:gymLe
   const dailyFood=known(dayLog.full_day_intake_kcal);
   const foodKnown=dailyFood||recorded.length>0;
   const foodMissing=!dailyFood&&foods.length!==recorded.length;
-  const intake=dailyFood?dayLog.full_day_intake_kcal:recorded.reduce((sum,m)=>sum+m.kcal,0);
+  const foodTotal=dailyFood?dayLog.full_day_intake_kcal:recorded.reduce((sum,m)=>sum+m.kcal,0);
+  const intake=roundEstimatedKcal(foodTotal,Math.ceil);
   const complete=dailyFood||dayLog.intake_complete===true;
   const resting=restingKcal(profile);
-  const baseline=profile?resting*profile.pal:null;
+  const baseline=profile?(profile.baseline_kcal??resting*profile.pal):null;
   let modeled=baseline;
   let gymAdded=0,otherAdded=0;
   let minutes=0;
@@ -1224,8 +1245,12 @@ function renderBalance(day,entries){
   const description=[];
   if(b.profile){
     description.push('Your daily baseline includes resting calories, everyday movement and digestion.');
-    description.push('At '+b.profile.kg+' kg, '+b.profile.cm+' cm and age '+b.profile.age+', the '+b.profile.equation+' Mifflin-St Jeor formula estimates '+kcal(roundEstimatedKcal(b.resting))+' at rest. We multiply the unrounded estimate by '+b.profile.pal+' for a mostly seated day.');
-    if(b.profile.gym_test_note)description.push(b.profile.gym_test_note);
+    if(known(b.profile.baseline_kcal)){
+      description.push('You set your mostly seated daily baseline to '+kcal(b.baseline)+'.');
+    }else{
+      description.push('At '+b.profile.kg+' kg, '+b.profile.cm+' cm and age '+b.profile.age+', the '+b.profile.equation+' Mifflin-St Jeor formula estimates '+kcal(roundEstimatedKcal(b.resting))+' at rest. We multiply the unrounded estimate by '+b.profile.pal+' for a mostly seated day.');
+      if(b.profile.gym_test_note)description.push(b.profile.gym_test_note);
+    }
   }
   description.push(b.watch?'Your daily burn comes from the full-day total on your watch. It already includes your workouts.':'For the minutes you exercised, the estimate uses your activity calories in place of your usual seated burn.');
   if(entries.some(m=>m.use_logged_kcal===true))description.push('Meals with a chosen calorie estimate use that amount as logged.');
@@ -1234,6 +1259,7 @@ function renderBalance(day,entries){
     if(automaticEstimates.some(m=>known(m.kcal_low)&&known(m.kcal_high)&&m.kcal_high>m.kcal_low))description.push('For an automatically estimated portion range, we use a point 80% of the way from the low estimate to the high one.');
     description.push('We round automatic food estimates of 100 kcal or more to the nearest 100, and estimates of 10 to 99 kcal to the nearest 10.');
   }
+  description.push('Daily food totals round up to the next 100 kcal, or to the next 10 kcal for totals from 10 to under 100. The calorie balance uses that rounded total.');
   if(b.estimate) {
     const e=b.estimate;
     description.push('We estimate this gym session at '+fmt(e.total_kcal)+' kcal over '+spanText(e.minutes_low,e.minutes_high)+' minutes.');
@@ -1242,7 +1268,7 @@ function renderBalance(day,entries){
   byId('energy-method').replaceChildren(...description.map(text=>element('p','',text)));
   const extraList=byId('extra-list');extraList.replaceChildren();
   if(!b.extra.length)extraList.append(element('p','','No other activity logged.'));
-  for(const a of b.extra){
+  for(const a of activityRows(b.extra)){
     extraList.append(element('p','',[activityName(a.name),activityDetails(a)].filter(Boolean).join(' · ')));
   }
 }
@@ -1329,7 +1355,9 @@ function renderFood(day){
     }else amount.textContent='Unknown';
     line.append(name,amount);list.append(line);
   }
-  if(entries.length>counted.length&&!known((journalData.daily_energy||[]).find(d=>d.date===day)?.full_day_intake_kcal))list.append(element('small','key','The food total counts entries with known calories.'));
+  const dayLog=(journalData.daily_energy||[]).find(d=>d.date===day);
+  if(entries.length>counted.length&&!known(dayLog?.full_day_intake_kcal))list.append(element('small','key','The food total counts entries with known calories.'));
+  if(dayLog?.intake_note)list.append(element('p','key',dayLog.intake_note));
 }
 foodDate.addEventListener('change',()=>selectFoodDay(foodDate.value));
 function shiftDay(date,offset){
@@ -1487,6 +1515,15 @@ function foodWeek(end,data,ledger){
     totals.eaten+=b.intake;
     totals.burn+=b.burn;
     if(!known(b.resting)||(ledger.days.get(date)==='attended'&&!b.sessions.length))continue;
+    if(!b.watch&&known(b.profile?.baseline_kcal)){
+      // Use the same baseline and rounded daily burn as the daily chart.
+      const base=roundEstimatedKcal(b.baseline);
+      if(b.burn<base)continue;
+      totals.active+=b.burn-base;
+      totals.resting+=Math.min(b.resting,base);
+      totals.splitDays++;
+      continue;
+    }
     // Remove the resting energy already counted during each recorded activity.
     let active=0;
     for(const activity of [...b.sessions,...b.extra]){
@@ -1526,7 +1563,7 @@ function renderFoodWeek(end){
   byId('week-totals').replaceChildren(
     metric('Total burned',w.days?burn:null),
     metric('Daily baseline',split?burn-active:null,'Resting calories, everyday movement and digestion across the logged days.'),
-    metric('Active exercise',split?active:null,'Energy above rest during logged workouts and additional activities.'),
+    metric('Active exercise',split?active:null,'Additional calories attributed to logged workouts and other activities.'),
     metric('Food & drinks',w.days?w.eaten:null),
     metric(balanceLabel,w.days?Math.abs(net):null)
   );
@@ -1841,14 +1878,11 @@ const initialJournalLoad=refresh();
     const items=new Map();
     const logs=[...(journalData.workouts||[])].sort((a,b)=>a.date.localeCompare(b.date));
     for(const workout of logs){
-      let section='strength';
-      for(const e of workout.exercises||[]){
-        if(e.block?.name)section=/^cardio/i.test(e.block.name)?'cardio':'strength';
+      for(const {exercise:e,entry,section} of exercisesWithSections(workout)){
         if(!e.name)continue;
         const name=exerciseLabel(e), sets=Array.isArray(e.sets)?e.sets:[];
-        const entry=libraryExercise(e);
         const loads=sets.length?recordedWeights(e)?.weights:null;
-        const item={name,section:entry?.section||section,exercise_id:entry?.id||e.exercise_id,
+        const item={name,section,exercise_id:entry?.id||e.exercise_id,
           focus:entry?.focus||focus[activityName(e.name)]||(e.muscles||[]).map(m=>names[m]||m).join(' · ')};
         if(item.section==='strength')item.sets=sets.map((reps,i)=>({reps,kg:loads?.[i]??null}));
         else Object.assign(item,{rounds:sets.length||null,target:sets[0]??null,unit:e.unit||entry?.unit||'min',kg:loads?.[0]??null,plates_kg:e.plates_kg,

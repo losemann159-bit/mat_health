@@ -47,6 +47,9 @@ def record(workout, folder, collection='workouts'):
             if not isinstance(review.get('note'), str) or not review['note'].strip():
                 raise ValueError('Include the chat review explaining the score')
     if collection == 'energy_profiles':
+        baseline = workout.get('baseline_kcal')
+        if baseline is not None and (not numeric(baseline) or baseline == 0):
+            raise ValueError('Provide a positive daily baseline in kcal')
         if workout.get('equation') not in ('male','female') or not all(numeric(workout.get(k)) and workout[k]>0 for k in ('kg','cm','age','pal')):
             raise ValueError('Provide the equation, weight, height, age and activity factor')
     if collection == 'activities':
