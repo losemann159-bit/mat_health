@@ -608,6 +608,158 @@
       "strength_reps": 132,
       "machine_volume_kg": 9556,
       "highlight": "35 minutes of continuous conditioning and leg press. Heaviest leg press set: 12 reps at 165 kg."
+    },
+    {
+      "id": "fitness-786ec643-463d-4d25-ab08-217e1ec992ff",
+      "date": "2026-11-16",
+      "source": "Mat's 16 November exercise-by-exercise report and final workout summary; duration, Apple Watch calories and heart rate confirmed in the Fitness log.",
+      "title": "Strength and SkiErg",
+      "minutes": 76,
+      "total_kcal": 750,
+      "average_hr": 119,
+      "peak_hr": 162,
+      "rating": 8.5,
+      "performance_ratings": {
+        "strength_performance": 9.5
+      },
+      "muscles": [
+        "quads",
+        "glutes",
+        "shoulders",
+        "chest",
+        "back",
+        "core"
+      ],
+      "incomplete": false,
+      "exercises": [
+        {
+          "name": "Dumbbell Squat + Raise",
+          "detail": "10x squad and raise dumbbell at 8kg per hand\n8x squad and raise dumbbell at 14kg per hand\n8x squad and raise dumbbell at 14kg per hand",
+          "sets": [
+            10,
+            8,
+            8
+          ],
+          "unit": "reps",
+          "loads_kg": [
+            8,
+            14,
+            14
+          ],
+          "load": "per hand",
+          "muscles": [
+            "quads",
+            "glutes",
+            "shoulders"
+          ],
+          "block": {
+            "name": "Strength",
+            "detail": "Dumbbell squat and raise, bench press, single handle lat pull, Pendlay row and abdominal machine.",
+            "rating": 9.5
+          }
+        },
+        {
+          "name": "Barbell Bench Press",
+          "exercise_id": "barbell-bench-press",
+          "detail": "10x bench press 20kg\n5x bench press 40kg\n5x bench press 50kg\n3x bench press 60kg\n3x bench press 60kg\n27x bench press 40kg",
+          "unit": "reps",
+          "sets": [
+            10,
+            5,
+            5,
+            3,
+            3,
+            27
+          ],
+          "loads_kg": [
+            20,
+            40,
+            50,
+            60,
+            60,
+            40
+          ],
+          "muscles": [
+            "chest"
+          ]
+        },
+        {
+          "name": "Single Handle Lat Pull",
+          "detail": "10 x single handle lat pull 27kg\n10 x single handle lat pull 34kg\n12 x single handle lat pull 47.5kg\n12 x single handle lat pull 47.5kg",
+          "unit": "reps",
+          "sets": [
+            10,
+            10,
+            12,
+            12
+          ],
+          "loads_kg": [
+            27,
+            34,
+            47.5,
+            47.5
+          ],
+          "muscles": [
+            "back"
+          ]
+        },
+        {
+          "name": "Pendlay Row",
+          "detail": "15x pennley row 20kg\n10x pennley row 30kg\n10x pennley row 30kg",
+          "unit": "reps",
+          "sets": [
+            15,
+            10,
+            10
+          ],
+          "loads_kg": [
+            20,
+            30,
+            30
+          ],
+          "muscles": [
+            "back"
+          ]
+        },
+        {
+          "name": "Abdominal Machine",
+          "detail": "10x abdominal 22.5 kg\n10x abdominal 41.5 kg\n10x abdominal 41.5 kg",
+          "unit": "reps",
+          "sets": [
+            10,
+            10,
+            10
+          ],
+          "loads_kg": [
+            22.5,
+            41.5,
+            41.5
+          ],
+          "muscles": [
+            "core"
+          ]
+        },
+        {
+          "name": "SkiErg",
+          "exercise_id": "skierg",
+          "detail": "2x 500m skierg",
+          "unit": "m",
+          "sets": [
+            500,
+            500
+          ],
+          "block": {
+            "name": "Cardio",
+            "detail": "Finished the session with two 500 m SkiErg intervals."
+          }
+        }
+      ],
+      "strength_sets": 19,
+      "strength_reps": 188,
+      "total_reps": 188,
+      "machine_volume_kg": 6403,
+      "notes": "10x squad and raise dumbbell at 8kg per hand\n8x squad and raise dumbbell at 14kg per hand\n8x squad and raise dumbbell at 14kg per hand\n\n10x bench press 20kg\n5x bench press 40kg\n5x bench press 50kg\n3x bench press 60kg\n3x bench press 60kg\n27x bench press 40kg\n\n10 x single handle lat pull 27kg\n10 x single handle lat pull 34kg\n12 x single handle lat pull 47.5kg\n12 x single handle lat pull 47.5kg\n\n15x pennley row 20kg\n10x pennley row 30kg\n10x pennley row 30kg\n\n10x abdominal 22.5 kg\n10x abdominal 41.5 kg\n10x abdominal 41.5 kg\n\n2x 500m skierg",
+      "highlight": "19 strength sets, 188 reps and 6,403 kg lifted, counting both dumbbells. Finished with 1,000 m on the SkiErg."
     }
   ],
   "attendance": {
@@ -1081,7 +1233,8 @@
       "protein_g": 76,
       "estimated": true,
       "use_logged_kcal": true,
-      "estimate_basis": "Screenshot itemizes chicken 360 kcal and 69 g protein, mashed potatoes 170 kcal and 3 g, broccoli 40 kcal and 3 g, carrots 30 kcal and 1 g, and oil/seasoning 20 kcal."
+      "estimate_basis": "Screenshot itemizes chicken 360 kcal and 69 g protein, mashed potatoes 170 kcal and 3 g, broccoli 40 kcal and 3 g, carrots 30 kcal and 1 g, and oil/seasoning 20 kcal.",
+      "meal_type": "breakfast"
     },
     {
       "id": "chat-2026-11-13-ba84db30-00d4-4609-bfa9-dec44d40df32-milk",
@@ -1278,6 +1431,53 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "For the portions eaten, the supplied estimate gives salmon 400 kcal and 43 g protein, mashed potatoes 100 kcal and 2 g, broccoli 20 kcal and 2 g, and carrots 30 kcal and 1 g. Food rating shown: 9.5/10."
+    },
+    {
+      "id": "chat-2026-11-16-af706791-e4eb-4456-aa92-1ce2149590ec-protein-bar",
+      "date": "2026-11-16",
+      "source": "Mat confirmed the 16 November food summary and identified this item as a snack.",
+      "name": "Protein bar",
+      "kcal": 200,
+      "protein_g": 20,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "portion": "1 bar",
+      "meal_type": "snack"
+    },
+    {
+      "id": "chat-2026-11-16-af706791-e4eb-4456-aa92-1ce2149590ec-tsukemen",
+      "date": "2026-11-16",
+      "source": "Mat confirmed the 16 November food summary and identified this item as dinner.",
+      "name": "Tsukemen",
+      "kcal": 495,
+      "protein_g": 29,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "meal_type": "dinner"
+    },
+    {
+      "id": "chat-2026-11-16-af706791-e4eb-4456-aa92-1ce2149590ec-sealect-tuna",
+      "date": "2026-11-16",
+      "source": "Mat confirmed the 16 November food summary and identified this item as a snack.",
+      "name": "Sealect tuna",
+      "kcal": 120,
+      "protein_g": 25,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "portion": "1",
+      "meal_type": "snack"
+    },
+    {
+      "id": "chat-2026-11-16-af706791-e4eb-4456-aa92-1ce2149590ec-tofusan",
+      "date": "2026-11-16",
+      "source": "Mat confirmed the five foods in the 16 November food summary were eaten today. Calories and protein from the supplied breakdown.",
+      "name": "Tofusan drink",
+      "kcal": 210,
+      "protein_g": 31,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "portion": "1 drink",
+      "meal_type": "drinks"
     }
   ],
   "energy_profiles": [
@@ -1523,6 +1723,12 @@
       "id": "2026-11-15",
       "date": "2026-11-15",
       "source": "Mat confirmed Sunday's food log was complete in the tracker chat.",
+      "intake_complete": true
+    },
+    {
+      "id": "2026-11-16",
+      "date": "2026-11-16",
+      "source": "Mat confirmed Monday's food log was complete in the tracker chat.",
       "intake_complete": true
     }
   ],
