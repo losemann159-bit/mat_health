@@ -4,6 +4,7 @@
 /training-food-journal*.json
 /backups/
 /.workouts.lock
+/.background-server.lock
 /workouts.tmp
 *.log
 __pycache__/

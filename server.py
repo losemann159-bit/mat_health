@@ -4,8 +4,21 @@ from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 ROOT=Path(__file__).resolve().parent
 TRACKER_PORT = 8766
 LOCK=threading.Lock()
+HEALTH_BODY = b'local-training-journal\n'
+
+class JournalServer(ThreadingHTTPServer):
+    allow_reuse_address = False
+
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        if self.path == '/health':
+            self.send_response_only(200)
+            self.send_header('Content-Type', 'text/plain')
+            self.send_header('Cache-Control', 'no-store')
+            self.send_header('Content-Length', str(len(HEALTH_BODY)))
+            self.end_headers()
+            self.wfile.write(HEALTH_BODY)
+            return
         routes={'/':('index.html','text/html'),'/api/workouts':('workouts.json','application/json')}
         if self.path not in routes:
             self.send_error(404); return
@@ -37,6 +50,6 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--port', type=int, default=TRACKER_PORT)
     port = parser.parse_args().port
-    server=ThreadingHTTPServer(('127.0.0.1',port),Handler)
+    server=JournalServer(('127.0.0.1',port),Handler)
     print(f'HYROX tracker: http://127.0.0.1:{server.server_port}',flush=True)
     server.serve_forever()

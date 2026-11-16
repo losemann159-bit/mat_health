@@ -1242,6 +1242,42 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "Photo estimate assumes no added oil or sauce. Shrimp: 155 kcal and 34 g protein. Eggs: 150 kcal and 13 g. Pumpkin: 125 kcal and 4 g. Corn: 80 kcal and 3 g. Food rating shown: 9.5/10."
+    },
+    {
+      "id": "chat-2026-11-15-snack-8bf0b02b-6d63-4211-9d69-e4ef290b974a",
+      "date": "2026-11-15",
+      "source": "Mat reported the afternoon snack and confirmed the Meiji drink was 210 kcal.",
+      "name": "Afternoon snack: small salami stick and Meiji protein drink",
+      "portion": "1 small salami stick (10 cm) and 1 Meiji protein drink (350 ml).",
+      "kcal": 240,
+      "protein_g": 35,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Salami stick: 30 kcal and 2 g protein. Meiji protein drink: 210 kcal and 33 g protein, as confirmed by Mat."
+    },
+    {
+      "id": "chat-2026-11-15-dinner-2352cf7b-0460-4826-bbae-d1c7177fcd83",
+      "date": "2026-11-15",
+      "name": "Dinner: grilled pork chop with mixed vegetables and broccoli",
+      "source": "Mat identified the pictured meal as Sunday dinner.",
+      "portion": "One grilled pork chop with grilled mixed vegetables and grilled broccoli, without butter or sauces.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "kcal": 570,
+      "protein_g": 61,
+      "estimate_basis": "Supplied dinner estimate: pork chop 450 kcal and 55 g protein, mixed vegetables 70 kcal and 2 g, broccoli 50 kcal and 4 g."
+    },
+    {
+      "id": "chat-2026-11-16-breakfast-ce633788-3a1c-4b78-9a55-edadaa255939",
+      "date": "2026-11-16",
+      "source": "Mat confirmed the pictured meal was his breakfast.",
+      "name": "Breakfast: grilled salmon, mashed potatoes, broccoli and carrots",
+      "portion": "All of the grilled salmon and carrots, 60% of the mashed potatoes and 50% of the broccoli.",
+      "kcal": 550,
+      "protein_g": 48,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "For the portions eaten, the supplied estimate gives salmon 400 kcal and 43 g protein, mashed potatoes 100 kcal and 2 g, broccoli 20 kcal and 2 g, and carrots 30 kcal and 1 g. Food rating shown: 9.5/10."
     }
   ],
   "energy_profiles": [
@@ -1481,6 +1517,12 @@
       "id": "2026-11-14",
       "date": "2026-11-14",
       "source": "Mat asked to close Saturday in the tracker chat.",
+      "intake_complete": true
+    },
+    {
+      "id": "2026-11-15",
+      "date": "2026-11-15",
+      "source": "Mat confirmed Sunday's food log was complete in the tracker chat.",
       "intake_complete": true
     }
   ],
