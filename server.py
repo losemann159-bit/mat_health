@@ -1,9 +1,10 @@
-import argparse, json, os, threading, shutil, time
+import argparse, json, time
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+from record_workout import record
 ROOT=Path(__file__).resolve().parent
 TRACKER_PORT = 8766
-LOCK=threading.Lock()
 HEALTH_BODY = b'local-training-journal\n'
 
 class JournalServer(ThreadingHTTPServer):
@@ -24,28 +25,36 @@ class Handler(BaseHTTPRequestHandler):
             self.send_error(404); return
         name,kind=routes[self.path]
         data=(ROOT/name).read_bytes()
-        self.send_response(200); self.send_header('Content-Type',kind+'; charset=utf-8'); self.send_header('Cache-Control','no-store'); self.end_headers(); self.wfile.write(data)
+        self.send_response(200)
+        if self.path == '/api/workouts':
+            self.send_header('X-Journal-Weigh-Ins', 'writable')
+        self.send_header('Content-Type',kind+'; charset=utf-8'); self.send_header('Cache-Control','no-store'); self.end_headers(); self.wfile.write(data)
     def do_POST(self):
         port = self.server.server_port
         origins = (f'http://localhost:{port}', f'http://127.0.0.1:{port}')
-        if self.path!='/api/workouts' or self.headers.get('Origin') not in origins:
+        if self.path not in ('/api/workouts','/api/weigh-ins') or self.headers.get('Origin') not in origins:
             self.send_error(403); return
         try:
             size=int(self.headers.get('Content-Length',0))
             if not 0<size<100000: raise ValueError()
             entry=json.loads(self.rfile.read(size))
-            if not isinstance(entry,dict) or not entry.get('date') or not entry.get('notes'): raise ValueError()
-            with LOCK:
-                path=ROOT/'workouts.json'
-                data=json.loads(path.read_text('utf-8'))
+            if not isinstance(entry,dict) or not entry.get('date'): raise ValueError()
+            if self.path == '/api/weigh-ins':
+                day = date.fromisoformat(entry['date'])
+                today = datetime.now(timezone(timedelta(hours=7))).date()
+                if day.isoformat() != entry['date'] or day > today:
+                    raise ValueError('Choose a weigh-in date on or before today')
+                reading = {'id': entry['date'], 'date': entry['date'], 'weight_kg': entry.get('weight_kg'),
+                           'source': 'Entered in Body Weight', 'weight_source': 'Entered in Body Weight'}
+                record(reading, ROOT, 'daily_energy', preserve_source=True)
+            else:
                 entry['id']=str(time.time_ns()); entry['source']='Entered in tracker'
-                data['workouts'].append(entry)
-                backup=ROOT/'backups'; backup.mkdir(exist_ok=True)
-                shutil.copy2(path,backup/(str(time.time_ns())+'.json'))
-                temp=ROOT/'workouts.tmp'; temp.write_text(json.dumps(data,ensure_ascii=False,indent=2),'utf-8'); os.replace(temp,path)
+                record(entry, ROOT)
             self.send_response(201); self.end_headers()
         except (ValueError,TypeError):
             self.send_error(400)
+        except OSError:
+            self.send_error(503, 'Could not save the journal')
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--port', type=int, default=TRACKER_PORT)

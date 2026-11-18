@@ -1181,26 +1181,28 @@
       "id": "chat-2026-11-12-snack-i-did-have-a-bifi-today",
       "date": "2026-11-12",
       "source": "Mat reported having one BiFi today in the tracker chat.",
-      "name": "Snack: BiFi salami stick",
+      "name": "Salami Stick, Bifi",
       "portion": "1 stick, assumed BiFi Original (22.5 g).",
       "kcal": 116,
       "estimated": true,
       "protein_g": 5.4,
-      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1"
+      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1",
+      "meal_type": "snack"
     },
     {
       "id": "chat-2026-11-12-drink-4497a529-c17d-4c40-8eec-970a6c5b48e6",
       "date": "2026-11-12",
       "source": "Mat reported drinking the Meiji bottle shown in the tracker chat.",
-      "name": "Meiji High Protein banana milk",
-      "portion": "1 bottle (350 ml)",
+      "name": "Protein Drink, Meiji",
+      "portion": "1 bottle (350 ml), banana flavor.",
       "estimated": false,
       "kcal": 210,
       "kcal_low": 210,
       "kcal_high": 210,
       "protein_g": 33,
       "use_logged_kcal": true,
-      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein."
+      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein.",
+      "meal_type": "drinks"
     },
     {
       "id": "chat-2026-11-12-meal-0ddd4f1c-a6be-4fff-b5a4-a404970da689",
@@ -1240,15 +1242,16 @@
       "id": "chat-2026-11-13-ba84db30-00d4-4609-bfa9-dec44d40df32-milk",
       "date": "2026-11-13",
       "source": "Mat reported the same protein milk as yesterday for breakfast.",
-      "name": "Breakfast: Meiji High Protein banana milk",
-      "portion": "1 bottle (350 ml)",
+      "name": "Protein Drink, Meiji",
+      "portion": "1 bottle (350 ml), banana flavor.",
       "estimated": false,
       "kcal": 210,
       "kcal_low": 210,
       "kcal_high": 210,
       "protein_g": 33,
       "use_logged_kcal": true,
-      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein."
+      "estimate_basis": "Mat confirmed 210 kcal for one 350 ml bottle. The supplied nutrition information gives 33 g protein.",
+      "meal_type": "breakfast"
     },
     {
       "id": "fitness-b1a4dd40-602a-47ec-8df1-96c89094308a-cognac",
@@ -1306,12 +1309,13 @@
       "id": "chat-2026-11-14-bifi-when-i-came-home",
       "date": "2026-11-13",
       "source": "Mat reported eating one BiFi when he came home on Saturday. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
-      "name": "Snack: BiFi salami stick",
+      "name": "Salami Stick, Bifi",
       "portion": "1 stick after coming home, assumed BiFi Original (22.5 g).",
       "kcal": 116,
       "estimated": true,
       "protein_g": 5.4,
-      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1"
+      "estimate_basis": "Assumed the single BiFi Original stick. Its label lists 514 kcal and 24 g protein per 100 g, giving 115.65 kcal and 5.4 g protein for 22.5 g. https://bifi.com/en/products/1",
+      "meal_type": "snack"
     },
     {
       "id": "chat-2026-11-13-one-singha-beer-on-friday",
@@ -1325,7 +1329,7 @@
       "estimate_basis": "630 ml at 37 kcal per 100 ml gives 233.1 kcal. https://carlsbergsverige.se/produkter/singha/singha/"
     },
     {
-      "portion": "1 bottle (350 ml)",
+      "portion": "1 bottle (350 ml), banana flavor.",
       "kcal": 210,
       "kcal_low": 210,
       "kcal_high": 210,
@@ -1336,7 +1340,8 @@
       "date": "2026-11-13",
       "source": "Mat reported one Meiji protein milk and one protein bar for Friday lunch and asked to use the previous entries.",
       "id": "chat-2026-11-13-lunch-meiji-and-bar-milk",
-      "name": "Lunch: Meiji High Protein banana milk"
+      "name": "Protein Drink, Meiji",
+      "meal_type": "lunch"
     },
     {
       "kcal": 200,
@@ -1400,13 +1405,14 @@
       "id": "chat-2026-11-15-snack-8bf0b02b-6d63-4211-9d69-e4ef290b974a",
       "date": "2026-11-15",
       "source": "Mat reported the afternoon snack and confirmed the Meiji drink was 210 kcal.",
-      "name": "Afternoon snack: small salami stick and Meiji protein drink",
-      "portion": "1 small salami stick (10 cm) and 1 Meiji protein drink (350 ml).",
-      "kcal": 240,
-      "protein_g": 35,
+      "name": "Salami Stick, Bifi",
+      "portion": "1 small stick (10 cm).",
+      "kcal": 30,
+      "protein_g": 2,
       "estimated": true,
       "use_logged_kcal": true,
-      "estimate_basis": "Salami stick: 30 kcal and 2 g protein. Meiji protein drink: 210 kcal and 33 g protein, as confirmed by Mat."
+      "estimate_basis": "The afternoon snack breakdown gives 30 kcal and 2 g protein for the small salami stick.",
+      "meal_type": "snack"
     },
     {
       "id": "chat-2026-11-15-dinner-2352cf7b-0460-4826-bbae-d1c7177fcd83",
@@ -1471,13 +1477,101 @@
       "id": "chat-2026-11-16-af706791-e4eb-4456-aa92-1ce2149590ec-tofusan",
       "date": "2026-11-16",
       "source": "Mat confirmed the five foods in the 16 November food summary were eaten today. Calories and protein from the supplied breakdown.",
-      "name": "Tofusan drink",
+      "name": "Protein Drink, Tofusan",
       "kcal": 210,
       "protein_g": 31,
       "estimated": true,
       "use_logged_kcal": true,
       "portion": "1 drink",
       "meal_type": "drinks"
+    },
+    {
+      "id": "chat-2026-11-17-breakfast-0ea9575b-bdf4-42b4-8d8a-5848f0b0e911",
+      "date": "2026-11-17",
+      "source": "Mat reported breakfast in the tracker chat on 17 November. Portions and estimates are from the supplied breakfast breakdown.",
+      "meal_type": "breakfast",
+      "name": "Sealect tuna, eggs and onion with sourdough",
+      "portion": "1 can of tuna, 2 eggs, all the onion and 2 of the 3 sourdough slices.",
+      "kcal": 510,
+      "protein_g": 46,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Tuna 120 kcal and 25 g protein, eggs 150 kcal and 13 g, onion 20 kcal and 1 g, sourdough 220 kcal and 7 g."
+    },
+    {
+      "portion": "1 stick",
+      "kcal": 30,
+      "protein_g": 2,
+      "estimated": true,
+      "estimate_basis": "The supplied snack breakdown lists 30 kcal and 2 g protein for the BiFi stick eaten.",
+      "id": "chat-2026-11-17-snacks-at-a-bifi-and-tofusan-bifi",
+      "date": "2026-11-17",
+      "name": "Salami Stick, Bifi",
+      "meal_type": "snack",
+      "use_logged_kcal": true,
+      "source": "Mat's 17 November snack report and follow-up nutrition screenshot."
+    },
+    {
+      "portion": "1 drink",
+      "kcal": 210,
+      "protein_g": 31,
+      "estimated": true,
+      "id": "chat-2026-11-17-snacks-at-a-bifi-and-tofusan-tofusan",
+      "date": "2026-11-17",
+      "name": "Protein Drink, Tofusan",
+      "meal_type": "drinks",
+      "use_logged_kcal": true,
+      "source": "Mat reported one BiFi and one Tofusan as today's snacks. Used the same serving as the previous journal entry."
+    },
+    {
+      "id": "chat-2026-11-15-snack-8bf0b02b-6d63-4211-9d69-e4ef290b974a-meiji",
+      "date": "2026-11-15",
+      "source": "Mat reported the afternoon snack and confirmed the Meiji drink was 210 kcal.",
+      "name": "Protein Drink, Meiji",
+      "portion": "1 bottle (350 ml).",
+      "kcal": 210,
+      "protein_g": 33,
+      "estimated": false,
+      "use_logged_kcal": true,
+      "estimate_basis": "Mat confirmed 210 kcal for the Meiji drink. The reported drink provides 33 g protein.",
+      "meal_type": "drinks"
+    },
+    {
+      "id": "chat-2026-11-17-15168af3-a9fa-4460-8e39-39cdb463f8a6-pork",
+      "date": "2026-11-17",
+      "source": "Mat's food log for 17 November lists pork tenderloin and mashed potatoes at 550 kcal and 61 g protein.",
+      "name": "Pork tenderloin and mashed potatoes",
+      "kcal": 550,
+      "protein_g": 61,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "meal_type": "dinner"
+    },
+    {
+      "routine_key": "americano",
+      "name": "Plain Americanos",
+      "portion": "2 venti, plain, no milk or sweetener",
+      "kcal": 35,
+      "kcal_low": 28,
+      "kcal_high": 42,
+      "estimated": true,
+      "id": "chat-2026-11-17-5207051b-777e-4c0c-be5a-2e4fe514d1bd-americanos",
+      "date": "2026-11-17",
+      "meal_type": "drinks",
+      "source": "Mat confirmed two Americanos in the tracker chat on 17 November. Size, preparation and calorie estimate follow the usual coffee order."
+    },
+    {
+      "id": "chat-2026-11-18-breakfast-eff2f87a-4c90-4978-b1ea-f12cc1f2170b",
+      "date": "2026-11-18",
+      "source": "Mat reported breakfast in the tracker chat on 18 November. Portions and estimates are from the supplied image.",
+      "meal_type": "breakfast",
+      "name": "Salmon, egg whites and vegetables",
+      "portion": "100 g salmon, 2 egg whites, green beans, broccoli and carrots.",
+      "kcal": 370,
+      "protein_g": 36,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Salmon 210 kcal and 22 g protein; 2 egg whites 30 kcal and 7 g; green beans 30 kcal and 2 g; broccoli 50 kcal and 4 g; carrots 50 kcal and 1 g. Nutrition rating shown: 9/10."
     }
   ],
   "energy_profiles": [
@@ -1621,6 +1715,47 @@
       "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
       "baseline_kcal": 2600,
       "baseline_note": "2,600 kcal seated baseline applied back to 6 November at Mat's request on 12 November."
+    },
+    {
+      "id": "2026-11-18",
+      "date": "2026-11-18",
+      "source": "Mat requested on 17 November that the seated baseline decrease with body weight; effective after the closed Tuesday.",
+      "kg": 116,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0-2.5 L daily",
+            "kcal": 0,
+            "water_ml": 2250,
+            "water_ml_low": 2000,
+            "water_ml_high": 2500
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "baseline_kcal": 2600,
+      "baseline_reference_kg": 118,
+      "baseline_note": "2,600 kcal/day at the 118 kg home weight. Scale the baseline with estimated resting expenditure at each dated weigh-in.",
+      "protein_gym_g": 200,
+      "protein_rest_g": 150,
+      "protein_note": "Mat confirmed on 18 November that Monday, Wednesday and Friday are gym days with a 200 g protein goal until he changes it; other days use 150 g."
     }
   ],
   "activities": [
@@ -1668,7 +1803,9 @@
       "training_review": {
         "score": 9.5,
         "note": "The 55-minute gym session included 60 sit-up wall-ball throws with a 9 kg ball, farmer carries and upper-body strength work. The throws left you breathing hard. You then added about 53 minutes of moderate activity, breathing harder but still able to talk. The sustained second session alongside the hard gym work earns this whole day 9.5/10."
-      }
+      },
+      "weight_kg": 120,
+      "weight_source": "Mat reported the three dated November weigh-ins in tracker chat on 17 November."
     },
     {
       "id": "2026-11-08",
@@ -1729,6 +1866,14 @@
       "id": "2026-11-16",
       "date": "2026-11-16",
       "source": "Mat confirmed Monday's food log was complete in the tracker chat.",
+      "intake_complete": true,
+      "weight_kg": 116,
+      "weight_source": "Mat reported the three dated November weigh-ins in tracker chat on 17 November."
+    },
+    {
+      "id": "2026-11-17",
+      "date": "2026-11-17",
+      "source": "Mat confirmed Tuesday was complete in the tracker chat.",
       "intake_complete": true
     }
   ],

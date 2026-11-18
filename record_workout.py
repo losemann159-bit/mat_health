@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 
-def record(workout, folder, collection='workouts'):
+def record(workout, folder, collection='workouts', *, preserve_source=False):
     # Reuse a source-based ID on retries, or an existing ID when correcting a session.
     if collection not in ('workouts', 'meals', 'energy_profiles', 'daily_energy', 'activities', 'exercise_library', 'food_options'):
         raise ValueError('Unsupported journal entry type')
@@ -48,6 +48,11 @@ def record(workout, folder, collection='workouts'):
                 raise ValueError('Include the chat review explaining the score')
     if collection == 'energy_profiles':
         baseline = workout.get('baseline_kcal')
+        for field in ('protein_gym_g', 'protein_rest_g'):
+            if field in workout and not (numeric(workout[field]) and workout[field] > 0):
+                raise ValueError('Provide a positive daily protein goal in grams')
+        if 'baseline_reference_kg' in workout and not (numeric(workout['baseline_reference_kg']) and workout['baseline_reference_kg'] > 0 and numeric(baseline) and baseline > 0):
+            raise ValueError('Provide a positive reference weight and seated baseline')
         if baseline is not None and (not numeric(baseline) or baseline == 0):
             raise ValueError('Provide a positive daily baseline in kcal')
         if workout.get('equation') not in ('male','female') or not all(numeric(workout.get(k)) and workout[k]>0 for k in ('kg','cm','age','pal')):
@@ -98,6 +103,8 @@ def record(workout, folder, collection='workouts'):
                 raise ValueError('This label already identifies another exercise. Include the station or model to distinguish them.')
         for entry in entries:
             if entry['id'] == workout['id']:
+                if preserve_source and entry.get('source'):
+                    workout = {**workout, 'source': entry['source']}
                 if all(entry.get(key) == value for key, value in workout.items()):
                     return 'Already saved'
                 entry.update(workout)
