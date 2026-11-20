@@ -48,6 +48,9 @@ def record(workout, folder, collection='workouts', *, preserve_source=False):
                 raise ValueError('Include the chat review explaining the score')
     if collection == 'energy_profiles':
         baseline = workout.get('baseline_kcal')
+        for field in ('deficit_gym_kcal', 'deficit_rest_kcal'):
+            if field in workout and not numeric(workout[field]):
+                raise ValueError('Provide a nonnegative calorie deficit target')
         for field in ('protein_gym_g', 'protein_rest_g'):
             if field in workout and not (numeric(workout[field]) and workout[field] > 0):
                 raise ValueError('Provide a positive daily protein goal in grams')

@@ -365,6 +365,7 @@ summary{list-style:none}.history summary{display:grid;grid-template-columns:72px
 .chart-balance strong { font-size:17px; line-height:1.25 }
 .chart-balance small { font:12px var(--sans) }
 .chart-balance.saved { color:#176440 }
+.chart-balance.budget { color:var(--blue) }
 @media(max-width:820px){.energy-panel{padding:14px}}
 @media(max-width:650px){
   .energy-row { grid-template-columns:minmax(0,1fr) auto; gap:5px 10px }
@@ -896,7 +897,7 @@ function exerciseComparison(exercise, earlier, amount) {
   }
   return sameLoad && amount!==before ? {change:amount-before,unit} : null;
 }
-function exerciseItem(exercise, previous, strengthBlock) {
+function exerciseItem(exercise, previous, strengthBlock, compactTotals=false) {
   const item = element('li');
   const heading = element('div','exercise-heading');
   const line = element('div','set-line');
@@ -904,6 +905,21 @@ function exerciseItem(exercise, previous, strengthBlock) {
   const {sets, unit, loads_kg: loads} = exercise;
   const hasSets = Array.isArray(sets) && sets.length && sets.every(n=>Number.isFinite(n) && n>0);
   const hasLoads = Array.isArray(loads) && hasSets && loads.length===sets.length && loads.every(n=>Number.isFinite(n) && n>=0);
+  if(compactTotals){
+    const amount=hasSets?sets.reduce((sum,n)=>sum+n,0):exercise.reps;
+    const name=normalizedName(exercise.name);
+    let prefix,label;
+    if(Number.isFinite(amount)&&amount>0){
+      const total=amount.toLocaleString('en-GB');
+      if(name==='single-leg squat'){prefix=total+'x';label='Single-Leg Squad';}
+      if(name==='single-leg glute bridge'){prefix=total+'x';label='Single-Leg Glute Bridge';}
+      if(name==='right-leg isometric hold'&&unit==='sec'){prefix=total+' sec';label='Right-Leg Isometric Hold';}
+    }
+    if(label){
+      heading.append(element('span','set-count',prefix),' ',element('strong','',label));
+      return item;
+    }
+  }
   if (!hasSets || !unit || (loads && !hasLoads)) {
     heading.append(element('strong','',exerciseLabel(exercise)));
     line.textContent = displayWeightText(exercise.detail);
@@ -1092,7 +1108,7 @@ function card(w, previous, activities) {
     if (!blocks.has(name)) blocks.set(name,[]);
     blocks.get(name).push(exercise);
   }
-  return {header:n,blocks,previous,date:date.textContent,notes:blocks.size?'':w.highlight||w.notes||'No exercises logged.',activities};
+  return {header:n,workoutId:w.id,blocks,previous,date:date.textContent,notes:blocks.size?'':w.highlight||w.notes||'No exercises logged.',activities};
 }
 function renderWorkoutBoard(cards) {
   const grid=byId('cards');
@@ -1123,7 +1139,8 @@ function renderWorkoutBoard(cards) {
       }
       const list=element('ul','card-exercises');
       list.style.gridRow=(strength?2:1)+' / span '+rowCount;
-      for (const exercise of exercises) list.append(exerciseItem(exercise,card.previous.get(exerciseKey(exercise)),strength));
+      const compactTotals=strength && card.workoutId==='fitness-db1c81c7-4b13-40b3-b7e9-b3e535497058';
+      for (const exercise of exercises) list.append(exerciseItem(exercise,card.previous.get(exerciseKey(exercise)),strength,compactTotals));
       column.append(list);
       block.append(column);
     });
@@ -1325,7 +1342,9 @@ function calorieBalance(day, data, ledger=data===journalData?gymAttendance:gymLe
   const status=ledger.days.get(day);
   const trainingDay=sessions.length>0||status==='attended'||(scheduled&&status!=='missed'&&!attendance?.skipped?.includes(day));
   const proteinGoal=trainingDay?(profile?.protein_gym_g??200):(profile?.protein_rest_g??150);
-  return {profile,resting,baseline,burn,watch,extra,sessions,estimate,intake,net,foodKnown,foodMissing,complete,gymAdded,otherAdded,protein,proteinGoal};
+  const deficitTarget=trainingDay?profile?.deficit_gym_kcal:profile?.deficit_rest_kcal;
+  const budgetRemaining=known(burn)&&known(deficitTarget)&&!foodMissing?burn-deficitTarget-intake:null;
+  return {profile,resting,baseline,burn,watch,extra,sessions,estimate,intake,net,foodKnown,foodMissing,complete,gymAdded,otherAdded,protein,proteinGoal,deficitTarget,budgetRemaining};
 }
 function renderBalance(day,entries){
   const b=calorieBalance(day,journalData);
@@ -1649,6 +1668,13 @@ byId('earlier-months').onclick=()=>{monthOffset-=4;renderCalendar(gymAttendance,
 byId('later-months').onclick=()=>{monthOffset+=4;renderCalendar(gymAttendance,todayBangkok());};
 function chartBalance(b,enoughBurn){
   const result=element('div','chart-balance');
+  if(!b.complete&&enoughBurn&&Number.isFinite(b.budgetRemaining)){
+    result.classList.add('budget');
+    const label=b.budgetRemaining<0?'kcal over budget':'kcal left to eat';
+    result.append(element('strong','',fmt(Math.abs(b.budgetRemaining))),element('small','',label));
+    result.title=fmt(b.burn)+' kcal estimated burn − '+fmt(b.deficitTarget)+' kcal target deficit − '+fmt(b.intake)+' kcal eaten. Updates as food and activity are logged.';
+    return result;
+  }
   if(!b.complete || !b.foodKnown || b.foodMissing || !enoughBurn){
     const reason=b.foodMissing?'Missing food calories':!b.complete?'—':!b.foodKnown?'Missing food calories':'Burn unknown';
     result.append(element('small','',reason));

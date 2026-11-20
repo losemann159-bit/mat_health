@@ -293,6 +293,8 @@
     {
       "id": "fitness-a6f4d6c2-0569-460f-a443-31aa0085b3c6",
       "source": "Fitness log record, 9 November 2026",
+      "source_message_id": "a6f4d6c2-0569-460f-a443-31aa0085b3c6",
+      "watch_message_id": "3a1e59f3-8385-4ba9-ade9-4e70dd9134b7",
       "title": "Bike, rowing, chest and arms",
       "incomplete": false,
       "notes": "Assault Bike - 5 intervals of 15 machine calories each, 75 cal total.\nRowErg - 4 x 500 m, 2,000 m total. The last 500 m was fast.\nBiceps curl - Arm curl (biceps): 12 at 23 kg, 12 at 32 kg, 12 at 32 kg.\nTriceps pushdown - 3 sets of 12 triceps pushdowns at 23 kg.\nChest press - 12 at 50 kg, 12 at 50 kg, 12 at 59 kg.\n4 alternating bike and row rounds, then a fifth bike interval. Exhaustion after cardio was 7-8/10. Heart rate fell from 160 to 120 bpm in about a minute.",
@@ -443,6 +445,7 @@
             "detail": "Barbell bench press, reverse pec deck, seated row and lateral raise. 14 sets, 163 reps and 4,990 kg lifted.",
             "rating": 9
           },
+          "source_message_id": "96f8f76d-3b9e-42b0-8f80-7ca8d59f2ba2",
           "detail": "bench press 10x 20kg\nbench press 10x 30kg\nbench press 8x 40kg\nbench press 10x 50kg\nbench press 10x 50kg\nbench press 10x 50kg"
         },
         {
@@ -458,6 +461,7 @@
             22.5,
             32
           ],
+          "source_message_id": "f4ca9821-0822-4c57-b6d0-e2ada10fee36",
           "detail": "reverse dec pec 15x 13.5kg\nreverse dec pec 15x 22.5kg\nreverse dec pec 15x 32.0kg"
         },
         {
@@ -469,6 +473,7 @@
           ],
           "unit": "reps",
           "load": "41 kg every set",
+          "source_message_id": "6be229c9-1a8d-4d5c-9841-5e5f006890b8",
           "detail": "Row Machine 12x 41kg\nRow Machine 12x 41kg"
         },
         {
@@ -481,6 +486,7 @@
           ],
           "unit": "reps",
           "load": "18.5 kg every set",
+          "source_message_id": "849e2d03-c619-4867-8c14-57b0d1753e68",
           "detail": "12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg\n12x Lateral Raise Machine at 18.5kg"
         },
         {
@@ -492,6 +498,7 @@
             "name": "Cardio",
             "detail": "5 sets of 20 with a 9 kg wall ball, 100 reps total."
           },
+          "source_message_id": "e7ec3dc7-681f-4d1b-80f2-6083f043466e",
           "detail": "5×20 Squat Wall Ball (9kg)",
           "sets": [
             20,
@@ -511,6 +518,7 @@
     },
     {
       "id": "fitness-467fe489-7cef-4abb-b04b-651d06da97dd",
+      "source_message_id": "467fe489-7cef-4abb-b04b-651d06da97dd",
       "date": "2026-11-13",
       "source": "Fitness log record, Friday 13 November. Original exercise reports, block heart rate, session duration and Apple Watch total.",
       "title": "SkiErg, Assault Bike, leg press, back and core",
@@ -611,6 +619,7 @@
     },
     {
       "id": "fitness-786ec643-463d-4d25-ab08-217e1ec992ff",
+      "source_message_id": "786ec643-463d-4d25-ab08-217e1ec992ff",
       "date": "2026-11-16",
       "source": "Mat's 16 November exercise-by-exercise report and final workout summary; duration, Apple Watch calories and heart rate confirmed in the Fitness log.",
       "title": "Strength and SkiErg",
@@ -760,6 +769,132 @@
       "machine_volume_kg": 6403,
       "notes": "10x squad and raise dumbbell at 8kg per hand\n8x squad and raise dumbbell at 14kg per hand\n8x squad and raise dumbbell at 14kg per hand\n\n10x bench press 20kg\n5x bench press 40kg\n5x bench press 50kg\n3x bench press 60kg\n3x bench press 60kg\n27x bench press 40kg\n\n10 x single handle lat pull 27kg\n10 x single handle lat pull 34kg\n12 x single handle lat pull 47.5kg\n12 x single handle lat pull 47.5kg\n\n15x pennley row 20kg\n10x pennley row 30kg\n10x pennley row 30kg\n\n10x abdominal 22.5 kg\n10x abdominal 41.5 kg\n10x abdominal 41.5 kg\n\n2x 500m skierg",
       "highlight": "19 strength sets, 188 reps and 6,403 kg lifted, counting both dumbbells. Finished with 1,000 m on the SkiErg."
+    },
+    {
+      "id": "fitness-db1c81c7-4b13-40b3-b7e9-b3e535497058",
+      "date": "2026-11-18",
+      "source": "Mat's completed 18 November gym session in the Fitness log, including the original exercise reports, later additions and final Apple Watch measurements.",
+      "source_message_id": "db1c81c7-4b13-40b3-b7e9-b3e535497058",
+      "watch_message_id": "da75cd96-f02f-4971-975b-4b39d131c30b",
+      "title": "Legs, stability and rowing",
+      "minutes": 94,
+      "total_kcal": 806,
+      "average_hr": 122,
+      "peak_hr": 153,
+      "rating": 8.5,
+      "rating_source": "8.5/10 in the final Fitness log workout summary.",
+      "muscles": [
+        "quads",
+        "glutes",
+        "hamstrings",
+        "back",
+        "core"
+      ],
+      "incomplete": false,
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "detail": "10x back squad 20kg\n10x back squad 30kg\n12x back squad 40kg\n\n(it’s the one holding a bar free weight overr shoulder)\n10x back squad 60kg\n+ 10x back squad 60kg (another set)",
+          "sets": [
+            10,
+            10,
+            12,
+            10,
+            10
+          ],
+          "unit": "reps",
+          "loads_kg": [
+            20,
+            30,
+            40,
+            60,
+            60
+          ],
+          "equipment": "Barbell",
+          "muscles": [
+            "quads",
+            "glutes"
+          ],
+          "assisting_muscles": [
+            "hamstrings",
+            "core"
+          ],
+          "block": {
+            "name": "Strength & Core",
+            "detail": "Barbell back squats, single-leg squats, single-leg glute bridges and right-leg isometric holds."
+          }
+        },
+        {
+          "name": "Single-Leg Squat",
+          "detail": "single leg squad 50x",
+          "reps": 50,
+          "unit": "reps",
+          "muscles": [
+            "quads",
+            "glutes"
+          ],
+          "measurement_note": "50 repetitions reported; set breakdown and left/right split were not specified."
+        },
+        {
+          "name": "Single-Leg Glute Bridge",
+          "detail": "30x single glut bridge\n15/15",
+          "reps": 30,
+          "reps_per_leg": 15,
+          "unit": "reps",
+          "muscles": [
+            "glutes",
+            "hamstrings"
+          ],
+          "measurement_note": "30 total repetitions, confirmed as 15 per leg. Set breakdown was not reported."
+        },
+        {
+          "name": "Right-Leg Isometric Hold",
+          "detail": "+ 3x 10 sec  isomatic hold right leg",
+          "sets": [
+            10,
+            10,
+            10
+          ],
+          "unit": "sec",
+          "side": "right",
+          "muscles": [
+            "quads",
+            "glutes"
+          ]
+        },
+        {
+          "name": "RowErg",
+          "detail": "4x 1 minute 250-260 m with 1 minute break on row machine",
+          "sets": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "unit": "min",
+          "distance_m_low": 1000,
+          "distance_m_high": 1040,
+          "distance_per_set_m_low": 250,
+          "distance_per_set_m_high": 260,
+          "rest_seconds": 60,
+          "measurement_note": "Four timed intervals; each distance was reported as 250-260 m, not an exact per-set distance.",
+          "muscles": [
+            "back",
+            "quads",
+            "glutes"
+          ],
+          "block": {
+            "name": "Cardio",
+            "detail": "4x 1 minute 250-260 m with 1 minute break on row machine",
+            "minutes": 4
+          }
+        }
+      ],
+      "strength_reps": 132,
+      "total_reps": 132,
+      "machine_volume_kg": 2180,
+      "notes": "10x back squad 20kg\n10x back squad 30kg\n12x back squad 40kg\n\n(it’s the one holding a bar free weight overr shoulder)\n\n10x back squad 60kg\n\n+ 10x back squad 60kg (another set)\n\nsingle leg squad 50x\n\n30x single glut bridge\n\n15/15\n\n+ 3x 10 sec  isomatic hold right leg\n\n4x 1 minute 250-260 m with 1 minute break on row machine\n\n806 cal\n94 min\n\n153max\n122 average",
+      "highlight": "52 barbell back squats and 2,180 kg lifting volume; 50 single-leg squats; 15 glute bridges per leg; 30 seconds of right-leg holds; 4 minutes of rowing, covering 1,000-1,040 m."
     }
   ],
   "attendance": {
@@ -1062,6 +1197,7 @@
     {
       "id": "fitness-96c334c3-524c-44e5-b9a1-043961b0354d",
       "source": "Fitness log record, lunch photo and protein confirmation",
+      "source_message_id": "96c334c3-524c-44e5-b9a1-043961b0354d",
       "name": "Protein Crisp bar",
       "portion": "1 bar after the gym, 20 g protein. Evian water with lunch.",
       "protein_g": 20,
@@ -1075,6 +1211,8 @@
     {
       "id": "fitness-69086a9d-92db-4e48-99af-92de6ff1e8e0",
       "source": "Fitness log record, dinner and subsequent calorie correction",
+      "source_message_id": "69086a9d-92db-4e48-99af-92de6ff1e8e0",
+      "correction_message_id": "6776394d-01ab-42ec-b1d9-45ae75cef32a",
       "name": "Corn som tam with salted egg, grilled meats and Isaan sausage",
       "portion": "4 spoons of corn som tam, half a salted egg, 2 tiny pieces of beef tongue without sauce, grilled pork neck and beef (reported as \"2 slices of grilled pork neck and beef\"), and 1 tiny Isaan sausage.",
       "kcal": 620,
@@ -1106,7 +1244,8 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "Reported estimates: pork chop 450 kcal, mushrooms 100 kcal, spinach 100 kcal.",
-      "source": "Dinner reported by Mat in the Fitness log record."
+      "source": "Dinner reported by Mat in the Fitness log record.",
+      "source_message_id": "f2d16422-b54a-466b-bcbb-c4ffe7bbfffb"
     },
     {
       "id": "chat-2026-11-11-breakfast-bb6b8b84-09e2-4112-b79f-85ba118aef82",
@@ -1255,6 +1394,7 @@
     },
     {
       "id": "fitness-b1a4dd40-602a-47ec-8df1-96c89094308a-cognac",
+      "source_message_id": "b1a4dd40-602a-47ec-8df1-96c89094308a",
       "date": "2026-11-13",
       "source": "Mat identified these as the after-dinner Martell pours and supplied the revised portion estimate in the tracker chat. Reported after midnight in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
       "name": "Martell VSOP cognac",
@@ -1266,6 +1406,7 @@
     },
     {
       "id": "fitness-b1a4dd40-602a-47ec-8df1-96c89094308a-cocktail",
+      "source_message_id": "b1a4dd40-602a-47ec-8df1-96c89094308a",
       "date": "2026-11-13",
       "source": "Fitness log record, drinks from Friday night reported at 01:59 Saturday in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
       "name": "Sweet cocktail mix",
@@ -1572,6 +1713,169 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "Salmon 210 kcal and 22 g protein; 2 egg whites 30 kcal and 7 g; green beans 30 kcal and 2 g; broccoli 50 kcal and 4 g; carrots 50 kcal and 1 g. Nutrition rating shown: 9/10."
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-protein-bar",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "name": "Protein bar",
+      "portion": "1 Mushisho protein bar",
+      "meal_type": "snack",
+      "kcal": 200,
+      "protein_g": 20
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-whey-isolate",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "name": "Whey isolate shake",
+      "meal_type": "drinks",
+      "kcal": 140,
+      "protein_g": 30
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-gatorade-zero",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": false,
+      "use_logged_kcal": true,
+      "name": "Gatorade Zero",
+      "meal_type": "drinks",
+      "kcal": 0,
+      "protein_g": 0
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-brownie",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "name": "Starbucks Christmas tree brownie",
+      "meal_type": "snack",
+      "kcal": 350,
+      "protein_g": 4
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-shawarma",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "name": "Mozzarella beef shawarma",
+      "portion": "Small; 165 g beef; no extra sauce",
+      "meal_type": "dinner",
+      "kcal": 650,
+      "protein_g": 50,
+      "meal_type_source": "Mat confirmed the shawarma and feta cheese with tomato salad were dinner for Wednesday, 18 November, in the tracker chat on 19 November."
+    },
+    {
+      "id": "chat-2026-11-18-9b963423-fbc1-4913-8b89-80b3c1348fd1-feta-salad",
+      "date": "2026-11-18",
+      "source": "Mat confirmed this was his food yesterday (18 November) in the tracker chat on 19 November. Calories, protein and reported portions are from the supplied food log.",
+      "estimated": true,
+      "use_logged_kcal": true,
+      "name": "Feta cheese and tomato salad",
+      "meal_type": "dinner",
+      "kcal": 320,
+      "protein_g": 12,
+      "meal_type_source": "Mat confirmed the shawarma and feta cheese with tomato salad were dinner for Wednesday, 18 November, in the tracker chat on 19 November."
+    },
+    {
+      "id": "chat-2026-11-19-breakfast-1ea1adcb-5e44-4f27-96a0-96c48730806d",
+      "date": "2026-11-19",
+      "source": "Mat confirmed this was his breakfast on 19 November 2026 in the tracker chat. Portions, calories and protein are from the supplied image.",
+      "meal_type": "breakfast",
+      "name": "Homemade yum tuna",
+      "portion": "1 can Sealect tuna, onion, tomatoes and fresh lime juice; no oil.",
+      "kcal": 175,
+      "protein_g": 26.5,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Sealect tuna: 120 kcal, 25 g protein; onion: 20 kcal, 0.5 g; tomatoes: 25 kcal, 1 g; fresh lime juice: 10 kcal, 0 g. Total: 175 kcal and 26.5 g protein (displayed as 27 g)."
+    },
+    {
+      "id": "chat-2026-11-19-whey-isolate-43e6ccc63fd2",
+      "date": "2026-11-19",
+      "source": "Mat reported in the tracker chat on 19 November 2026: i had a protein Whey isolate shake",
+      "name": "Whey isolate shake",
+      "meal_type": "drinks",
+      "portion": "1 shake",
+      "kcal": 140,
+      "protein_g": 30,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Using the previously reported whey isolate shake values from 18 November: 140 kcal and 30 g protein; assumed the same serving."
+    },
+    {
+      "id": "chat-2026-11-19-bifi-8388f7bddede",
+      "date": "2026-11-19",
+      "source": "Mat reported in the tracker chat on 19 November 2026: i also had a salami today. the normal one",
+      "name": "Salami Stick, Bifi",
+      "meal_type": "snack",
+      "portion": "1 regular BiFi Original stick (22.5 g)",
+      "kcal": 120,
+      "protein_g": 5.4,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Mat clarified this was the normal BiFi and accepted 120 kcal on 19 November. Manufacturer lists 514 kcal and 24 g protein per 100 g: 22.5 g gives 115.65 kcal (rounded to 120) and 5.4 g protein. https://bifi.com/en/products/1",
+      "correction_source": "Mat questioned the 30 kcal estimate, clarified the regular BiFi serving and accepted the correction to 120 kcal."
+    },
+    {
+      "id": "chat-2026-11-19-dinner-b245de15-7cb2-4e10-9e7a-c34a8a30b316",
+      "date": "2026-11-19",
+      "source": "Mat reported dinner in the tracker chat on 19 November 2026. Portions and estimates are from the supplied meal image.",
+      "meal_type": "dinner",
+      "name": "Pork tenderloin soup with pickled mustard greens",
+      "portion": "400 g pork tenderloin, 2 preserved plums, homemade soup broth and half a pack of pickled mustard greens.",
+      "kcal": 600,
+      "protein_g": 92,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Revised November 19 food tracker supplied by Mat gives pork tenderloin soup as 600 kcal and 92 g protein, superseding the earlier 700 kcal and 108 g estimate. Ingredient quantities were not restated; the originally reported portion is retained.",
+      "correction_source": "Updated November 19 food tracker image c29f3ea4-bc62-4b53-bc27-e4140e071e92, supplied by Mat in this tracker chat."
+    },
+    {
+      "id": "chat-2026-11-19-tofusan-4fe8bf9a39e5",
+      "date": "2026-11-19",
+      "source": "Mat reported in the tracker chat on 19 November 2026: i did have a tofusan",
+      "name": "Protein Drink, Tofusan",
+      "meal_type": "drinks",
+      "portion": "1 drink",
+      "kcal": 210,
+      "protein_g": 31,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Using the same Tofusan serving previously logged: 210 kcal and 31 g protein."
+    },
+    {
+      "id": "chat-2026-11-20-breakfast-98745fcb-d254-464f-a63a-084930639a59",
+      "date": "2026-11-20",
+      "source": "Mat supplied the meal estimate in the tracker chat on 20 November 2026 and confirmed it was breakfast. Portions and nutrition estimates are from image 98745fcb-d254-464f-a63a-084930639a59.",
+      "meal_type": "breakfast",
+      "name": "Chicken breast, brown rice and Panang curry with eggs",
+      "portion": "Full chicken breast portion (about 150 g), 90% of the brown rice (about 160 g), Panang curry sauce, 1 whole boiled egg and 1 additional egg white.",
+      "kcal": 620,
+      "protein_g": 64,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Chicken breast: 250 kcal and 47 g protein; brown rice: 200 kcal and 4 g; Panang curry sauce: 80 kcal and 3 g; whole boiled egg: 75 kcal and 6 g; additional egg white: 15 kcal and 4 g. Total: 620 kcal and 64 g protein. Estimated carbohydrates shown: 50-55 g."
+    },
+    {
+      "id": "chat-2026-11-20-whey-isolate-0e548665fea9",
+      "date": "2026-11-20",
+      "source": "Mat reported in the tracker chat on 20 November 2026: i also had a protein drink Whey isolate shake",
+      "name": "Whey isolate shake",
+      "meal_type": "drinks",
+      "portion": "1 shake",
+      "kcal": 140,
+      "protein_g": 30,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Using the same whey isolate serving previously reported and logged: 140 kcal and 30 g protein."
     }
   ],
   "energy_profiles": [
@@ -1642,6 +1946,7 @@
         ]
       },
       "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "source_message_id": "198a454c-cca0-48a9-89ca-1afd57aedee2",
       "baseline_kcal": 2600,
       "baseline_note": "2,600 kcal seated baseline applied back to 6 November at Mat's request on 12 November."
     },
@@ -1756,6 +2061,49 @@
       "protein_gym_g": 200,
       "protein_rest_g": 150,
       "protein_note": "Mat confirmed on 18 November that Monday, Wednesday and Friday are gym days with a 200 g protein goal until he changes it; other days use 150 g."
+    },
+    {
+      "id": "2026-11-19",
+      "date": "2026-11-19",
+      "source": "Mat set deficit targets in the tracker chat on 19 November 2026: 1,500 kcal on workout days and 1,200 kcal on non-workout days. Other settings carried forward from the active profile.",
+      "kg": 116,
+      "cm": 186,
+      "age": 40,
+      "equation": "male",
+      "pal": 1.4,
+      "routine": "Mostly sitting outside workouts. Tuesday, Thursday, Saturday and Sunday are usually seated days. Friday nights usually involve either dancing (about 4 hours) or vigorous sexual activity (about 60 active minutes). Count only the activity reported for that date.",
+      "drink_routine": {
+        "start": "2026-11-07",
+        "items": [
+          {
+            "routine_key": "water",
+            "name": "Water",
+            "portion": "2.0-2.5 L daily",
+            "kcal": 0,
+            "water_ml": 2250,
+            "water_ml_low": 2000,
+            "water_ml_high": 2500
+          },
+          {
+            "routine_key": "americano",
+            "name": "Plain Americanos",
+            "portion": "2 venti · no milk or sweetener · daily usual",
+            "kcal": 35,
+            "kcal_low": 28,
+            "kcal_high": 42,
+            "estimated": true
+          }
+        ]
+      },
+      "gym_test_note": "You recall about 2,100 kcal per day on an August 2026 gym test. You don't remember whether the report listed resting burn or total daily burn.",
+      "baseline_kcal": 2600,
+      "baseline_reference_kg": 118,
+      "baseline_note": "2,600 kcal/day at the 118 kg home weight. Scale the baseline with estimated resting expenditure at each dated weigh-in.",
+      "protein_gym_g": 200,
+      "protein_rest_g": 150,
+      "protein_note": "Mat confirmed on 18 November that Monday, Wednesday and Friday are gym days with a 200 g protein goal until he changes it; other days use 150 g.",
+      "deficit_gym_kcal": 1500,
+      "deficit_rest_kcal": 1200
     }
   ],
   "activities": [
@@ -1771,6 +2119,7 @@
     },
     {
       "id": "fitness-6d2505f3-c995-49ef-9050-6e585175a189",
+      "source_message_id": "6d2505f3-c995-49ef-9050-6e585175a189",
       "date": "2026-11-13",
       "source": "Fitness log record, Friday night outing, reported at 01:59 Saturday in Bangkok. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
       "name": "Dancing",
@@ -1780,6 +2129,7 @@
     },
     {
       "id": "fitness-c66295dd-8a94-42bf-bd4a-4c3c8d02da16",
+      "source_message_id": "c66295dd-8a94-42bf-bd4a-4c3c8d02da16",
       "date": "2026-11-13",
       "source": "Fitness log record, reported at 03:24 Saturday in Bangkok. Mat confirmed in the tracker chat this was extra cardio in addition to dancing. Mat assigned this after-midnight entry to the Friday 13 November outing in the tracker chat.",
       "name": "Extra cardio",
@@ -1875,6 +2225,21 @@
       "date": "2026-11-17",
       "source": "Mat confirmed Tuesday was complete in the tracker chat.",
       "intake_complete": true
+    },
+    {
+      "id": "2026-11-18",
+      "date": "2026-11-18",
+      "source": "Mat confirmed Wednesday, 18 November, was complete in the tracker chat on 19 November.",
+      "intake_complete": true,
+      "weight_kg": 115.5,
+      "weight_source": "Mat confirmed in the tracker chat on 19 November 2026 that his Wednesday, 18 November, weight was 115.5 kg."
+    },
+    {
+      "id": "2026-11-19",
+      "date": "2026-11-19",
+      "source": "Mat asked in the tracker chat on 19 November 2026 to add the Tofusan drink and close today.",
+      "intake_complete": true,
+      "intake_complete_source": "Mat confirmed: add that and can close today, after reporting the Tofusan drink on 19 November 2026."
     }
   ],
   "exercise_library": [
