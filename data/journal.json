@@ -895,6 +895,131 @@
       "machine_volume_kg": 2180,
       "notes": "10x back squad 20kg\n10x back squad 30kg\n12x back squad 40kg\n\n(it’s the one holding a bar free weight overr shoulder)\n\n10x back squad 60kg\n\n+ 10x back squad 60kg (another set)\n\nsingle leg squad 50x\n\n30x single glut bridge\n\n15/15\n\n+ 3x 10 sec  isomatic hold right leg\n\n4x 1 minute 250-260 m with 1 minute break on row machine\n\n806 cal\n94 min\n\n153max\n122 average",
       "highlight": "52 barbell back squats and 2,180 kg lifting volume; 50 single-leg squats; 15 glute bridges per leg; 30 seconds of right-leg holds; 4 minutes of rowing, covering 1,000-1,040 m."
+    },
+    {
+      "id": "fitness-db0f062d-5c21-430d-b0c8-155476a7e863",
+      "date": "2026-11-20",
+      "source": "Mat's completed Friday gym session in the Fitness log. Exercises checked against the final exercise record and the confirmed sled additions; duration and heart rates from Mat's completion message, followed by his recovery-session clarification and 630-calorie report.",
+      "source_message_id": "db0f062d-5c21-430d-b0c8-155476a7e863",
+      "exercise_summary_message_id": "70bc5be3-4f0c-4ff8-b292-3c14ed1c886b",
+      "calorie_message_id": "14111477-c649-4984-adc6-cfb99cab465a",
+      "recovery_message_id": "efa3ac7a-b546-4494-8472-295e83c5381b",
+      "title": "Recovery strength and sled pushes",
+      "minutes": 64,
+      "total_kcal": 630,
+      "average_hr": 110,
+      "peak_hr": 154,
+      "rating": 9,
+      "rating_source": "9/10 recovery-session rating in the final Fitness log summary after Mat clarified the long warm-up and cooldown; supersedes the earlier 8.5/10 summary.",
+      "muscles": [
+        "core",
+        "chest",
+        "shoulders",
+        "triceps",
+        "quads",
+        "glutes"
+      ],
+      "incomplete": false,
+      "exercises": [
+        {
+          "name": "Full-body Planks",
+          "detail": "Full-body Planks | 4 × 30 sec",
+          "sets": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "unit": "sec",
+          "equipment": "Bodyweight",
+          "muscles": [
+            "core"
+          ],
+          "assisting_muscles": [
+            "shoulders"
+          ],
+          "block": {
+            "name": "Strength & Core",
+            "detail": "Full-body planks, push-ups and standing barbell push press."
+          }
+        },
+        {
+          "name": "Push-ups",
+          "detail": "Push-ups | 2 × 10",
+          "sets": [
+            10,
+            10
+          ],
+          "unit": "reps",
+          "equipment": "Bodyweight",
+          "muscles": [
+            "chest",
+            "triceps"
+          ],
+          "assisting_muscles": [
+            "shoulders",
+            "core"
+          ]
+        },
+        {
+          "name": "Barbell Push Press",
+          "detail": "Standing Barbell Push Press | 10 × 20 kg, 2 × 10 at 30 kg",
+          "sets": [
+            10,
+            10,
+            10
+          ],
+          "unit": "reps",
+          "loads_kg": [
+            20,
+            30,
+            30
+          ],
+          "equipment": "Barbell",
+          "muscles": [
+            "shoulders",
+            "triceps"
+          ],
+          "assisting_muscles": [
+            "quads",
+            "glutes",
+            "core"
+          ]
+        },
+        {
+          "name": "Sled Push",
+          "detail": "Sled Push | 20 m at 128 kg, 60 m at 153 kg\nFinal set table: 20 m at 128 kg; 20 m at 153 kg; 20 m at 153 kg; 20 m at 153 kg. Total 80 m.",
+          "sets": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "unit": "m",
+          "loads_kg": [
+            128,
+            153,
+            153,
+            153
+          ],
+          "equipment": "Sled",
+          "muscles": [
+            "quads",
+            "glutes"
+          ],
+          "assisting_muscles": [
+            "core",
+            "shoulders"
+          ],
+          "measurement_note": "Loads are the reported total sled loads. No separate plates or empty-sled weight inferred. Duration not reported.",
+          "block": {
+            "name": "Cardio",
+            "detail": "Four sled pushes, 80 m total; 20 m at 128 kg and three 20 m pushes at 153 kg."
+          }
+        }
+      ],
+      "notes": "Final exercise record in the Fitness log:\nFull-body Planks | 4 × 30 sec\nPush-ups | 2 × 10\nStanding Barbell Push Press | 10 × 20 kg, 2 × 10 at 30 kg\nSled Push | 20 m at 128 kg, 60 m at 153 kg\n\nMat's completion message:\nfinished. 64 minutes \nmax 154\naverage 110\n\nRecovery clarification:\nthis was a recovery very long warm up and post\n\nFinal calorie report:\n630 calories",
+      "highlight": "Recovery session with a long warm-up and cooldown: 2 minutes of planks, 20 push-ups, 30 barbell push presses and 80 m of sled pushes. Separate warm-up, cooldown and sled durations were not reported."
     }
   ],
   "attendance": {
@@ -1876,6 +2001,71 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "Using the same whey isolate serving previously reported and logged: 140 kcal and 30 g protein."
+    },
+    {
+      "id": "chat-2026-11-20-dinner-5d9a4c1d-e14a-4905-a108-6020965af717",
+      "date": "2026-11-20",
+      "source": "Mat confirmed the foods in image 5d9a4c1d-e14a-4905-a108-6020965af717 were eaten on 20 November 2026, plus one protein bar, and identified the beef, pork and tartare meal as dinner.",
+      "name": "Mixed beef and pork with beef tartare",
+      "meal_type": "dinner",
+      "portion": "50% each of marinated beef, pork, beef shank, beef tongue and beef with garlic; all beef tartare, without the cone.",
+      "kcal": 1040,
+      "protein_g": 99,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "components": [
+        {
+          "name": "Marinated beef",
+          "portion": "50%",
+          "kcal": 100,
+          "protein_g": 10
+        },
+        {
+          "name": "Pork",
+          "portion": "50%",
+          "kcal": 100,
+          "protein_g": 7
+        },
+        {
+          "name": "Beef shank",
+          "portion": "50%",
+          "kcal": 170,
+          "protein_g": 22
+        },
+        {
+          "name": "Beef tongue",
+          "portion": "50%",
+          "kcal": 140,
+          "protein_g": 9
+        },
+        {
+          "name": "Beef with garlic",
+          "portion": "50%",
+          "kcal": 260,
+          "protein_g": 23
+        },
+        {
+          "name": "Beef tartare",
+          "portion": "100%; no cone",
+          "kcal": 270,
+          "protein_g": 28
+        }
+      ],
+      "estimate_basis": "The revised six eaten dinner items total 1,040 kcal and 99 g protein, superseding 1,180 kcal and 106 g. The second beef plate is identified as beef shank. Earlier tartare with egg yolk was not eaten.",
+      "correction_source": "Mat requested this dinner correction on 20 November 2026 using image 2483fe33-44f8-4053-a3e0-62c3325e3caa."
+    },
+    {
+      "id": "chat-2026-11-20-protein-bar-5d9a4c1d-e14a-4905-a108-6020965af717",
+      "date": "2026-11-20",
+      "source": "Mat confirmed the foods in image 5d9a4c1d-e14a-4905-a108-6020965af717 were eaten on 20 November 2026, plus one protein bar, and identified the beef, pork and tartare meal as dinner.",
+      "name": "Protein bar",
+      "meal_type": "snack",
+      "portion": "1 bar",
+      "kcal": 200,
+      "protein_g": 20,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Using the same previously logged protein-bar serving: approximately 200 kcal and 20 g protein; no new label or different size reported."
     }
   ],
   "energy_profiles": [
@@ -2240,6 +2430,14 @@
       "source": "Mat asked in the tracker chat on 19 November 2026 to add the Tofusan drink and close today.",
       "intake_complete": true,
       "intake_complete_source": "Mat confirmed: add that and can close today, after reporting the Tofusan drink on 19 November 2026."
+    },
+    {
+      "id": "2026-11-20",
+      "date": "2026-11-20",
+      "source": "Mat confirmed in the tracker chat on 20 November 2026: and close today, following the revised dinner estimate.",
+      "intake_complete": true,
+      "weight_kg": 115.5,
+      "weight_source": "Mat reported in the tracker chat: November 20: 115.5 kg, unchanged from November 18. Total loss remains 4.5 kg."
     }
   ],
   "exercise_library": [
