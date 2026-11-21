@@ -2066,6 +2066,143 @@
       "estimated": true,
       "use_logged_kcal": true,
       "estimate_basis": "Using the same previously logged protein-bar serving: approximately 200 kcal and 20 g protein; no new label or different size reported."
+    },
+    {
+      "id": "chat-2026-11-21-snack-78d1455b-475b-43c0-9ee0-843499d65bc3",
+      "date": "2026-11-21",
+      "source": "Mat reported Salametti Milani as a snack in the tracker chat on 21 November 2026, with nutrition values from image 78d1455b-475b-43c0-9ee0-843499d65bc3.",
+      "name": "Salametti Milani",
+      "meal_type": "snack",
+      "portion": "Half a salami (35 g)",
+      "kcal": 155,
+      "protein_g": 8,
+      "fat_g": 13,
+      "carbs_g": 0.5,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "The supplied half-salami (35 g) nutrition breakdown gives 155 kcal, 8 g protein, 13 g fat and 0.5 g carbohydrates."
+    },
+    {
+      "id": "chat-2026-11-21-breakfast-f055c877-d47a-41dc-8040-30f2cdf395ab",
+      "date": "2026-11-21",
+      "source": "Mat identified the meal in image f055c877-d47a-41dc-8040-30f2cdf395ab as his breakfast in the tracker chat on 21 November 2026. His current breakfast confirmation supersedes the image heading describing a planned meal.",
+      "name": "Pork with lime and grilled squid",
+      "meal_type": "lunch",
+      "portion": "80% of the pork with lime; all grilled squid without sauce.",
+      "kcal": 455,
+      "protein_g": 72,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "components": [
+        {
+          "name": "Pork with lime",
+          "portion": "80%",
+          "kcal": 225,
+          "protein_g": 32
+        },
+        {
+          "name": "Grilled squid",
+          "portion": "No sauce",
+          "kcal": 230,
+          "protein_g": 40
+        }
+      ],
+      "estimate_basis": "Final supplied food list revises pork with lime to an 80% portion: 225 kcal and 32 g protein. Grilled squid without sauce remains 230 kcal and 40 g protein. Combined lunch: 455 kcal and 72 g protein.",
+      "correction_source": "Mat supplied image 49cd4b60-0c46-48c7-99dd-05d70a0263bf as his final food list for 21 November 2026 and explicitly requested: this will be my today, and then can close. nothing more. Meal category remains lunch as previously clarified."
+    },
+    {
+      "id": "chat-2026-11-21-dinner-49cd4b60-0c46-48c7-99dd-05d70a0263bf",
+      "date": "2026-11-21",
+      "source": "Mat supplied image 49cd4b60-0c46-48c7-99dd-05d70a0263bf as his final food list for 21 November 2026 and explicitly requested: this will be my today, and then can close. nothing more.",
+      "name": "Greek yogurt with blackberries",
+      "meal_type": "dinner",
+      "portion": "200 g Farmers Union High Protein Greek yogurt + 100 g blackberries",
+      "kcal": 154,
+      "protein_g": 18,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Based on the Farmers Union High Protein nutrition used in this chat: 200 g provides 464 kJ (about 111 kcal) and 16.6 g protein. Raw blackberries, 100 g: 43 kcal and about 1.4 g protein. Combined estimate: 154 kcal and 18 g protein; the menu suggestion displayed approximately 150 kcal after rounding to the nearest 10.",
+      "components": [
+        {
+          "name": "Greek Yogurt, Farmers Union",
+          "portion": "High Protein, 200 g",
+          "kcal": 111,
+          "protein_g": 16.6
+        },
+        {
+          "name": "Blackberries",
+          "portion": "100 g",
+          "kcal": 43,
+          "protein_g": 1.4
+        }
+      ],
+      "correction_source": "Mat confirmed on 21 November 2026: i had this 200 g Greek Yogurt (Farmers Union) + 100 g Blackberries instead of the Pork Tenderloin Soup. Replace the previously recorded dinner using its existing ID. No honey, oats or other toppings were reported."
+    },
+    {
+      "id": "chat-2026-11-21-tofusan-5eb15116af44",
+      "date": "2026-11-21",
+      "source": "Mat supplied image 49cd4b60-0c46-48c7-99dd-05d70a0263bf as his final food list for 21 November 2026 and explicitly requested: this will be my today, and then can close. nothing more.",
+      "name": "Protein Drink, Tofusan",
+      "meal_type": "drinks",
+      "portion": "1 drink",
+      "kcal": 210,
+      "protein_g": 31,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "estimate_basis": "Final food list includes one Tofusan protein drink at 210 kcal and 31 g protein.",
+      "correction_source": "Restored using its original dated ID because Mat included the Tofusan in his final list, superseding the earlier request to cut it for now."
+    },
+    {
+      "id": "chat-2026-11-21-americano-d5ff41de2113",
+      "date": "2026-11-21",
+      "name": "Plain Americano",
+      "meal_type": "drinks",
+      "portion": "1 venti, plain, no milk or sweetener",
+      "routine_key": "americano",
+      "kcal": 17.5,
+      "kcal_low": 14,
+      "kcal_high": 21,
+      "estimated": true,
+      "source": "Mat corrected his 21 November 2026 coffee count in the tracker chat: i only had 1 coffee.",
+      "estimate_basis": "One coffee, using the saved usual plain venti Americano preparation. Half the usual two-coffee estimate: 14-21 kcal, midpoint 17.5 kcal. Dated routine override replaces the automatic two coffees only on 21 November."
+    },
+    {
+      "id": "chat-2026-11-21-dinner-7a6f8174-9838-4250-ba1d-65655ae4dcd1",
+      "date": "2026-11-21",
+      "source": "Mat confirmed in the tracker chat on 21 November 2026: this came additional as my dinner, with food and nutrition details in image 7a6f8174-9838-4250-ba1d-65655ae4dcd1. This is additional to the already recorded yogurt and blackberries.",
+      "name": "Beef tenderloin with corn and carrot",
+      "meal_type": "dinner",
+      "portion": "Beef tenderloin (200 g weighed raw), 2 small pieces of corn, 1 medium carrot; salt and pepper.",
+      "kcal": 380,
+      "protein_g": 46,
+      "estimated": true,
+      "use_logged_kcal": true,
+      "components": [
+        {
+          "name": "Beef tenderloin",
+          "portion": "200 g weighed raw",
+          "kcal": 260,
+          "protein_g": 42
+        },
+        {
+          "name": "Corn",
+          "portion": "2 small pieces",
+          "kcal": 90,
+          "protein_g": 3
+        },
+        {
+          "name": "Carrot",
+          "portion": "1 medium",
+          "kcal": 30,
+          "protein_g": 1
+        },
+        {
+          "name": "Salt and pepper",
+          "kcal": 0,
+          "protein_g": 0
+        }
+      ],
+      "estimate_basis": "Nutrition estimates supplied in the image: beef 260 kcal and 42 g protein, corn 90 kcal and 3 g, carrot 30 kcal and 1 g, salt and pepper 0 kcal. Total 380 kcal and 46 g protein. Beef quantity is explicitly raw weight."
     }
   ],
   "energy_profiles": [
@@ -2438,6 +2575,13 @@
       "intake_complete": true,
       "weight_kg": 115.5,
       "weight_source": "Mat reported in the tracker chat: November 20: 115.5 kg, unchanged from November 18. Total loss remains 4.5 kg."
+    },
+    {
+      "id": "2026-11-21",
+      "date": "2026-11-21",
+      "source": "Mat supplied image 49cd4b60-0c46-48c7-99dd-05d70a0263bf as his final food list for 21 November 2026 and explicitly requested: this will be my today, and then can close. nothing more.",
+      "intake_complete": true,
+      "intake_complete_source": "Mat requested closure of 21 November after providing his final food list and confirming nothing more."
     }
   ],
   "exercise_library": [
